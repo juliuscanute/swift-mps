@@ -5,23 +5,30 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.0.82+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.4.+'
     }
 }
 
-// ------------- DEPENDENCY VERSIONS ------------- 
-// Dependency versions
-ext.mpsVersion = '2019.2.3'
-ext.iets3OpenSourceVersion = '0.1+'
 // ------------- /DEPENDENCY VERSIONS -------------
 
 
-import de.itemis.mps.gradle.*
-apply plugin: 'base'
+plugins {
+    id 'base'
+    id 'maven-publish'
+    id "de.undercouch.download" version "4.1.1"
+}
 
 
 // ------------- DEPENDENCY CONFIG -------------
+// Make BuildLanguages and GenerateLibrariesXml available
+import de.itemis.mps.gradle.*
 
+// Tools to determine architecture
+import org.apache.tools.ant.taskdefs.condition.Os
+// ------------- DEPENDENCY VERSIONS ------------- 
+// Dependency versions
+ext.mpsVersion = '2020.2.3'
+ext.iets3OpenSourceVersion = '2020.2+'
 ext.dependencyRepositories = [
         'https://projects.itemis.de/nexus/content/repositories/mbeddr',
         'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
@@ -45,12 +52,8 @@ configurations {
 dependencies {
     mps "com.jetbrains:mps:$mpsVersion"
     mpsArtifacts "org.iets3:opensource:$iets3OpenSourceVersion"
-    junitAnt 'org.apache.ant:ant-junit:1.10.1'
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion '4.10.1'
-    distributionType "all"
+    mpsArtifacts "de.itemis.mps:extensions:2020.2+"
+    junitAnt 'org.apache.ant:ant-junit:1.10.9'
 }
 
 // ------------- /DEPENDENCY CONFIG -------------
@@ -58,17 +61,66 @@ task wrapper(type: Wrapper) {
 
 // ------------- DEPENDENCY RESOLUTION -------------
 // JDK_HOME required for adding tools.jar into classpath of the forked ant process
-if (!hasProperty("jdk_home")) {
-    def java_home = System.properties['java.home']
-    def jdk_home = java_home
-    if (!file("$jdk_home/lib/tools.jar").isFile()) {
-        jdk_home = jdk_home + "/.."
-    }
-    if (!file("$jdk_home/lib/tools.jar").isFile()) {
-        throw new GradleException("Was not able to locate jdk home folder. Use 'jdk_home' project variable to specify JDK location explicitly. Current JAVA_HOME is: $java_home")
-    }
-    ext.jdk_home = jdk_home
+// ==== resolving java 11 ====
+def jdkHome
+def downloadJdk = false
+
+
+// Sdk specified
+if (project.hasProperty("jdk")) {
+    // No further check
+    jdkHome = project.property('jdk')
 }
+
+// Current java version is 11
+else if (JavaVersion.current() == JavaVersion.VERSION_11) {
+    // Perfect then -> use it
+    jdkHome = System.getProperty('java.home')
+}
+
+// Neither specified, but MPS installation provided with a jbr folder !
+else if (project.hasProperty("mpsDir") && file("$mpsDir/jbr").exists()) {
+    // That was close
+    jdkHome = "$mpsDir/jbr"
+}
+
+else {
+    // No option left but to download it :c
+    // We set a flag so we wait for a task to actually need it
+    downloadJdk = true
+	jdkHome = "$buildDir/jbrsdk"
+}
+
+task resolveJdk(type: Download) {
+	doFirst {
+	    println "Java 11, which is required to build dependencies, was not found."
+	    println "We will download one for you."
+		mkdir file(jdkHome)
+	}
+	
+	def arch = System.properties['sun.arch.data.model'].equals("64") ? "x64" : "x86"
+	def os
+	if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        os = "windows"
+    } else if (Os.isFamily(Os.FAMILY_LINUX)) {
+    	os = "linux"
+    } else {
+    	os = "osx"
+    }
+
+    def filename = "jbrsdk-11_0_8-$os-$arch-b1145.3.tar.gz"
+
+    src "https://dl.bintray.com/jetbrains/intellij-jbr/$filename"
+	dest "$buildDir/$filename"
+	overwrite false
+
+}
+
+task unpackJdk(type: Copy, dependsOn: resolveJdk) {
+    from tarTree(resources.gzip(resolveJdk.dest))
+    into "$buildDir"
+}
+
 
 task resolveMps(type: Copy) {
     dependsOn configurations.mps
@@ -95,13 +147,15 @@ ext.artifacts_dir = '-Dartifacts.root=' + new File(buildDir, 'artifacts')
 ext.mps_home = '-Dmps.home=' + resolveMps.destinationDir.getAbsolutePath()
 ext.buildScriptArgs = [mps_home, build_dir, artifacts_dir]
 // tools might be needed later for running test scripts
-ext.buildScriptClasspath = project.configurations.junitAnt.fileCollection({ true }) + project.files("$project.jdk_home/lib/tools.jar")
+ext.buildScriptClasspath = project.configurations.junitAnt.fileCollection({ true }) + project.files("$jdkHome/lib/tools.jar")
 
 // ------------- /BUILD SCRIPT PARAMS -------------
 
 // ------------- BUILD TASKS -------------
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
-    script rootProject.file('build/mpsintrocourse.allScripts/build.xml')
+    if (downloadJdk) dependsOn "unpackJdk"
+    // script rootProject.file('build/mpsintrocourse.allScripts/build.xml')
+    script "$rootDir/build/mpsintrocourse.allScripts/build.xml"
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }
