@@ -3,12 +3,12 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/statestuff/statestuff.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/statemachine.test/statemachine.test.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/statemachine/statemachine.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/swift.test/swift.test.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/swift/swift.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/code.build/code.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/code.buildAllScripts/code.buildAllScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/statemachine.test.interpreter/statemachine.test.interpreter.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/swift.test.interpreter/swift.test.interpreter.msd" folder="" />
     </projectModules>
   </component>
 </project>

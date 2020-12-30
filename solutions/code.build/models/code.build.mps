@@ -264,16 +264,16 @@
       <property role="TrG5h" value="code" />
       <node concept="1E1JtD" id="14E7mQ7KVrI" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="statemachine.test" />
+        <property role="TrG5h" value="swift.test" />
         <property role="3LESm3" value="388b264c-9809-4e2e-b292-61ab9914c8d0" />
         <node concept="398BVA" id="14E7mQ7L2Cb" role="3LF7KH">
           <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
           <node concept="2Ry0Ak" id="14E7mQ7L2Cg" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="14E7mQ7L2Ch" role="2Ry0An">
-              <property role="2Ry0Am" value="statemachine.test" />
+              <property role="2Ry0Am" value="swift.test" />
               <node concept="2Ry0Ak" id="14E7mQ7L2Ci" role="2Ry0An">
-                <property role="2Ry0Am" value="statemachine.test.mpl" />
+                <property role="2Ry0Am" value="swift.test.mpl" />
               </node>
             </node>
           </node>
@@ -309,7 +309,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="14E7mQ7KVsy" role="1TViLv">
-          <property role="TrG5h" value="statemachine.test#01" />
+          <property role="TrG5h" value="swift.test#01" />
           <property role="3LESm3" value="7c6c1b6a-aaba-467a-9372-64154f298b99" />
           <node concept="1SiIV0" id="14E7mQ7KVsz" role="3bR37C">
             <node concept="3bR9La" id="14E7mQ7KVs$" role="1SiIV1">
@@ -334,27 +334,27 @@
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2k2" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7L2k3" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="statemachine.test" />
+            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="swift.test" />
           </node>
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2k4" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7L2k5" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="statemachine" />
+            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="swift" />
           </node>
         </node>
       </node>
       <node concept="1E1JtA" id="14E7mQ7KVrO" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="statemachine.test.interpreter" />
+        <property role="TrG5h" value="swift.test.interpreter" />
         <property role="3LESm3" value="7102c78c-03aa-49bd-a8a7-da421fcdf6a6" />
         <node concept="398BVA" id="14E7mQ7L2CG" role="3LF7KH">
           <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
           <node concept="2Ry0Ak" id="14E7mQ7L2CL" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="14E7mQ7L2CM" role="2Ry0An">
-              <property role="2Ry0Am" value="statemachine.test.interpreter" />
+              <property role="2Ry0Am" value="swift.test.interpreter" />
               <node concept="2Ry0Ak" id="14E7mQ7L2CN" role="2Ry0An">
-                <property role="2Ry0Am" value="statemachine.test.interpreter.msd" />
+                <property role="2Ry0Am" value="swift.test.interpreter.msd" />
               </node>
             </node>
           </node>
@@ -376,12 +376,12 @@
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2kh" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7L2ki" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="statemachine.test" />
+            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="swift.test" />
           </node>
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2kj" role="3bR37C">
           <node concept="3bR9La" id="14E7mQ7L2kk" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="statemachine" />
+            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="swift" />
           </node>
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2kl" role="3bR37C">
@@ -392,22 +392,22 @@
       </node>
       <node concept="1E1JtD" id="14E7mQ7KVrU" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="statemachine" />
+        <property role="TrG5h" value="swift" />
         <property role="3LESm3" value="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" />
         <node concept="398BVA" id="14E7mQ7L2Dh" role="3LF7KH">
           <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
           <node concept="2Ry0Ak" id="14E7mQ7L2Dm" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="14E7mQ7L2Dn" role="2Ry0An">
-              <property role="2Ry0Am" value="statemachine" />
+              <property role="2Ry0Am" value="swift" />
               <node concept="2Ry0Ak" id="14E7mQ7L2Do" role="2Ry0An">
-                <property role="2Ry0Am" value="statemachine.mpl" />
+                <property role="2Ry0Am" value="swift.mpl" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1yeLz9" id="14E7mQ7KVsS" role="1TViLv">
-          <property role="TrG5h" value="statemachine#01" />
+          <property role="TrG5h" value="swift#01" />
           <property role="3LESm3" value="775134a4-c0dd-4eec-b5a6-18f21e52d840" />
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2kr" role="3bR37C">
@@ -448,10 +448,10 @@
           </node>
         </node>
         <node concept="3LEDTy" id="14E7mQ7L2kG" role="3LEDUa">
-          <ref role="3LEDTV" node="14E7mQ7KVrU" resolve="statemachine" />
+          <ref role="3LEDTV" node="14E7mQ7KVrU" resolve="swift" />
         </node>
         <node concept="3LEDTy" id="14E7mQ7L2kH" role="3LEDUa">
-          <ref role="3LEDTV" node="14E7mQ7KVrI" resolve="statemachine.test" />
+          <ref role="3LEDTV" node="14E7mQ7KVrI" resolve="swift.test" />
         </node>
         <node concept="3LEDTy" id="14E7mQ7L2kI" role="3LEDUa">
           <ref role="3LEDTV" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />

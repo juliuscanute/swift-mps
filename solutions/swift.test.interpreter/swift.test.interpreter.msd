@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="statemachine.test.interpreter" uuid="7102c78c-03aa-49bd-a8a7-da421fcdf6a6" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="swift.test.interpreter" uuid="7102c78c-03aa-49bd-a8a7-da421fcdf6a6" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -16,8 +16,8 @@
     <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
     <dependency reexport="false">735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-    <dependency reexport="false">388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)</dependency>
-    <dependency reexport="false">ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)</dependency>
+    <dependency reexport="false">388b264c-9809-4e2e-b292-61ab9914c8d0(swift.test)</dependency>
+    <dependency reexport="false">ec192600-e7e1-4a3e-8ddf-ce429474a2ed(swift)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter" version="1" />
@@ -66,9 +66,9 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
-    <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(statemachine)" version="0" />
-    <module reference="388b264c-9809-4e2e-b292-61ab9914c8d0(statemachine.test)" version="0" />
-    <module reference="7102c78c-03aa-49bd-a8a7-da421fcdf6a6(statemachine.test.interpreter)" version="0" />
+    <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(swift)" version="0" />
+    <module reference="388b264c-9809-4e2e-b292-61ab9914c8d0(swift.test)" version="0" />
+    <module reference="7102c78c-03aa-49bd-a8a7-da421fcdf6a6(swift.test.interpreter)" version="0" />
   </dependencyVersions>
 </solution>
 
