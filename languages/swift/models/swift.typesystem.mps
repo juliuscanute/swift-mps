@@ -196,6 +196,7 @@
   </registry>
   <node concept="18kY7G" id="6u4eORbC11J">
     <property role="TrG5h" value="check_StateMachine" />
+    <property role="3GE5qa" value="delete" />
     <node concept="3clFbS" id="6u4eORbC11K" role="18ibNy">
       <node concept="3clFbJ" id="6u4eORbC3eE" role="3cqZAp">
         <node concept="1Wc70l" id="6u4eORbC6wM" role="3clFbw">
@@ -396,6 +397,7 @@
   </node>
   <node concept="18kY7G" id="6u4eORbDbX9">
     <property role="TrG5h" value="check_Transition" />
+    <property role="3GE5qa" value="delete" />
     <node concept="3clFbS" id="6u4eORbDbXa" role="18ibNy">
       <node concept="3clFbJ" id="6u4eORbDbXm" role="3cqZAp">
         <node concept="3clFbC" id="6u4eORbDcxX" role="3clFbw">
@@ -436,7 +438,7 @@
   </node>
   <node concept="1YbPZF" id="4ByeTwKoF$9">
     <property role="TrG5h" value="typeof_Variable" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="4ByeTwKoF$a" role="18ibNy">
       <node concept="1Z5TYs" id="4ByeTwKoFN4" role="3cqZAp">
         <node concept="mw_s8" id="4ByeTwKoFNo" role="1ZfhKB">
@@ -467,7 +469,7 @@
   </node>
   <node concept="1YbPZF" id="4ByeTwKoGd4">
     <property role="TrG5h" value="typeof_VarRef" />
-    <property role="3GE5qa" value="expr" />
+    <property role="3GE5qa" value="expression" />
     <node concept="3clFbS" id="4ByeTwKoGd5" role="18ibNy">
       <node concept="1Z5TYs" id="4ByeTwKoGt_" role="3cqZAp">
         <node concept="mw_s8" id="4ByeTwKoGtT" role="1ZfhKB">
@@ -498,6 +500,7 @@
   </node>
   <node concept="1YbPZF" id="4ByeTwKoGRq">
     <property role="TrG5h" value="typeof_Transition" />
+    <property role="3GE5qa" value="delete" />
     <node concept="3clFbS" id="4ByeTwKoGRr" role="18ibNy">
       <node concept="3clFbJ" id="4ByeTwKoHwu" role="3cqZAp">
         <node concept="3clFbS" id="4ByeTwKoHww" role="3clFbx">

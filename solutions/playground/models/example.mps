@@ -6,39 +6,43 @@
   </languages>
   <imports />
   <registry>
-    <language id="388b264c-9809-4e2e-b292-61ab9914c8d0" name="statemachine.test">
-      <concept id="7459152088147528103" name="statemachine.test.structure.TestCase" flags="ng" index="2G8rbE">
+    <language id="388b264c-9809-4e2e-b292-61ab9914c8d0" name="swift.test">
+      <concept id="7459152088147528103" name="swift.test.structure.TestCase" flags="ng" index="2G8rbE">
         <reference id="7459152088147528104" name="machine" index="2G8rb_" />
         <child id="7459152088147529057" name="contents" index="2G8roG" />
       </concept>
-      <concept id="7459152088147529060" name="statemachine.test.structure.AssertState" flags="ng" index="2G8roD">
+      <concept id="7459152088147529060" name="swift.test.structure.AssertState" flags="ng" index="2G8roD">
         <reference id="7459152088147529063" name="state" index="2G8roE" />
       </concept>
-      <concept id="7459152088147529090" name="statemachine.test.structure.TriggerMachine" flags="ng" index="2G8rrf">
+      <concept id="7459152088147529090" name="swift.test.structure.TriggerMachine" flags="ng" index="2G8rrf">
         <reference id="7459152088147529091" name="event" index="2G8rre" />
       </concept>
     </language>
-    <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="statemachine">
-      <concept id="7459152088147169320" name="statemachine.structure.StateMachine" flags="ng" index="2G92H_">
+    <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
+        <child id="2715275293073836085" name="contents" index="aCh1b" />
+      </concept>
+      <concept id="2715275293073414015" name="swift.structure.ImportDeclaration" flags="ng" index="aDSW1" />
+      <concept id="7459152088147169320" name="swift.structure.StateMachine" flags="ng" index="2G92H_">
         <child id="7459152088147263655" name="contents" index="2G9rJE" />
       </concept>
-      <concept id="7459152088147263388" name="statemachine.structure.Event" flags="ng" index="2G9kjh" />
-      <concept id="7459152088147263391" name="statemachine.structure.Transition" flags="ng" index="2G9kji">
+      <concept id="7459152088147263388" name="swift.structure.Event" flags="ng" index="2G9kjh" />
+      <concept id="7459152088147263391" name="swift.structure.Transition" flags="ng" index="2G9kji">
         <reference id="7459152088147263395" name="target" index="2G9kjI" />
         <child id="7459152088147263776" name="trigger" index="2G9rDH" />
         <child id="5323883234338014268" name="guard" index="1TwzY$" />
       </concept>
-      <concept id="7459152088147263377" name="statemachine.structure.State" flags="ng" index="2G9kjs">
+      <concept id="7459152088147263377" name="swift.structure.State" flags="ng" index="2G9kjs">
         <property id="7459152088147263378" name="initial" index="2G9kjv" />
         <child id="7459152088147263534" name="contents" index="2G9rHz" />
       </concept>
-      <concept id="7459152088147263734" name="statemachine.structure.EventTrigger" flags="ng" index="2G9rIV">
+      <concept id="7459152088147263734" name="swift.structure.EventTrigger" flags="ng" index="2G9rIV">
         <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
-      <concept id="5323883234338083216" name="statemachine.structure.VarRef" flags="ng" index="1TwMC8">
+      <concept id="5323883234338083216" name="swift.structure.VarRef" flags="ng" index="1TwMC8">
         <reference id="5323883234338083217" name="var" index="1TwMC9" />
       </concept>
-      <concept id="5323883234337882098" name="statemachine.structure.Variable" flags="ng" index="1TJWhE">
+      <concept id="5323883234337882098" name="swift.structure.Variable" flags="ng" index="1TJWhE">
         <child id="5323883234337882101" name="init" index="1TJWhH" />
       </concept>
     </language>
@@ -65,6 +69,9 @@
     <property role="TrG5h" value="TrafficLight" />
     <node concept="2G9kjh" id="6u4eORbCyok" role="2G9rJE">
       <property role="TrG5h" value="pedestrianButton" />
+    </node>
+    <node concept="2G9kjh" id="2mIA7SIWQKw" role="2G9rJE">
+      <property role="TrG5h" value="clickButton" />
     </node>
     <node concept="1TJWhE" id="4ByeTwKnZQn" role="2G9rJE">
       <property role="TrG5h" value="counter" />
@@ -103,12 +110,29 @@
           </node>
         </node>
       </node>
+      <node concept="2G9kji" id="2mIA7SIWQKZ" role="2G9rHz">
+        <ref role="2G9kjI" node="2mIA7SIWRdP" resolve="yellow" />
+        <node concept="2G9rIV" id="2mIA7SIWQLf" role="2G9rDH">
+          <ref role="2G9rIU" node="2mIA7SIWQKw" resolve="clickButton" />
+        </node>
+        <node concept="30cPrO" id="2mIA7SIWR5A" role="1TwzY$">
+          <node concept="30bXRB" id="2mIA7SIWR7R" role="30dEs_">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="1TwMC8" id="2mIA7SIWQLA" role="30dEsF">
+            <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G9kjs" id="6u4eORbD3Dj" role="2G9rJE">
       <property role="TrG5h" value="green" />
     </node>
     <node concept="2G9kjs" id="4ByeTwKoFwt" role="2G9rJE">
       <property role="TrG5h" value="error" />
+    </node>
+    <node concept="2G9kjs" id="2mIA7SIWRdP" role="2G9rJE">
+      <property role="TrG5h" value="yellow" />
     </node>
   </node>
   <node concept="2G8rbE" id="6u4eORbDKFr">
@@ -121,6 +145,15 @@
     </node>
     <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
       <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
+    </node>
+  </node>
+  <node concept="aCh1a" id="2mIA7SJaxhY">
+    <property role="TrG5h" value="Sample" />
+    <node concept="aDSW1" id="2mIA7SJaxi1" role="aCh1b">
+      <property role="TrG5h" value="UIKit" />
+    </node>
+    <node concept="aDSW1" id="2mIA7SJaxi7" role="aCh1b">
+      <property role="TrG5h" value="SwiftUI" />
     </node>
   </node>
 </model>
