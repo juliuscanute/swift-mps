@@ -26,9 +26,17 @@
       <concept id="2715275293073414015" name="swift.structure.ImportDeclaration" flags="ng" index="aDSW1" />
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
       <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R">
+        <property id="2715275293104988249" name="static" index="lh7wB" />
         <property id="2715275293092257916" name="typeAnnotationName" index="lxzw2" />
         <child id="2715275293080885172" name="type" index="aPoZa" />
         <child id="2715275293096196038" name="codeBlock" index="lMyYS" />
+      </concept>
+      <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
+        <child id="2715275293101041224" name="statement" index="l03SQ" />
+      </concept>
+      <concept id="2715275293098371017" name="swift.structure.StructDeclaration" flags="ng" index="laRYR">
+        <child id="2715275293098371048" name="body" index="laRYm" />
+        <child id="2715275293100039473" name="inheritType" index="lcslf" />
       </concept>
       <concept id="2715275293091191054" name="swift.structure.CodeBlock" flags="ng" index="lHG5K">
         <child id="2715275293091191328" name="statement" index="lHG9u" />
@@ -167,20 +175,52 @@
     </node>
   </node>
   <node concept="aCh1a" id="2mIA7SJVKf3">
-    <property role="TrG5h" value="Sample" />
+    <property role="TrG5h" value="ContentView" />
     <node concept="lHG9r" id="2mIA7SKhxaA" role="aCh1b">
       <node concept="aDSW1" id="2mIA7SKhxaI" role="lHG9p">
         <property role="TrG5h" value="SwiftUI" />
       </node>
       <node concept="aAFJ2" id="2mIA7SKujCo" role="lHG9p" />
-      <node concept="aUV3R" id="2mIA7SKsp2f" role="lHG9p">
-        <property role="TrG5h" value="body" />
-        <property role="lxzw2" value="some" />
-        <node concept="aPoZM" id="2mIA7SKsIJ$" role="aPoZa">
+      <node concept="laRYR" id="2mIA7SKz4TK" role="lHG9p">
+        <property role="TrG5h" value="ContentView" />
+        <node concept="lHG5K" id="2mIA7SKz4TM" role="laRYm">
+          <node concept="l03SS" id="2mIA7SKHsW_" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SKsp2f" role="l03SQ">
+              <property role="TrG5h" value="body" />
+              <property role="lxzw2" value="some" />
+              <node concept="aPoZM" id="2mIA7SKsIJ$" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SKsIJE" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SKHkDZ" role="lHG9u" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SKE0$J" role="lcslf">
           <property role="TrG5h" value="View" />
         </node>
-        <node concept="lHG5K" id="2mIA7SKsIJE" role="lMyYS">
-          <node concept="lHG9r" id="2mIA7SKsIJF" role="lHG9u" />
+      </node>
+      <node concept="aAFJ2" id="2mIA7SKJ9Ex" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SKJ9EU" role="lHG9p">
+        <property role="TrG5h" value="ContentView_Previews" />
+        <node concept="lHG5K" id="2mIA7SKJ9EW" role="laRYm">
+          <node concept="l03SS" id="2mIA7SKJ9EY" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SKJ9Fn" role="l03SQ">
+              <property role="TrG5h" value="previews" />
+              <property role="lxzw2" value="some" />
+              <property role="lh7wB" value="true" />
+              <node concept="aPoZM" id="2mIA7SKJ9F$" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SKJ9FE" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SKJ9FF" role="lHG9u" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SKJ9Fi" role="lcslf">
+          <property role="TrG5h" value="PreviewProvider" />
         </node>
       </node>
     </node>
