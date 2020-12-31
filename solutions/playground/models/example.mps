@@ -45,10 +45,16 @@
       <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
         <child id="2715275293091191335" name="statement" index="lHG9p" />
       </concept>
+      <concept id="2715275293146686936" name="swift.structure.ParameterValue" flags="ng" index="mMrQA">
+        <property id="2715275293152384132" name="parameter" index="m48NU" />
+        <property id="2715275293154685727" name="value" index="mjUHx" />
+      </concept>
       <concept id="2715275293132024387" name="swift.structure.CommaSeparatedExpressions" flags="ng" index="nav8X">
         <child id="2715275293132024414" name="expressions" index="nav8w" />
       </concept>
-      <concept id="2715275293139355096" name="swift.structure.DotParenthesizedExpression" flags="ng" index="nmtQA" />
+      <concept id="2715275293139355096" name="swift.structure.DotParenthesizedExpression" flags="ng" index="nmtQA">
+        <child id="2715275293139355100" name="expression" index="nmtQy" />
+      </concept>
       <concept id="2715275293136196378" name="swift.structure.ObjectExpression" flags="ng" index="nqoH$">
         <child id="2715275293136196383" name="expression" index="nqoHx" />
         <child id="2715275293137744081" name="start" index="ns2yJ" />
@@ -57,6 +63,7 @@
         <child id="2715275293132033328" name="expression" index="nahle" />
       </concept>
       <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
+        <child id="2715275293150616556" name="parenExpression" index="m3oei" />
         <child id="2715275293129003443" name="statement" index="nXWBd" />
       </concept>
       <concept id="7459152088147169320" name="swift.structure.StateMachine" flags="ng" index="2G92H_">
@@ -209,58 +216,52 @@
               <node concept="aPoZM" id="2mIA7SKsIJ$" role="aPoZa">
                 <property role="TrG5h" value="View" />
               </node>
-              <node concept="lHG5K" id="2mIA7SKsIJE" role="lMyYS">
-                <node concept="l03SS" id="2mIA7SKHkDZ" role="lHG9u">
-                  <node concept="nqoH$" id="2mIA7SMTHVE" role="l03SQ">
-                    <node concept="nLx3E" id="2mIA7SMTHVQ" role="ns2yJ">
-                      <property role="TrG5h" value="Text" />
-                      <node concept="nav8X" id="2mIA7SMTHWt" role="nahle">
-                        <node concept="30bdrP" id="2mIA7SMTHWx" role="nav8w">
-                          <property role="30bdrQ" value="Hello World" />
+              <node concept="lHG5K" id="2mIA7SNyme2" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SNyme3" role="lHG9u">
+                  <node concept="nXWBc" id="2mIA7SNyme7" role="l03SQ">
+                    <property role="TrG5h" value="VStack" />
+                    <node concept="l03SS" id="2mIA7SNyme8" role="nXWBd">
+                      <node concept="nqoH$" id="2mIA7SNymeb" role="l03SQ">
+                        <node concept="nLx3E" id="2mIA7SNymen" role="ns2yJ">
+                          <property role="TrG5h" value="Text" />
+                          <node concept="nav8X" id="2mIA7SNymeq" role="nahle">
+                            <node concept="30bdrP" id="2mIA7SNymeu" role="nav8w">
+                              <property role="30bdrQ" value="Turtle Rock" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="nmtQA" id="2mIA7SNymeL" role="nqoHx">
+                          <property role="TrG5h" value="font" />
+                          <node concept="nav8X" id="2mIA7SNymeS" role="nmtQy">
+                            <node concept="mMrQA" id="2mIA7SNX2VN" role="nav8w">
+                              <property role="mjUHx" value=".title" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="nmtQA" id="2mIA7SN23E9" role="nqoHx">
-                      <property role="TrG5h" value="padding" />
-                    </node>
-                    <node concept="nmtQA" id="2mIA7SNlxl7" role="nqoHx">
-                      <property role="TrG5h" value="foregroundColor" />
-                    </node>
-                    <node concept="nmtQA" id="2mIA7SNnD$n" role="nqoHx">
-                      <property role="TrG5h" value="font" />
-                    </node>
-                  </node>
-                  <node concept="nXWBc" id="2mIA7SNnDA$" role="l03SQ">
-                    <property role="TrG5h" value="HStack" />
-                    <node concept="l03SS" id="2mIA7SNnDAA" role="nXWBd">
-                      <node concept="nqoH$" id="2mIA7SNnD_G" role="l03SQ">
-                        <node concept="nLx3E" id="2mIA7SNnD_V" role="ns2yJ">
+                      <node concept="nqoH$" id="2mIA7SO1BuS" role="l03SQ">
+                        <node concept="nLx3E" id="2mIA7SO1BuT" role="ns2yJ">
                           <property role="TrG5h" value="Text" />
-                          <node concept="nav8X" id="2mIA7SNnD_Y" role="nahle">
-                            <node concept="30bdrP" id="2mIA7SNnDA2" role="nav8w">
+                          <node concept="nav8X" id="2mIA7SO1BuU" role="nahle">
+                            <node concept="30bdrP" id="2mIA7SO1BuV" role="nav8w">
                               <property role="30bdrQ" value="Joshua Tree National Park" />
                             </node>
                           </node>
                         </node>
-                        <node concept="nmtQA" id="2mIA7SNnDAc" role="nqoHx">
+                        <node concept="nmtQA" id="2mIA7SO1BuW" role="nqoHx">
                           <property role="TrG5h" value="font" />
-                        </node>
-                      </node>
-                      <node concept="nLx3E" id="2mIA7SNnDBe" role="l03SQ">
-                        <property role="TrG5h" value="Spacer" />
-                      </node>
-                      <node concept="nqoH$" id="2mIA7SNnDBu" role="l03SQ">
-                        <node concept="nLx3E" id="2mIA7SNnDBv" role="ns2yJ">
-                          <property role="TrG5h" value="Text" />
-                          <node concept="nav8X" id="2mIA7SNnDBw" role="nahle">
-                            <node concept="30bdrP" id="2mIA7SNnDBx" role="nav8w">
-                              <property role="30bdrQ" value="California" />
+                          <node concept="nav8X" id="2mIA7SO1BuX" role="nmtQy">
+                            <node concept="mMrQA" id="2mIA7SO1BuY" role="nav8w">
+                              <property role="mjUHx" value=".subheadline" />
                             </node>
                           </node>
                         </node>
-                        <node concept="nmtQA" id="2mIA7SNnDBy" role="nqoHx">
-                          <property role="TrG5h" value="font" />
-                        </node>
+                      </node>
+                    </node>
+                    <node concept="nav8X" id="2mIA7SNF0Xy" role="m3oei">
+                      <node concept="mMrQA" id="2mIA7SNX2Vn" role="nav8w">
+                        <property role="mjUHx" value=".leading" />
+                        <property role="m48NU" value="alignment" />
                       </node>
                     </node>
                   </node>
@@ -318,18 +319,6 @@
               <property role="lxzw2" value="some" />
               <node concept="aPoZM" id="2mIA7SMbpqa" role="aPoZa">
                 <property role="TrG5h" value="Scene" />
-              </node>
-              <node concept="lHG5K" id="2mIA7SMbpqg" role="lMyYS">
-                <node concept="l03SS" id="2mIA7SMbpqh" role="lHG9u">
-                  <node concept="nXWBc" id="2mIA7SMoeNU" role="l03SQ">
-                    <property role="TrG5h" value="WindowGroup" />
-                    <node concept="l03SS" id="2mIA7SMoeNV" role="nXWBd">
-                      <node concept="nLx3E" id="2mIA7SMtL9w" role="l03SQ">
-                        <property role="TrG5h" value="ContentView" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
