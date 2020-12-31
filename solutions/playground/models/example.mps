@@ -19,10 +19,23 @@
       </concept>
     </language>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="2715275293076235196" name="swift.structure.EmptyStatement" flags="ng" index="aAFJ2" />
       <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
         <child id="2715275293073836085" name="contents" index="aCh1b" />
       </concept>
       <concept id="2715275293073414015" name="swift.structure.ImportDeclaration" flags="ng" index="aDSW1" />
+      <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
+      <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R">
+        <property id="2715275293092257916" name="typeAnnotationName" index="lxzw2" />
+        <child id="2715275293080885172" name="type" index="aPoZa" />
+        <child id="2715275293096196038" name="codeBlock" index="lMyYS" />
+      </concept>
+      <concept id="2715275293091191054" name="swift.structure.CodeBlock" flags="ng" index="lHG5K">
+        <child id="2715275293091191328" name="statement" index="lHG9u" />
+      </concept>
+      <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
+        <child id="2715275293091191335" name="statement" index="lHG9p" />
+      </concept>
       <concept id="7459152088147169320" name="swift.structure.StateMachine" flags="ng" index="2G92H_">
         <child id="7459152088147263655" name="contents" index="2G9rJE" />
       </concept>
@@ -79,6 +92,12 @@
         <property role="30bXRw" value="0" />
       </node>
     </node>
+    <node concept="1TJWhE" id="2mIA7SJPol2" role="2G9rJE">
+      <property role="TrG5h" value="hello" />
+      <node concept="30bXRB" id="2mIA7SJPolz" role="1TJWhH">
+        <property role="30bXRw" value="3" />
+      </node>
+    </node>
     <node concept="2G9kjs" id="6u4eORbCyop" role="2G9rJE">
       <property role="TrG5h" value="red" />
       <property role="2G9kjv" value="true" />
@@ -87,12 +106,12 @@
         <node concept="2G9rIV" id="6u4eORbD3Da" role="2G9rDH">
           <ref role="2G9rIU" node="6u4eORbCyok" resolve="pedestrianButton" />
         </node>
-        <node concept="30d7iD" id="48onJ2cHNrU" role="1TwzY$">
-          <node concept="30bXRB" id="48onJ2cHNtr" role="30dEs_">
-            <property role="30bXRw" value="333" />
-          </node>
+        <node concept="30d7iD" id="2mIA7SJPom7" role="1TwzY$">
           <node concept="1TwMC8" id="48onJ2cHNqk" role="30dEsF">
             <ref role="1TwMC9" node="4ByeTwKnZQn" resolve="counter" />
+          </node>
+          <node concept="30bXRB" id="2mIA7SJPom8" role="30dEs_">
+            <property role="30bXRw" value="333" />
           </node>
         </node>
       </node>
@@ -147,13 +166,23 @@
       <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
     </node>
   </node>
-  <node concept="aCh1a" id="2mIA7SJaxhY">
+  <node concept="aCh1a" id="2mIA7SJVKf3">
     <property role="TrG5h" value="Sample" />
-    <node concept="aDSW1" id="2mIA7SJaxi1" role="aCh1b">
-      <property role="TrG5h" value="UIKit" />
-    </node>
-    <node concept="aDSW1" id="2mIA7SJaxi7" role="aCh1b">
-      <property role="TrG5h" value="SwiftUI" />
+    <node concept="lHG9r" id="2mIA7SKhxaA" role="aCh1b">
+      <node concept="aDSW1" id="2mIA7SKhxaI" role="lHG9p">
+        <property role="TrG5h" value="SwiftUI" />
+      </node>
+      <node concept="aAFJ2" id="2mIA7SKujCo" role="lHG9p" />
+      <node concept="aUV3R" id="2mIA7SKsp2f" role="lHG9p">
+        <property role="TrG5h" value="body" />
+        <property role="lxzw2" value="some" />
+        <node concept="aPoZM" id="2mIA7SKsIJ$" role="aPoZa">
+          <property role="TrG5h" value="View" />
+        </node>
+        <node concept="lHG5K" id="2mIA7SKsIJE" role="lMyYS">
+          <node concept="lHG9r" id="2mIA7SKsIJF" role="lHG9u" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
