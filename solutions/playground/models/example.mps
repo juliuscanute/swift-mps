@@ -35,6 +35,7 @@
         <child id="2715275293101041224" name="statement" index="l03SQ" />
       </concept>
       <concept id="2715275293098371017" name="swift.structure.StructDeclaration" flags="ng" index="laRYR">
+        <property id="2715275293127056071" name="attributeName" index="n_gaT" />
         <child id="2715275293098371048" name="body" index="laRYm" />
         <child id="2715275293100039473" name="inheritType" index="lcslf" />
       </concept>
@@ -43,6 +44,20 @@
       </concept>
       <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
         <child id="2715275293091191335" name="statement" index="lHG9p" />
+      </concept>
+      <concept id="2715275293132024387" name="swift.structure.CommaSeparatedExpressions" flags="ng" index="nav8X">
+        <child id="2715275293132024414" name="expressions" index="nav8w" />
+      </concept>
+      <concept id="2715275293139355096" name="swift.structure.DotParenthesizedExpression" flags="ng" index="nmtQA" />
+      <concept id="2715275293136196378" name="swift.structure.ObjectExpression" flags="ng" index="nqoH$">
+        <child id="2715275293136196383" name="expression" index="nqoHx" />
+        <child id="2715275293137744081" name="start" index="ns2yJ" />
+      </concept>
+      <concept id="2715275293130000532" name="swift.structure.ParenthesizedExpression" flags="ng" index="nLx3E">
+        <child id="2715275293132033328" name="expression" index="nahle" />
+      </concept>
+      <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
+        <child id="2715275293129003443" name="statement" index="nXWBd" />
       </concept>
       <concept id="7459152088147169320" name="swift.structure.StateMachine" flags="ng" index="2G92H_">
         <child id="7459152088147263655" name="contents" index="2G9rJE" />
@@ -76,6 +91,9 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
+        <property id="5115872837157252555" name="value" index="30bdrQ" />
+      </concept>
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -192,7 +210,61 @@
                 <property role="TrG5h" value="View" />
               </node>
               <node concept="lHG5K" id="2mIA7SKsIJE" role="lMyYS">
-                <node concept="l03SS" id="2mIA7SKHkDZ" role="lHG9u" />
+                <node concept="l03SS" id="2mIA7SKHkDZ" role="lHG9u">
+                  <node concept="nqoH$" id="2mIA7SMTHVE" role="l03SQ">
+                    <node concept="nLx3E" id="2mIA7SMTHVQ" role="ns2yJ">
+                      <property role="TrG5h" value="Text" />
+                      <node concept="nav8X" id="2mIA7SMTHWt" role="nahle">
+                        <node concept="30bdrP" id="2mIA7SMTHWx" role="nav8w">
+                          <property role="30bdrQ" value="Hello World" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SN23E9" role="nqoHx">
+                      <property role="TrG5h" value="padding" />
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SNlxl7" role="nqoHx">
+                      <property role="TrG5h" value="foregroundColor" />
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SNnD$n" role="nqoHx">
+                      <property role="TrG5h" value="font" />
+                    </node>
+                  </node>
+                  <node concept="nXWBc" id="2mIA7SNnDA$" role="l03SQ">
+                    <property role="TrG5h" value="HStack" />
+                    <node concept="l03SS" id="2mIA7SNnDAA" role="nXWBd">
+                      <node concept="nqoH$" id="2mIA7SNnD_G" role="l03SQ">
+                        <node concept="nLx3E" id="2mIA7SNnD_V" role="ns2yJ">
+                          <property role="TrG5h" value="Text" />
+                          <node concept="nav8X" id="2mIA7SNnD_Y" role="nahle">
+                            <node concept="30bdrP" id="2mIA7SNnDA2" role="nav8w">
+                              <property role="30bdrQ" value="Joshua Tree National Park" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="nmtQA" id="2mIA7SNnDAc" role="nqoHx">
+                          <property role="TrG5h" value="font" />
+                        </node>
+                      </node>
+                      <node concept="nLx3E" id="2mIA7SNnDBe" role="l03SQ">
+                        <property role="TrG5h" value="Spacer" />
+                      </node>
+                      <node concept="nqoH$" id="2mIA7SNnDBu" role="l03SQ">
+                        <node concept="nLx3E" id="2mIA7SNnDBv" role="ns2yJ">
+                          <property role="TrG5h" value="Text" />
+                          <node concept="nav8X" id="2mIA7SNnDBw" role="nahle">
+                            <node concept="30bdrP" id="2mIA7SNnDBx" role="nav8w">
+                              <property role="30bdrQ" value="California" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="nmtQA" id="2mIA7SNnDBy" role="nqoHx">
+                          <property role="TrG5h" value="font" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -214,13 +286,56 @@
                 <property role="TrG5h" value="View" />
               </node>
               <node concept="lHG5K" id="2mIA7SKJ9FE" role="lMyYS">
-                <node concept="l03SS" id="2mIA7SKJ9FF" role="lHG9u" />
+                <node concept="l03SS" id="2mIA7SKJ9FF" role="lHG9u">
+                  <node concept="nLx3E" id="2mIA7SMvUkd" role="l03SQ">
+                    <property role="TrG5h" value="ContentView" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="aPoZM" id="2mIA7SKJ9Fi" role="lcslf">
           <property role="TrG5h" value="PreviewProvider" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="aCh1a" id="2mIA7SMbppH">
+    <property role="TrG5h" value="LandmarksApp" />
+    <node concept="lHG9r" id="2mIA7SMbppI" role="aCh1b">
+      <node concept="aDSW1" id="2mIA7SMd9wm" role="lHG9p">
+        <property role="TrG5h" value="SwiftUI" />
+      </node>
+      <node concept="aAFJ2" id="2mIA7SMbpqv" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SMbppK" role="lHG9p">
+        <property role="TrG5h" value="LandmarkApp" />
+        <property role="n_gaT" value="main" />
+        <node concept="lHG5K" id="2mIA7SMbppL" role="laRYm">
+          <node concept="l03SS" id="2mIA7SMbppM" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SMbppY" role="l03SQ">
+              <property role="TrG5h" value="body" />
+              <property role="lxzw2" value="some" />
+              <node concept="aPoZM" id="2mIA7SMbpqa" role="aPoZa">
+                <property role="TrG5h" value="Scene" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SMbpqg" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SMbpqh" role="lHG9u">
+                  <node concept="nXWBc" id="2mIA7SMoeNU" role="l03SQ">
+                    <property role="TrG5h" value="WindowGroup" />
+                    <node concept="l03SS" id="2mIA7SMoeNV" role="nXWBd">
+                      <node concept="nLx3E" id="2mIA7SMtL9w" role="l03SQ">
+                        <property role="TrG5h" value="ContentView" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SMbppT" role="lcslf">
+          <property role="TrG5h" value="App" />
         </node>
       </node>
     </node>
