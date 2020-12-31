@@ -286,6 +286,11 @@
       <property role="TrG5h" value="typeAnnotationName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="2mIA7SOXtcO" role="1TKVEl">
+      <property role="IQ2nx" value="2715275293172814644" />
+      <property role="TrG5h" value="private" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="2mIA7SKUI1p" role="1TKVEl">
       <property role="IQ2nx" value="2715275293104988249" />
       <property role="TrG5h" value="static" />
@@ -455,6 +460,13 @@
       <property role="20kJfa" value="parenExpression" />
       <ref role="20lvS9" node="2mIA7SMxQD3" resolve="CommaSeparatedExpressions" />
     </node>
+    <node concept="1TJgyj" id="2mIA7SOaMeb" role="1TKVEi">
+      <property role="IQ2ns" value="2715275293159531403" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dotExpression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2mIA7SMXOno" resolve="DotParenthesizedExpression" />
+    </node>
     <node concept="PrWs8" id="2mIA7SMml6O" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
     </node>
@@ -485,6 +497,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expression" />
       <ref role="20lvS9" node="2mIA7SMxQD3" resolve="CommaSeparatedExpressions" />
+    </node>
+    <node concept="1TJgyj" id="2mIA7SOCLJX" role="1TKVEi">
+      <property role="IQ2ns" value="2715275293167393789" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dotExpression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2mIA7SMXOno" resolve="DotParenthesizedExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SMxQD3">
@@ -549,8 +568,8 @@
   <node concept="1TIwiD" id="2mIA7SNpMno">
     <property role="EcuMT" value="2715275293146686936" />
     <property role="3GE5qa" value="statement" />
-    <property role="TrG5h" value="ParameterValue" />
-    <property role="34LRSv" value="id" />
+    <property role="TrG5h" value="ConstantParameterValue" />
+    <property role="34LRSv" value="const id" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyi" id="2mIA7SNJxi4" role="1TKVEl">
       <property role="IQ2nx" value="2715275293152384132" />
@@ -567,13 +586,37 @@
     <property role="3F6X1D" value="2715275293154685725" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="_SwiftValue" />
-    <property role="FLfZY" value="[\\.a-zA-Z_$][a-zA-Z_$0-9]*" />
+    <property role="FLfZY" value="[\\+\\-\\.0-9a-zA-Z_$][a-zA-Z_$0-9\\.]*" />
   </node>
   <node concept="Az7Fb" id="2mIA7SNSjcu">
     <property role="3F6X1D" value="2715275293154685726" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="_SwiftParameter" />
-    <property role="FLfZY" value="[a-zA-Z_$][a-zA-Z_$0-9\\.]*" />
+    <property role="FLfZY" value="[a-zA-Z_$][a-zA-Z_$0-9]*" />
+  </node>
+  <node concept="1TIwiD" id="2mIA7SPaR4e">
+    <property role="EcuMT" value="2715275293176328462" />
+    <property role="3GE5qa" value="statement" />
+    <property role="TrG5h" value="DynamicParameterValue" />
+    <property role="34LRSv" value="id" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyi" id="2mIA7SPaR4f" role="1TKVEl">
+      <property role="IQ2nx" value="2715275293176328463" />
+      <property role="TrG5h" value="parameter" />
+      <ref role="AX2Wp" node="2mIA7SNSjcu" resolve="_SwiftParameter" />
+    </node>
+    <node concept="1TJgyi" id="2mIA7SPlO4Q" role="1TKVEl">
+      <property role="IQ2nx" value="2715275293179199798" />
+      <property role="TrG5h" value="dollar" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="2mIA7SPaR4h" role="1TKVEi">
+      <property role="IQ2ns" value="2715275293176328465" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
   </node>
 </model>
 

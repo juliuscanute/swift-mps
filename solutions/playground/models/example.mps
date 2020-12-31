@@ -19,6 +19,9 @@
       </concept>
     </language>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
+        <reference id="2715275293086813482" name="var" index="auLlk" />
+      </concept>
       <concept id="2715275293076235196" name="swift.structure.EmptyStatement" flags="ng" index="aAFJ2" />
       <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
         <child id="2715275293073836085" name="contents" index="aCh1b" />
@@ -26,10 +29,18 @@
       <concept id="2715275293073414015" name="swift.structure.ImportDeclaration" flags="ng" index="aDSW1" />
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
       <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R">
+        <property id="2715275293077350542" name="attributeName" index="aUV3K" />
+        <property id="2715275293172814644" name="private" index="hmOHa" />
         <property id="2715275293104988249" name="static" index="lh7wB" />
         <property id="2715275293092257916" name="typeAnnotationName" index="lxzw2" />
         <child id="2715275293080885172" name="type" index="aPoZa" />
+        <child id="2715275293078817270" name="init" index="aXh68" />
         <child id="2715275293096196038" name="codeBlock" index="lMyYS" />
+      </concept>
+      <concept id="2715275293176328462" name="swift.structure.DynamicParameterValue" flags="ng" index="gxu_K">
+        <property id="2715275293176328463" name="parameter" index="gxu_L" />
+        <property id="2715275293179199798" name="dollar" index="gYt_8" />
+        <child id="2715275293176328465" name="expression" index="gxu_J" />
       </concept>
       <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
         <child id="2715275293101041224" name="statement" index="l03SQ" />
@@ -45,7 +56,7 @@
       <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
         <child id="2715275293091191335" name="statement" index="lHG9p" />
       </concept>
-      <concept id="2715275293146686936" name="swift.structure.ParameterValue" flags="ng" index="mMrQA">
+      <concept id="2715275293146686936" name="swift.structure.ConstantParameterValue" flags="ng" index="mMrQA">
         <property id="2715275293152384132" name="parameter" index="m48NU" />
         <property id="2715275293154685727" name="value" index="mjUHx" />
       </concept>
@@ -60,9 +71,11 @@
         <child id="2715275293137744081" name="start" index="ns2yJ" />
       </concept>
       <concept id="2715275293130000532" name="swift.structure.ParenthesizedExpression" flags="ng" index="nLx3E">
+        <child id="2715275293167393789" name="dotExpression" index="h3oe3" />
         <child id="2715275293132033328" name="expression" index="nahle" />
       </concept>
       <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
+        <child id="2715275293159531403" name="dotExpression" index="hxrJP" />
         <child id="2715275293150616556" name="parenExpression" index="m3oei" />
         <child id="2715275293129003443" name="statement" index="nXWBd" />
       </concept>
@@ -239,20 +252,46 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="nqoH$" id="2mIA7SO1BuS" role="l03SQ">
-                        <node concept="nLx3E" id="2mIA7SO1BuT" role="ns2yJ">
-                          <property role="TrG5h" value="Text" />
-                          <node concept="nav8X" id="2mIA7SO1BuU" role="nahle">
-                            <node concept="30bdrP" id="2mIA7SO1BuV" role="nav8w">
-                              <property role="30bdrQ" value="Joshua Tree National Park" />
+                      <node concept="nXWBc" id="2mIA7SO8ukM" role="l03SQ">
+                        <property role="TrG5h" value="HStack" />
+                        <node concept="l03SS" id="2mIA7SO8ukO" role="nXWBd">
+                          <node concept="nqoH$" id="2mIA7SO1BuS" role="l03SQ">
+                            <node concept="nLx3E" id="2mIA7SO1BuT" role="ns2yJ">
+                              <property role="TrG5h" value="Text" />
+                              <node concept="nav8X" id="2mIA7SO1BuU" role="nahle">
+                                <node concept="30bdrP" id="2mIA7SO1BuV" role="nav8w">
+                                  <property role="30bdrQ" value="Joshua Tree National Park" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="nmtQA" id="2mIA7SO1BuW" role="nqoHx">
+                              <property role="TrG5h" value="font" />
+                              <node concept="nav8X" id="2mIA7SO1BuX" role="nmtQy">
+                                <node concept="mMrQA" id="2mIA7SO1BuY" role="nav8w">
+                                  <property role="mjUHx" value=".subheadline" />
+                                </node>
+                              </node>
                             </node>
                           </node>
-                        </node>
-                        <node concept="nmtQA" id="2mIA7SO1BuW" role="nqoHx">
-                          <property role="TrG5h" value="font" />
-                          <node concept="nav8X" id="2mIA7SO1BuX" role="nmtQy">
-                            <node concept="mMrQA" id="2mIA7SO1BuY" role="nav8w">
-                              <property role="mjUHx" value=".subheadline" />
+                          <node concept="nLx3E" id="2mIA7SO8um$" role="l03SQ">
+                            <property role="TrG5h" value="Spacer" />
+                          </node>
+                          <node concept="nqoH$" id="2mIA7SO8uly" role="l03SQ">
+                            <node concept="nLx3E" id="2mIA7SO8ulz" role="ns2yJ">
+                              <property role="TrG5h" value="Text" />
+                              <node concept="nav8X" id="2mIA7SO8ul$" role="nahle">
+                                <node concept="30bdrP" id="2mIA7SO8ul_" role="nav8w">
+                                  <property role="30bdrQ" value="California" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="nmtQA" id="2mIA7SO8ulA" role="nqoHx">
+                              <property role="TrG5h" value="font" />
+                              <node concept="nav8X" id="2mIA7SO8ulB" role="nmtQy">
+                                <node concept="mMrQA" id="2mIA7SO8ulC" role="nav8w">
+                                  <property role="mjUHx" value=".subheadline" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -263,6 +302,9 @@
                         <property role="mjUHx" value=".leading" />
                         <property role="m48NU" value="alignment" />
                       </node>
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SOddHg" role="hxrJP">
+                      <property role="TrG5h" value="padding" />
                     </node>
                   </node>
                 </node>
@@ -320,11 +362,241 @@
               <node concept="aPoZM" id="2mIA7SMbpqa" role="aPoZa">
                 <property role="TrG5h" value="Scene" />
               </node>
+              <node concept="lHG5K" id="2mIA7SO3TEj" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SO3TEk" role="lHG9u">
+                  <node concept="nXWBc" id="2mIA7SO3TEq" role="l03SQ">
+                    <property role="TrG5h" value="WindowGroup" />
+                    <node concept="l03SS" id="2mIA7SO3TEr" role="nXWBd">
+                      <node concept="nLx3E" id="2mIA7SO3TEu" role="l03SQ">
+                        <property role="TrG5h" value="ContentView" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="aPoZM" id="2mIA7SMbppT" role="lcslf">
           <property role="TrG5h" value="App" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="aCh1a" id="2mIA7SOuYgo">
+    <property role="TrG5h" value="CircleImage" />
+    <node concept="lHG9r" id="2mIA7SOuYgq" role="aCh1b">
+      <node concept="aDSW1" id="2mIA7SOuYh0" role="lHG9p">
+        <property role="TrG5h" value="SwiftUI" />
+      </node>
+      <node concept="aAFJ2" id="2mIA7SOuYgN" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SOuYgs" role="lHG9p">
+        <property role="TrG5h" value="CircleImage" />
+        <node concept="lHG5K" id="2mIA7SOuYgt" role="laRYm">
+          <node concept="l03SS" id="2mIA7SOuYgu" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SOuYgv" role="l03SQ">
+              <property role="TrG5h" value="body" />
+              <property role="lxzw2" value="some" />
+              <node concept="aPoZM" id="2mIA7SOuYgw" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SOuYgx" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SOuYgy" role="lHG9u">
+                  <node concept="nqoH$" id="2mIA7SOxsPq" role="l03SQ">
+                    <node concept="nLx3E" id="2mIA7SOuYhj" role="ns2yJ">
+                      <property role="TrG5h" value="Image" />
+                      <node concept="nav8X" id="2mIA7SOuYhl" role="nahle">
+                        <node concept="30bdrP" id="2mIA7SOuYhp" role="nav8w">
+                          <property role="30bdrQ" value="turtlerock" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SOxsPH" role="nqoHx">
+                      <property role="TrG5h" value="clipShape" />
+                      <node concept="nav8X" id="2mIA7SOxsPJ" role="nmtQy">
+                        <node concept="nLx3E" id="2mIA7SOxsPT" role="nav8w">
+                          <property role="TrG5h" value="Circle" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SOxsPW" role="nqoHx">
+                      <property role="TrG5h" value="overlay" />
+                      <node concept="nav8X" id="2mIA7SOxsQo" role="nmtQy">
+                        <node concept="nLx3E" id="2mIA7SOxsQq" role="nav8w">
+                          <property role="TrG5h" value="Circle" />
+                          <node concept="nmtQA" id="2mIA7SOFtcw" role="h3oe3">
+                            <property role="TrG5h" value="stroke" />
+                            <node concept="nav8X" id="2mIA7SOK_JO" role="nmtQy">
+                              <node concept="mMrQA" id="2mIA7SOK_JS" role="nav8w">
+                                <property role="mjUHx" value="Color.gray" />
+                              </node>
+                              <node concept="mMrQA" id="2mIA7SOSkNJ" role="nav8w">
+                                <property role="mjUHx" value="4" />
+                                <property role="m48NU" value="lineWidth" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="nmtQA" id="2mIA7SOxsR3" role="nqoHx">
+                      <property role="TrG5h" value="shadow" />
+                      <node concept="nav8X" id="2mIA7SOxsRb" role="nmtQy">
+                        <node concept="mMrQA" id="2mIA7SOAkMt" role="nav8w">
+                          <property role="mjUHx" value="7" />
+                          <property role="m48NU" value="radius" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SOuYgA" role="lcslf">
+          <property role="TrG5h" value="App" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="2mIA7SOuYhx" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SOuYi0" role="lHG9p">
+        <property role="TrG5h" value="CircleImage_Previews" />
+        <node concept="lHG5K" id="2mIA7SOuYi1" role="laRYm">
+          <node concept="l03SS" id="2mIA7SOuYi2" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SOuYi3" role="l03SQ">
+              <property role="TrG5h" value="previews" />
+              <property role="lxzw2" value="some" />
+              <property role="lh7wB" value="true" />
+              <node concept="aPoZM" id="2mIA7SOuYi4" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SOuYi5" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SOuYi6" role="lHG9u">
+                  <node concept="nLx3E" id="2mIA7SOuYi7" role="l03SQ">
+                    <property role="TrG5h" value="CircleImage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SOuYi8" role="lcslf">
+          <property role="TrG5h" value="PreviewProvider" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="2mIA7SOuYhK" role="lHG9p" />
+    </node>
+  </node>
+  <node concept="aCh1a" id="2mIA7SOURNS">
+    <property role="TrG5h" value="MapView" />
+    <node concept="lHG9r" id="2mIA7SOURNT" role="aCh1b">
+      <node concept="aDSW1" id="2mIA7SOURNV" role="lHG9p">
+        <property role="TrG5h" value="SwiftUI" />
+      </node>
+      <node concept="aAFJ2" id="2mIA7SOURNW" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SOURNX" role="lHG9p">
+        <property role="TrG5h" value="MapView" />
+        <node concept="lHG5K" id="2mIA7SOURNY" role="laRYm">
+          <node concept="l03SS" id="2mIA7SOURNZ" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SOURPV" role="l03SQ">
+              <property role="TrG5h" value="region" />
+              <property role="aUV3K" value="State" />
+              <property role="hmOHa" value="true" />
+              <node concept="aPoZM" id="2mIA7SOURQf" role="aPoZa">
+                <property role="TrG5h" value="MKCoordinateRegion" />
+              </node>
+              <node concept="nLx3E" id="2mIA7SOURQu" role="aXh68">
+                <property role="TrG5h" value="MKCoordinateRegion" />
+                <node concept="nav8X" id="2mIA7SOURQD" role="nahle">
+                  <node concept="gxu_K" id="2mIA7SPdCoO" role="nav8w">
+                    <property role="gxu_L" value="center" />
+                    <node concept="nLx3E" id="2mIA7SPdCp0" role="gxu_J">
+                      <property role="TrG5h" value="CLLocationCoordinate2D" />
+                      <node concept="nav8X" id="2mIA7SPdCpT" role="nahle">
+                        <node concept="mMrQA" id="2mIA7SPdCqd" role="nav8w">
+                          <property role="mjUHx" value="34.011_286" />
+                          <property role="m48NU" value="latitude" />
+                        </node>
+                        <node concept="mMrQA" id="2mIA7SPdCqp" role="nav8w">
+                          <property role="mjUHx" value="-116.166_868" />
+                          <property role="m48NU" value="longitude" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gxu_K" id="2mIA7SPdCp$" role="nav8w">
+                    <property role="gxu_L" value="span" />
+                    <node concept="nLx3E" id="2mIA7SPdCpO" role="gxu_J">
+                      <property role="TrG5h" value="CLLocationCoordinate2D" />
+                      <node concept="nav8X" id="2mIA7SPgmLw" role="nahle">
+                        <node concept="mMrQA" id="2mIA7SPgmL$" role="nav8w">
+                          <property role="mjUHx" value="0.2" />
+                          <property role="m48NU" value="latitudeDelta" />
+                        </node>
+                        <node concept="mMrQA" id="2mIA7SPgmLY" role="nav8w">
+                          <property role="mjUHx" value="0.2" />
+                          <property role="m48NU" value="longitudeDelta" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="aAFJ2" id="2mIA7SOURPK" role="l03SQ" />
+            <node concept="aUV3R" id="2mIA7SOURO0" role="l03SQ">
+              <property role="TrG5h" value="body" />
+              <property role="lxzw2" value="some" />
+              <node concept="aPoZM" id="2mIA7SOURO1" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SOURO2" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SOURO3" role="lHG9u">
+                  <node concept="nLx3E" id="2mIA7SPj4TZ" role="l03SQ">
+                    <property role="TrG5h" value="Map" />
+                    <node concept="nav8X" id="2mIA7SPj4U1" role="nahle">
+                      <node concept="gxu_K" id="2mIA7SPj4Ub" role="nav8w">
+                        <property role="gxu_L" value="coordinateRegion" />
+                        <property role="gYt_8" value="true" />
+                        <node concept="auLln" id="2mIA7SPj4Ui" role="gxu_J">
+                          <ref role="auLlk" node="2mIA7SOURPV" resolve="region" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SOUROl" role="lcslf">
+          <property role="TrG5h" value="App" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="2mIA7SOUROm" role="lHG9p" />
+      <node concept="laRYR" id="2mIA7SOUROn" role="lHG9p">
+        <property role="TrG5h" value="MapView_Previews" />
+        <node concept="lHG5K" id="2mIA7SOUROo" role="laRYm">
+          <node concept="l03SS" id="2mIA7SOUROp" role="lHG9u">
+            <node concept="aUV3R" id="2mIA7SOUROq" role="l03SQ">
+              <property role="TrG5h" value="previews" />
+              <property role="lxzw2" value="some" />
+              <property role="lh7wB" value="true" />
+              <node concept="aPoZM" id="2mIA7SOUROr" role="aPoZa">
+                <property role="TrG5h" value="View" />
+              </node>
+              <node concept="lHG5K" id="2mIA7SOUROs" role="lMyYS">
+                <node concept="l03SS" id="2mIA7SOUROt" role="lHG9u">
+                  <node concept="nLx3E" id="2mIA7SOUROu" role="l03SQ">
+                    <property role="TrG5h" value="MapView" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="aPoZM" id="2mIA7SOUROv" role="lcslf">
+          <property role="TrG5h" value="PreviewProvider" />
         </node>
       </node>
     </node>
