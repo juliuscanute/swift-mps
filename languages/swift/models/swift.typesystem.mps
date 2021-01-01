@@ -548,7 +548,7 @@
   </node>
   <node concept="18kY7G" id="2mIA7SJrQW3">
     <property role="TrG5h" value="check_VariableDeclaration" />
-    <property role="3GE5qa" value="statement" />
+    <property role="3GE5qa" value="declaration" />
     <node concept="3clFbS" id="2mIA7SJrQW4" role="18ibNy">
       <node concept="3clFbJ" id="2mIA7SJrSEm" role="3cqZAp">
         <node concept="1Wc70l" id="2mIA7SJrUn3" role="3clFbw">
@@ -600,7 +600,7 @@
   </node>
   <node concept="1YbPZF" id="2mIA7SJKb4Q">
     <property role="TrG5h" value="typeof_VariableDeclaration" />
-    <property role="3GE5qa" value="statement" />
+    <property role="3GE5qa" value="declaration" />
     <node concept="3clFbS" id="2mIA7SJKb4R" role="18ibNy">
       <node concept="1Z5TYs" id="2mIA7SJKb4X" role="3cqZAp">
         <node concept="mw_s8" id="2mIA7SJKb4Y" role="1ZfhKB">
