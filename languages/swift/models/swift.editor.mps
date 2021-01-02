@@ -1247,8 +1247,8 @@
             <node concept="3F0ifn" id="2mIA7SRblsM" role="3EZMnx">
               <property role="3F0ifm" value="-&gt;" />
             </node>
-            <node concept="3F1sOY" id="2mIA7SRblsU" role="3EZMnx">
-              <ref role="1NtTu8" to="op4d:2mIA7SRblsP" resolve="functionType" />
+            <node concept="3F1sOY" id="5IRaEV$934e" role="3EZMnx">
+              <ref role="1NtTu8" to="op4d:5IRaEV$9341" resolve="functionType" />
             </node>
             <node concept="l2Vlx" id="2mIA7SRblsK" role="2iSdaV" />
             <node concept="VPM3Z" id="2mIA7SRblsL" role="3F10Kt" />
@@ -1645,8 +1645,8 @@
     <property role="3GE5qa" value="declaration" />
     <ref role="1XX52x" to="op4d:5IRaEVuAjEy" resolve="GenericParameterType" />
     <node concept="3EZMnI" id="5IRaEVuAjMs" role="2wV5jI">
-      <node concept="3F0A7n" id="5IRaEVuAjMO" role="3EZMnx">
-        <ref role="1NtTu8" to="op4d:5IRaEVuAjE$" resolve="parameter" />
+      <node concept="3F0A7n" id="5IRaEVzS0ep" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="5IRaEVuAjMP" role="3EZMnx">
         <property role="3F0ifm" value=":" />
