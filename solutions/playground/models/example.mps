@@ -36,7 +36,6 @@
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
         <reference id="2715275293086813482" name="var" index="auLlk" />
         <child id="6608797908768326689" name="dotExpression" index="2VN2Uf" />
-        <child id="6608797908766433781" name="indexExpression" index="2VUgHr" />
       </concept>
       <concept id="2715275293076235196" name="swift.structure.EmptyStatement" flags="ng" index="aAFJ2" />
       <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
@@ -60,14 +59,14 @@
       </concept>
       <concept id="2715275293176328462" name="swift.structure.DynamicParameterValue" flags="ng" index="gxu_K">
         <property id="2715275293176328463" name="parameter" index="gxu_L" />
-        <child id="2715275293176328465" name="expression" index="gxu_J" />
+        <property id="2715275293179199798" name="dollar" index="gYt_8" />
+        <child id="6608797908818318853" name="expression" index="2SKJMF" />
       </concept>
       <concept id="2715275293200916469" name="swift.structure.ParameterListType" flags="ng" index="j30ub">
         <child id="2715275293200916472" name="parameters" index="j30u6" />
       </concept>
       <concept id="2715275293192533385" name="swift.structure.ParameterType" flags="ng" index="jz2RR">
         <property id="2715275293201721029" name="expernalParameterName" index="j07UV" />
-        <property id="2715275293192533387" name="parameter" index="jz2RP" />
         <child id="2715275293192533386" name="type" index="jz2RO" />
       </concept>
       <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
@@ -97,7 +96,9 @@
       <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
         <child id="2715275293150616556" name="parenExpression" index="m3oei" />
         <child id="2715275293129003443" name="statement" index="nXWBd" />
+        <child id="6608797908807390424" name="parameters" index="2Tu3TQ" />
       </concept>
+      <concept id="6608797908807388545" name="swift.structure.ClosureParameter" flags="ng" index="2Tu2sJ" />
       <concept id="6608797908786903333" name="swift.structure.DotSeparatedExpression" flags="ng" index="2U8leb">
         <child id="6608797908786903334" name="expressions" index="2U8le8" />
       </concept>
@@ -257,17 +258,7 @@
       </node>
       <node concept="nLx3E" id="5IRaEVwrb4h" role="lHG9p">
         <property role="24xvQs" value="LandmarkRow" />
-        <node concept="nav8X" id="5IRaEVwrb4n" role="nahle">
-          <node concept="gxu_K" id="5IRaEVwrb9$" role="nav8w">
-            <property role="gxu_L" value="landmark" />
-            <node concept="auLln" id="5IRaEVwrb9G" role="gxu_J">
-              <ref role="auLlk" node="5IRaEVwrb7H" resolve="landmark" />
-              <node concept="30bXRB" id="5IRaEVwrb9R" role="2VUgHr">
-                <property role="30bXRw" value="0" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="nav8X" id="5IRaEVwrb4n" role="nahle" />
       </node>
       <node concept="auLln" id="5IRaEVxD$l0" role="lHG9p">
         <ref role="auLlk" node="5IRaEVwrb7H" resolve="landmark" />
@@ -295,24 +286,17 @@
       <node concept="aAFJ2" id="5IRaEVxWoH6" role="lHG9p" />
       <node concept="nLx3E" id="5IRaEVyiM2f" role="lHG9p">
         <property role="24xvQs" value=".frame" />
-        <node concept="nav8X" id="5IRaEVyiM48" role="nahle">
-          <node concept="gxu_K" id="5IRaEVyiM4e" role="nav8w">
-            <property role="gxu_L" value="width" />
-            <node concept="30bXRB" id="5IRaEVyiM4m" role="gxu_J">
-              <property role="30bXRw" value="300" />
-            </node>
-          </node>
-          <node concept="gxu_K" id="5IRaEVyiM4H" role="nav8w">
-            <property role="gxu_L" value="height" />
-            <node concept="30bXRB" id="5IRaEVyiM4T" role="gxu_J">
-              <property role="30bXRw" value="70" />
-            </node>
-          </node>
-        </node>
+        <node concept="nav8X" id="5IRaEVyiM48" role="nahle" />
       </node>
       <node concept="aAFJ2" id="5IRaEVyiM5W" role="lHG9p" />
       <node concept="nXWBc" id="5IRaEVyiM9T" role="lHG9p">
         <property role="TrG5h" value="List" />
+        <node concept="2Tu2sJ" id="5IRaEVyREEe" role="2Tu3TQ">
+          <property role="TrG5h" value="c" />
+        </node>
+        <node concept="2Tu2sJ" id="5IRaEVz_8M7" role="2Tu3TQ">
+          <property role="TrG5h" value="d" />
+        </node>
         <node concept="l03SS" id="5IRaEVyiM9V" role="nXWBd" />
         <node concept="nav8X" id="5IRaEVyiMbX" role="m3oei">
           <node concept="auLln" id="5IRaEVyiMc2" role="nav8w">
@@ -321,6 +305,24 @@
           <node concept="mMrQA" id="5IRaEVyiMca" role="nav8w">
             <property role="mjUHx" value="\.id" />
             <property role="m48NU" value="id" />
+          </node>
+        </node>
+      </node>
+      <node concept="gj05W" id="5IRaEVzxnSR" role="lHG9p">
+        <property role="TrG5h" value="add" />
+        <node concept="l03SS" id="5IRaEVzxnST" role="gj05X" />
+        <node concept="j30ub" id="5IRaEVzxnUR" role="gj05U">
+          <node concept="jz2RR" id="5IRaEVzxnUT" role="j30u6">
+            <property role="TrG5h" value="a" />
+            <node concept="aPoZM" id="5IRaEVzxnV3" role="jz2RO">
+              <property role="TrG5h" value="Int" />
+            </node>
+          </node>
+          <node concept="jz2RR" id="5IRaEVzxnUX" role="j30u6">
+            <property role="TrG5h" value="b" />
+            <node concept="aPoZM" id="5IRaEVzxnV5" role="jz2RO">
+              <property role="TrG5h" value="Int" />
+            </node>
           </node>
         </node>
       </node>
@@ -333,16 +335,11 @@
               <property role="TrG5h" value="Data" />
             </node>
           </node>
-          <node concept="aAFJ2" id="5IRaEVv9mVq" role="l03SQ" />
           <node concept="24Cf_u" id="5IRaEVv9mVz" role="l03SQ">
             <property role="TrG5h" value="file" />
             <node concept="nLx3E" id="5IRaEVvghhn" role="24Cf_v">
               <property role="24xvQs" value="Bundle.main.url" />
               <node concept="nav8X" id="5IRaEVvghhq" role="nahle">
-                <node concept="mMrQA" id="5IRaEVvghhz" role="nav8w">
-                  <property role="mjUHx" value="filename" />
-                  <property role="m48NU" value="forResource" />
-                </node>
                 <node concept="mMrQA" id="5IRaEVvghhL" role="nav8w">
                   <property role="mjUHx" value="nil" />
                   <property role="m48NU" value="withExtension" />
@@ -370,11 +367,12 @@
                   <node concept="24jHJq" id="5IRaEVw22Jc" role="24riId">
                     <node concept="nLx3E" id="5IRaEVw22Jq" role="24jHJr">
                       <property role="24xvQs" value="Data" />
-                      <node concept="nav8X" id="5IRaEVw22Jt" role="nahle">
-                        <node concept="gxu_K" id="5IRaEVw5Kh1" role="nav8w">
-                          <property role="gxu_L" value="contentsOf" />
-                          <node concept="auLln" id="5IRaEVw5Kh8" role="gxu_J">
-                            <ref role="auLlk" node="5IRaEVv9mVz" resolve="file" />
+                      <node concept="nav8X" id="5IRaEVzxnPU" role="nahle">
+                        <node concept="gxu_K" id="5IRaEVzxnQJ" role="nav8w">
+                          <property role="gxu_L" value="fileContents" />
+                          <property role="gYt_8" value="false" />
+                          <node concept="auLln" id="5IRaEVzxnVK" role="2SKJMF">
+                            <ref role="auLlk" node="5IRaEVza_KR" resolve="filename" />
                           </node>
                         </node>
                       </node>
@@ -413,12 +411,6 @@
                         <node concept="mMrQA" id="5IRaEVwjXEt" role="nav8w">
                           <property role="mjUHx" value="T.self" />
                         </node>
-                        <node concept="gxu_K" id="5IRaEVwjXE$" role="nav8w">
-                          <property role="gxu_L" value="from" />
-                          <node concept="auLln" id="5IRaEVwjXEG" role="gxu_J">
-                            <ref role="auLlk" node="5IRaEVuMLe7" resolve="data" />
-                          </node>
-                        </node>
                       </node>
                     </node>
                   </node>
@@ -443,10 +435,10 @@
           <property role="TrG5h" value="T" />
         </node>
         <node concept="j30ub" id="2mIA7SRhTk7" role="gj05U">
-          <node concept="jz2RR" id="2mIA7SRhTk9" role="j30u6">
-            <property role="jz2RP" value="filename" />
-            <property role="j07UV" value="" />
-            <node concept="aPoZM" id="2mIA7SRhTkd" role="jz2RO">
+          <node concept="jz2RR" id="5IRaEVza_KR" role="j30u6">
+            <property role="TrG5h" value="filename" />
+            <property role="j07UV" value="_" />
+            <node concept="aPoZM" id="5IRaEVza_KV" role="jz2RO">
               <property role="TrG5h" value="String" />
             </node>
           </node>
