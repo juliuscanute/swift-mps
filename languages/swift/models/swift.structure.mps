@@ -346,11 +346,27 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="VariableReference" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5IRaEVwny7P" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908766433781" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="indexExpression" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVwuKgx" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908768326689" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dotExpression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5IRaEVx_B$_" resolve="DotSeparatedExpression" />
+    </node>
     <node concept="1TJgyj" id="2mIA7SJPoOE" role="1TKVEi">
       <property role="IQ2ns" value="2715275293086813482" />
       <property role="20kJfa" value="var" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2mIA7SJ2htY" resolve="IDeclaration" />
+    </node>
+    <node concept="PrWs8" id="5IRaEVwy_mQ" role="PzmwI">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
     </node>
   </node>
   <node concept="PlHQZ" id="2mIA7SJUIrx">
@@ -585,7 +601,7 @@
     <property role="3F6X1D" value="2715275293154685725" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="_SwiftValue" />
-    <property role="FLfZY" value="[\\+\\-\\.0-9a-zA-Z_$][a-zA-Z_$0-9\\.]*" />
+    <property role="FLfZY" value="[\\\\+\\-\\.0-9a-zA-Z_$][a-zA-Z_$0-9\\.]*" />
   </node>
   <node concept="Az7Fb" id="2mIA7SNSjcu">
     <property role="3F6X1D" value="2715275293154685726" />
@@ -832,6 +848,19 @@
     </node>
     <node concept="PrWs8" id="5IRaEVwgqjJ" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IRaEVx_B$_">
+    <property role="EcuMT" value="6608797908786903333" />
+    <property role="3GE5qa" value="expression" />
+    <property role="TrG5h" value="DotSeparatedExpression" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="5IRaEVx_B$A" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908786903334" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -35,6 +35,8 @@
       </concept>
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
         <reference id="2715275293086813482" name="var" index="auLlk" />
+        <child id="6608797908768326689" name="dotExpression" index="2VN2Uf" />
+        <child id="6608797908766433781" name="indexExpression" index="2VUgHr" />
       </concept>
       <concept id="2715275293076235196" name="swift.structure.EmptyStatement" flags="ng" index="aAFJ2" />
       <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
@@ -92,6 +94,13 @@
         <property id="6608797908746819378" name="name" index="24xvQs" />
         <child id="2715275293132033328" name="expression" index="nahle" />
       </concept>
+      <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
+        <child id="2715275293150616556" name="parenExpression" index="m3oei" />
+        <child id="2715275293129003443" name="statement" index="nXWBd" />
+      </concept>
+      <concept id="6608797908786903333" name="swift.structure.DotSeparatedExpression" flags="ng" index="2U8leb">
+        <child id="6608797908786903334" name="expressions" index="2U8le8" />
+      </concept>
       <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
         <child id="6608797908764566776" name="init" index="2VXCTm" />
       </concept>
@@ -99,6 +108,9 @@
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
+      </concept>
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -226,6 +238,7 @@
                 <property role="TrG5h" value="Codable" />
               </node>
             </node>
+            <node concept="aAFJ2" id="5IRaEVwrb2A" role="l03SQ" />
           </node>
         </node>
         <node concept="aPoZM" id="2mIA7SPAUop" role="lcslf">
@@ -236,7 +249,81 @@
         </node>
       </node>
       <node concept="aAFJ2" id="5IRaEVvukjU" role="lHG9p" />
-      <node concept="aAFJ2" id="2mIA7SRhThC" role="lHG9p" />
+      <node concept="aUV3R" id="5IRaEVwrb7H" role="lHG9p">
+        <property role="TrG5h" value="landmark" />
+        <node concept="aPoZM" id="5IRaEVwrb9t" role="aPoZa">
+          <property role="TrG5h" value="Landmark" />
+        </node>
+      </node>
+      <node concept="nLx3E" id="5IRaEVwrb4h" role="lHG9p">
+        <property role="24xvQs" value="LandmarkRow" />
+        <node concept="nav8X" id="5IRaEVwrb4n" role="nahle">
+          <node concept="gxu_K" id="5IRaEVwrb9$" role="nav8w">
+            <property role="gxu_L" value="landmark" />
+            <node concept="auLln" id="5IRaEVwrb9G" role="gxu_J">
+              <ref role="auLlk" node="5IRaEVwrb7H" resolve="landmark" />
+              <node concept="30bXRB" id="5IRaEVwrb9R" role="2VUgHr">
+                <property role="30bXRw" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="auLln" id="5IRaEVxD$l0" role="lHG9p">
+        <ref role="auLlk" node="5IRaEVwrb7H" resolve="landmark" />
+        <node concept="2U8leb" id="5IRaEVxWIy7" role="2VN2Uf">
+          <node concept="auLln" id="5IRaEVyiLVD" role="2U8le8">
+            <ref role="auLlk" node="2mIA7SPDIbz" resolve="image" />
+          </node>
+        </node>
+        <node concept="2U8leb" id="5IRaEVyiLZA" role="2VN2Uf">
+          <node concept="nLx3E" id="5IRaEVyiLZK" role="2U8le8">
+            <property role="24xvQs" value="resizeable" />
+          </node>
+        </node>
+        <node concept="2U8leb" id="5IRaEVyiLZP" role="2VN2Uf">
+          <node concept="nLx3E" id="5IRaEVyiM01" role="2U8le8">
+            <property role="24xvQs" value="frame" />
+            <node concept="nav8X" id="5IRaEVyiM04" role="nahle">
+              <node concept="30bXRB" id="5IRaEVyiM0a" role="nav8w">
+                <property role="30bXRw" value="50" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVxWoH6" role="lHG9p" />
+      <node concept="nLx3E" id="5IRaEVyiM2f" role="lHG9p">
+        <property role="24xvQs" value=".frame" />
+        <node concept="nav8X" id="5IRaEVyiM48" role="nahle">
+          <node concept="gxu_K" id="5IRaEVyiM4e" role="nav8w">
+            <property role="gxu_L" value="width" />
+            <node concept="30bXRB" id="5IRaEVyiM4m" role="gxu_J">
+              <property role="30bXRw" value="300" />
+            </node>
+          </node>
+          <node concept="gxu_K" id="5IRaEVyiM4H" role="nav8w">
+            <property role="gxu_L" value="height" />
+            <node concept="30bXRB" id="5IRaEVyiM4T" role="gxu_J">
+              <property role="30bXRw" value="70" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVyiM5W" role="lHG9p" />
+      <node concept="nXWBc" id="5IRaEVyiM9T" role="lHG9p">
+        <property role="TrG5h" value="List" />
+        <node concept="l03SS" id="5IRaEVyiM9V" role="nXWBd" />
+        <node concept="nav8X" id="5IRaEVyiMbX" role="m3oei">
+          <node concept="auLln" id="5IRaEVyiMc2" role="nav8w">
+            <ref role="auLlk" node="2mIA7SPMLmB" resolve="landmarks" />
+          </node>
+          <node concept="mMrQA" id="5IRaEVyiMca" role="nav8w">
+            <property role="mjUHx" value="\.id" />
+            <property role="m48NU" value="id" />
+          </node>
+        </node>
+      </node>
       <node concept="gj05W" id="2mIA7SRhTjb" role="lHG9p">
         <property role="TrG5h" value="load" />
         <node concept="l03SS" id="2mIA7SRhTjd" role="gj05X">
