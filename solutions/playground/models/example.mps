@@ -7,6 +7,17 @@
   <imports />
   <registry>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="6608797908754159710" name="swift.structure.DoCatchStatement" flags="ng" index="245vbK">
+        <child id="6608797908754159717" name="catchBlock" index="245vbb" />
+        <child id="6608797908754159715" name="doBlock" index="245vbd" />
+      </concept>
+      <concept id="6608797908759867764" name="swift.structure.TryExpression" flags="ng" index="24jHJq">
+        <child id="6608797908759867765" name="expression" index="24jHJr" />
+      </concept>
+      <concept id="6608797908757774626" name="swift.structure.AssignmentStatement" flags="ng" index="24riIc">
+        <reference id="6608797908757778942" name="variableReference" index="24rjHg" />
+        <child id="6608797908757774627" name="init" index="24riId" />
+      </concept>
       <concept id="6608797908745049072" name="swift.structure.GuardConstantDeclaration" flags="ng" index="24Cf_u">
         <child id="6608797908745049073" name="init" index="24Cf_v" />
         <child id="6608797908747793722" name="codeBlock" index="24XDYk" />
@@ -20,6 +31,7 @@
       </concept>
       <concept id="2715275293084206882" name="swift.structure.ConstantDeclaration" flags="ng" index="a0PXs">
         <child id="2715275293084206884" name="type" index="a0PXq" />
+        <child id="2715275293084206883" name="init" index="a0PXt" />
       </concept>
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
         <reference id="2715275293086813482" name="var" index="auLlk" />
@@ -28,7 +40,7 @@
       <concept id="2715275293073836084" name="swift.structure.SwiftProgram" flags="ng" index="aCh1a">
         <child id="2715275293073836085" name="contents" index="aCh1b" />
       </concept>
-      <concept id="2715275293073414015" name="swift.structure.ImportDeclaration" flags="ng" index="aDSW1" />
+      <concept id="2715275293073414015" name="swift.structure.ImportStatement" flags="ng" index="aDSW1" />
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM">
         <property id="2715275293186017815" name="bracket" index="g4t9D" />
       </concept>
@@ -43,6 +55,10 @@
         <child id="2715275293188331779" name="statement" index="gj05X" />
         <child id="2715275293210007349" name="functionType" index="iwWXb" />
         <child id="2715275293206655355" name="genericParameters" index="jla$5" />
+      </concept>
+      <concept id="2715275293176328462" name="swift.structure.DynamicParameterValue" flags="ng" index="gxu_K">
+        <property id="2715275293176328463" name="parameter" index="gxu_L" />
+        <child id="2715275293176328465" name="expression" index="gxu_J" />
       </concept>
       <concept id="2715275293200916469" name="swift.structure.ParameterListType" flags="ng" index="j30ub">
         <child id="2715275293200916472" name="parameters" index="j30u6" />
@@ -75,6 +91,9 @@
       <concept id="2715275293130000532" name="swift.structure.ParenthesizedExpression" flags="ng" index="nLx3E">
         <property id="6608797908746819378" name="name" index="24xvQs" />
         <child id="2715275293132033328" name="expression" index="nahle" />
+      </concept>
+      <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
+        <child id="6608797908764566776" name="init" index="2VXCTm" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -216,35 +235,6 @@
           <property role="TrG5h" value="Codable" />
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEVvukiN" role="lHG9p" />
-      <node concept="24Cf_u" id="5IRaEVvukl2" role="lHG9p">
-        <property role="TrG5h" value="file" />
-        <node concept="nLx3E" id="5IRaEVvukl3" role="24Cf_v">
-          <property role="24xvQs" value="Bundle.main.url" />
-          <node concept="nav8X" id="5IRaEVvukl4" role="nahle">
-            <node concept="mMrQA" id="5IRaEVvukl5" role="nav8w">
-              <property role="mjUHx" value="filename" />
-              <property role="m48NU" value="forResource" />
-            </node>
-            <node concept="mMrQA" id="5IRaEVvukl6" role="nav8w">
-              <property role="mjUHx" value="nil" />
-              <property role="m48NU" value="withExtension" />
-            </node>
-          </node>
-        </node>
-        <node concept="lHG5K" id="5IRaEVvukl7" role="24XDYk">
-          <node concept="l03SS" id="5IRaEVvukl8" role="lHG9u">
-            <node concept="nLx3E" id="5IRaEVvukl9" role="l03SQ">
-              <property role="24xvQs" value="fatalError" />
-              <node concept="nav8X" id="5IRaEVvukla" role="nahle">
-                <node concept="30bdrP" id="5IRaEVvuklb" role="nav8w">
-                  <property role="30bdrQ" value="Couldn't find \(filename) in main bundle." />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="aAFJ2" id="5IRaEVvukjU" role="lHG9p" />
       <node concept="aAFJ2" id="2mIA7SRhThC" role="lHG9p" />
       <node concept="gj05W" id="2mIA7SRhTjb" role="lHG9p">
@@ -279,6 +269,82 @@
                   <node concept="nav8X" id="5IRaEVvqOzj" role="nahle">
                     <node concept="30bdrP" id="5IRaEVvqOzn" role="nav8w">
                       <property role="30bdrQ" value="Couldn't find \(filename) in main bundle." />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="245vbK" id="5IRaEVvG98n" role="l03SQ">
+            <node concept="lHG5K" id="5IRaEVvG98B" role="245vbd">
+              <node concept="l03SS" id="5IRaEVvG98C" role="lHG9u">
+                <node concept="24riIc" id="5IRaEVw22J1" role="l03SQ">
+                  <ref role="24rjHg" node="5IRaEVuMLe7" resolve="data" />
+                  <node concept="24jHJq" id="5IRaEVw22Jc" role="24riId">
+                    <node concept="nLx3E" id="5IRaEVw22Jq" role="24jHJr">
+                      <property role="24xvQs" value="Data" />
+                      <node concept="nav8X" id="5IRaEVw22Jt" role="nahle">
+                        <node concept="gxu_K" id="5IRaEVw5Kh1" role="nav8w">
+                          <property role="gxu_L" value="contentsOf" />
+                          <node concept="auLln" id="5IRaEVw5Kh8" role="gxu_J">
+                            <ref role="auLlk" node="5IRaEVv9mVz" resolve="file" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="lHG5K" id="5IRaEVvG98F" role="245vbb">
+              <node concept="l03SS" id="5IRaEVvG98G" role="lHG9u">
+                <node concept="nLx3E" id="5IRaEVvN1vX" role="l03SQ">
+                  <property role="24xvQs" value="fatalError" />
+                  <node concept="nav8X" id="5IRaEVvN1vZ" role="nahle">
+                    <node concept="30bdrP" id="5IRaEVvN1w3" role="nav8w">
+                      <property role="30bdrQ" value="Couldn't load \(filename) from main bundle:\n\(error)" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="245vbK" id="5IRaEVvN1uV" role="l03SQ">
+            <node concept="lHG5K" id="5IRaEVvN1vg" role="245vbd">
+              <node concept="l03SS" id="5IRaEVvN1vh" role="lHG9u">
+                <node concept="a0PXs" id="5IRaEVvN1vA" role="l03SQ">
+                  <property role="TrG5h" value="decoder" />
+                  <node concept="nLx3E" id="5IRaEVvN1vO" role="a0PXt">
+                    <property role="24xvQs" value="JSONDecoder" />
+                  </node>
+                </node>
+                <node concept="2VXCT0" id="5IRaEVwjXDS" role="l03SQ">
+                  <node concept="24jHJq" id="5IRaEVwjXE7" role="2VXCTm">
+                    <node concept="nLx3E" id="5IRaEVwjXEl" role="24jHJr">
+                      <property role="24xvQs" value="decoder.decode" />
+                      <node concept="nav8X" id="5IRaEVwjXEo" role="nahle">
+                        <node concept="mMrQA" id="5IRaEVwjXEt" role="nav8w">
+                          <property role="mjUHx" value="T.self" />
+                        </node>
+                        <node concept="gxu_K" id="5IRaEVwjXE$" role="nav8w">
+                          <property role="gxu_L" value="from" />
+                          <node concept="auLln" id="5IRaEVwjXEG" role="gxu_J">
+                            <ref role="auLlk" node="5IRaEVuMLe7" resolve="data" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="lHG5K" id="5IRaEVvN1vk" role="245vbb">
+              <node concept="l03SS" id="5IRaEVvN1vl" role="lHG9u">
+                <node concept="nLx3E" id="5IRaEVvN1vo" role="l03SQ">
+                  <property role="24xvQs" value="fatalError" />
+                  <node concept="nav8X" id="5IRaEVvN1vq" role="nahle">
+                    <node concept="30bdrP" id="5IRaEVvN1vu" role="nav8w">
+                      <property role="30bdrQ" value="Couldn't parse \(filename) as \(T.self):\n\(error)" />
                     </node>
                   </node>
                 </node>
