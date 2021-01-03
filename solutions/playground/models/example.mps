@@ -7,6 +7,10 @@
   <imports />
   <registry>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="6608797908754159710" name="swift.structure.DoStatement" flags="ng" index="245vbK">
+        <child id="6608797908754159715" name="doBlock" index="245vbd" />
+        <child id="6608797908884270593" name="catchBlock" index="2WOKiJ" />
+      </concept>
       <concept id="6608797908757774626" name="swift.structure.AssignmentStatement" flags="ng" index="24riIc">
         <reference id="6608797908757778942" name="variableReference" index="24rjHg" />
         <child id="6608797908757774627" name="init" index="24riId" />
@@ -83,7 +87,34 @@
       <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
         <child id="6608797908764566776" name="init" index="2VXCTm" />
       </concept>
+      <concept id="6608797908892638415" name="swift.structure.EnumCaseListDeclaration" flags="ng" index="2Wlfpx">
+        <child id="6608797908892638451" name="cases" index="2Wlfpt" />
+      </concept>
+      <concept id="6608797908892636410" name="swift.structure.EnumCaseDeclaration" flags="ng" index="2WlfTk">
+        <child id="6608797908892636411" name="expressoin" index="2WlfTl" />
+      </concept>
+      <concept id="6608797908891436063" name="swift.structure.EnumDeclaration" flags="ng" index="2WpEUL">
+        <child id="6608797908891436067" name="body" index="2WpEUd" />
+      </concept>
+      <concept id="6608797908879756079" name="swift.structure.ClassDeclaration" flags="ng" index="2WE661">
+        <child id="6608797908879756084" name="inheritType" index="2WE66q" />
+        <child id="6608797908879756083" name="body" index="2WE66t" />
+      </concept>
+      <concept id="6608797908884260479" name="swift.structure.CatchStatement" flags="ng" index="2WOMNh">
+        <child id="6608797908884270603" name="nextCatchBlock" index="2WOKi_" />
+        <child id="6608797908884261340" name="expression" index="2WOMdM" />
+        <child id="6608797908884260480" name="catchBlock" index="2WOMKI" />
+      </concept>
+      <concept id="6608797908884264192" name="swift.structure.CatchOnlyStatement" flags="ng" index="2WONYI">
+        <child id="6608797908884264194" name="catchBlock" index="2WONYG" />
+      </concept>
       <concept id="6608797908871263397" name="swift.structure.BreakStatement" flags="ng" index="2XaDSb" />
+      <concept id="6608797908877607416" name="swift.structure.DeferExpression" flags="ng" index="2XiqHm">
+        <child id="6608797908877607418" name="codeBlock" index="2XiqHk" />
+      </concept>
+      <concept id="6608797908875461593" name="swift.structure.ThrowStatement" flags="ng" index="2XqI_R">
+        <child id="6608797908875461594" name="init" index="2XqI_O" />
+      </concept>
       <concept id="6608797908874401758" name="swift.structure.ContinueStatement" flags="ng" index="2XuFPK" />
       <concept id="6608797908861100620" name="swift.structure.SwitchDefaultBlock" flags="ng" index="2XHozy">
         <child id="6608797908861100671" name="block" index="2XHozh" />
@@ -440,7 +471,43 @@
           <node concept="l03SS" id="5IRaEV_SPlw" role="lHG9u" />
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEV_WKY4" role="lHG9p" />
+      <node concept="2XiqHm" id="5IRaEVB7O$S" role="lHG9p">
+        <node concept="lHG5K" id="5IRaEVB7O$U" role="2XiqHk">
+          <node concept="l03SS" id="5IRaEVB7O$W" role="lHG9u">
+            <node concept="nLx3E" id="5IRaEVB7OBd" role="l03SQ">
+              <property role="24xvQs" value="print" />
+              <node concept="nav8X" id="5IRaEVB7OBf" role="nahle">
+                <node concept="30bdrP" id="5IRaEVB7OBj" role="nav8w">
+                  <property role="30bdrQ" value="First defer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2XiqHm" id="5IRaEVB7ODM" role="lHG9p">
+        <node concept="lHG5K" id="5IRaEVB7ODO" role="2XiqHk">
+          <node concept="l03SS" id="5IRaEVB7ODQ" role="lHG9u">
+            <node concept="nLx3E" id="5IRaEVB7OGd" role="l03SQ">
+              <property role="24xvQs" value="print" />
+              <node concept="nav8X" id="5IRaEVB7OGf" role="nahle">
+                <node concept="30bdrP" id="5IRaEVB7OGw" role="nav8w">
+                  <property role="30bdrQ" value="Second defer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2WE661" id="5IRaEVBc7VB" role="lHG9p">
+        <property role="TrG5h" value="name" />
+        <node concept="lHG5K" id="5IRaEVBc7VD" role="2WE66t">
+          <node concept="l03SS" id="5IRaEVBc7VF" role="lHG9u" />
+        </node>
+        <node concept="aPoZM" id="5IRaEVBkGKT" role="2WE66q">
+          <property role="TrG5h" value="Double" />
+        </node>
+      </node>
       <node concept="2Yl7Zd" id="5IRaEV_WL1T" role="lHG9p">
         <node concept="auLln" id="5IRaEV_WL40" role="2Yl7Z8">
           <ref role="auLlk" node="5IRaEV_SPj5" resolve="name" />
@@ -467,6 +534,11 @@
                   </node>
                 </node>
                 <node concept="2XaDSb" id="5IRaEVAFqG9" role="l03SQ" />
+                <node concept="2XqI_R" id="5IRaEVAZC7q" role="l03SQ">
+                  <node concept="nLx3E" id="5IRaEVAZC7P" role="2XqI_O">
+                    <property role="24xvQs" value="Exception" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2XHozy" id="5IRaEVA4_y_" role="l03SQ">
@@ -483,6 +555,43 @@
           </node>
         </node>
       </node>
+      <node concept="245vbK" id="5IRaEVBp0nq" role="lHG9p">
+        <node concept="lHG5K" id="5IRaEVBp0ns" role="245vbd">
+          <node concept="l03SS" id="5IRaEVBp0nu" role="lHG9u" />
+        </node>
+        <node concept="2WOMNh" id="5IRaEVBucNK" role="2WOKiJ">
+          <node concept="nav8X" id="5IRaEVBucNL" role="2WOMdM">
+            <node concept="auLln" id="5IRaEVByBNQ" role="nav8w">
+              <ref role="auLlk" node="2mIA7SPGWPP" resolve="Coordinates" />
+            </node>
+            <node concept="auLln" id="5IRaEVByBNW" role="nav8w">
+              <ref role="auLlk" node="2mIA7SPAUpm" resolve="Foundation" />
+            </node>
+          </node>
+          <node concept="lHG5K" id="5IRaEVBucNM" role="2WOMKI">
+            <node concept="l03SS" id="5IRaEVBucNN" role="lHG9u" />
+          </node>
+          <node concept="2WONYI" id="5IRaEVByBNI" role="2WOKi_">
+            <node concept="lHG5K" id="5IRaEVByBNJ" role="2WONYG">
+              <node concept="l03SS" id="5IRaEVByBNK" role="lHG9u" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVCp6kQ" role="lHG9p" />
+      <node concept="2WpEUL" id="5IRaEVCp6qd" role="lHG9p">
+        <property role="TrG5h" value="Hello" />
+        <node concept="2Wlfpx" id="5IRaEVCp6qf" role="2WpEUd">
+          <node concept="2WlfTk" id="5IRaEVCp6qh" role="2Wlfpt">
+            <node concept="nav8X" id="5IRaEVCp6qj" role="2WlfTl">
+              <node concept="auLln" id="5IRaEVCtF_y" role="nav8w">
+                <ref role="auLlk" node="5IRaEVCp6qd" resolve="Hello" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVBXJUx" role="lHG9p" />
     </node>
   </node>
 </model>
