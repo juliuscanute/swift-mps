@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="2715275293084206882" name="swift.structure.ConstantDeclaration" flags="ng" index="a0PXs">
+        <child id="2715275293084206883" name="init" index="a0PXt" />
+      </concept>
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
         <reference id="2715275293086813482" name="var" index="auLlk" />
         <child id="6608797908768326689" name="dotExpression" index="2VN2Uf" />
@@ -72,8 +75,22 @@
       <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
         <child id="6608797908764566776" name="init" index="2VXCTm" />
       </concept>
+      <concept id="6608797908838636516" name="swift.structure.IfStatment" flags="ng" index="2Z7f5a">
+        <child id="6608797908838636522" name="ifBlock" index="2Z7f54" />
+        <child id="6608797908838636521" name="init" index="2Z7f57" />
+      </concept>
+      <concept id="6608797908835668993" name="swift.structure.RepeatStatement" flags="ng" index="2ZMrUJ">
+        <child id="6608797908835668994" name="init" index="2ZMrUG" />
+        <child id="6608797908835668995" name="repeatBlock" index="2ZMrUH" />
+      </concept>
+      <concept id="6608797908833699222" name="swift.structure.WhileStatement" flags="ng" index="2ZPUWS">
+        <child id="6608797908833699230" name="doBlock" index="2ZPUWK" />
+        <child id="6608797908833699224" name="init" index="2ZPUWQ" />
+      </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156687890" name="org.iets3.core.expr.base.structure.LessExpression" flags="ng" index="30d6GJ" />
+      <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -281,9 +298,58 @@
           </node>
         </node>
       </node>
+      <node concept="aAFJ2" id="5IRaEV$vDez" role="lHG9p" />
       <node concept="gj05W" id="5IRaEVzxnSR" role="lHG9p">
         <property role="TrG5h" value="add" />
         <node concept="l03SS" id="5IRaEVzxnST" role="gj05X">
+          <node concept="2ZPUWS" id="5IRaEV$rSOX" role="l03SQ">
+            <node concept="30d6GJ" id="5IRaEV$rSPm" role="2ZPUWQ">
+              <node concept="auLln" id="5IRaEV$rSPC" role="30dEs_">
+                <ref role="auLlk" node="5IRaEVzxnUX" resolve="b" />
+              </node>
+              <node concept="auLln" id="5IRaEV$rSPg" role="30dEsF">
+                <ref role="auLlk" node="5IRaEVzxnUT" resolve="a" />
+              </node>
+            </node>
+            <node concept="lHG5K" id="5IRaEV$rSP1" role="2ZPUWK">
+              <node concept="l03SS" id="5IRaEV$rSP3" role="lHG9u">
+                <node concept="a0PXs" id="5IRaEV$rSPH" role="l03SQ">
+                  <property role="TrG5h" value="c" />
+                  <node concept="30bXRB" id="5IRaEV$rSPR" role="a0PXt">
+                    <property role="30bXRw" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2ZMrUJ" id="5IRaEV$BdjB" role="l03SQ">
+            <node concept="auLln" id="5IRaEV$Bdk0" role="2ZMrUG">
+              <ref role="auLlk" node="5IRaEVzxnUT" resolve="a" />
+            </node>
+            <node concept="lHG5K" id="5IRaEV$BdjF" role="2ZMrUH">
+              <node concept="l03SS" id="5IRaEV$BdjH" role="lHG9u">
+                <node concept="a0PXs" id="5IRaEV$Bdk3" role="l03SQ">
+                  <property role="TrG5h" value="d" />
+                  <node concept="30bXRB" id="5IRaEV$Bdkd" role="a0PXt">
+                    <property role="30bXRw" value="333" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2Z7f5a" id="5IRaEV$IKs8" role="l03SQ">
+            <node concept="30d7iD" id="5IRaEV$IKsJ" role="2Z7f57">
+              <node concept="auLln" id="5IRaEV$IKt1" role="30dEs_">
+                <ref role="auLlk" node="5IRaEVzxnUX" resolve="b" />
+              </node>
+              <node concept="auLln" id="5IRaEV$IKsD" role="30dEsF">
+                <ref role="auLlk" node="5IRaEVzxnUT" resolve="a" />
+              </node>
+            </node>
+            <node concept="lHG5K" id="5IRaEV$IKsc" role="2Z7f54">
+              <node concept="l03SS" id="5IRaEV$IKse" role="lHG9u" />
+            </node>
+          </node>
           <node concept="2VXCT0" id="5IRaEVzOdor" role="l03SQ">
             <node concept="30dDZf" id="5IRaEVzOdoA" role="2VXCTm">
               <node concept="auLln" id="5IRaEVzOdoK" role="30dEs_">
@@ -313,7 +379,16 @@
           <property role="TrG5h" value="Int" />
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEV$7HJq" role="lHG9p" />
+      <node concept="aAFJ2" id="5IRaEV_dFvH" role="lHG9p" />
+      <node concept="2Z7f5a" id="5IRaEV_psHj" role="lHG9p">
+        <node concept="auLln" id="5IRaEV_psJb" role="2Z7f57">
+          <ref role="auLlk" node="5IRaEVzxnUT" resolve="a" />
+        </node>
+        <node concept="lHG5K" id="5IRaEV_psHn" role="2Z7f54">
+          <node concept="l03SS" id="5IRaEV_psHp" role="lHG9u" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEV_tkWM" role="lHG9p" />
     </node>
   </node>
 </model>
