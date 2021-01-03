@@ -2761,5 +2761,76 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="5IRaEVCP$Wf">
+    <property role="3GE5qa" value="declaration" />
+    <ref role="WuzLi" to="op4d:5IRaEVCP$UB" resolve="ExtensionDeclaration" />
+    <node concept="11bSqf" id="5IRaEVCP$Wg" role="11c4hB">
+      <node concept="3clFbS" id="5IRaEVCP$Wh" role="2VODD2">
+        <node concept="lc7rE" id="5IRaEVCP_aJ" role="3cqZAp">
+          <node concept="la8eA" id="5IRaEVCP_aK" role="lcghm">
+            <property role="lacIc" value="extension " />
+          </node>
+          <node concept="l9hG8" id="5IRaEVCP_aL" role="lcghm">
+            <node concept="2OqwBi" id="5IRaEVCP_aM" role="lb14g">
+              <node concept="117lpO" id="5IRaEVCP_aN" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5IRaEVCP_aO" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5IRaEVCP_aP" role="3cqZAp">
+          <node concept="3clFbS" id="5IRaEVCP_aQ" role="3clFbx">
+            <node concept="lc7rE" id="5IRaEVCP_aR" role="3cqZAp">
+              <node concept="la8eA" id="5IRaEVCP_aS" role="lcghm">
+                <property role="lacIc" value=" : " />
+              </node>
+              <node concept="l9S2W" id="5IRaEVCP_aT" role="lcghm">
+                <property role="XA4eZ" value="true" />
+                <property role="lbP0B" value=", " />
+                <node concept="2OqwBi" id="5IRaEVCP_aU" role="lbANJ">
+                  <node concept="117lpO" id="5IRaEVCP_aV" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="5IRaEVCP_aW" role="2OqNvi">
+                    <ref role="3TtcxE" to="op4d:5IRaEVCP$UG" resolve="inheritType" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="5IRaEVCP_aX" role="lcghm">
+                <property role="lacIc" value=" " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5IRaEVCP_aY" role="3clFbw">
+            <node concept="2OqwBi" id="5IRaEVCP_aZ" role="2Oq$k0">
+              <node concept="117lpO" id="5IRaEVCP_b0" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5IRaEVCP_b1" role="2OqNvi">
+                <ref role="3TtcxE" to="op4d:5IRaEVCP$UG" resolve="inheritType" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="5IRaEVCP_b2" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="5IRaEVCP_b3" role="9aQIa">
+            <node concept="3clFbS" id="5IRaEVCP_b4" role="9aQI4">
+              <node concept="lc7rE" id="5IRaEVCP_b5" role="3cqZAp">
+                <node concept="la8eA" id="5IRaEVCP_b6" role="lcghm">
+                  <property role="lacIc" value=" " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="5IRaEVCP_b7" role="3cqZAp">
+          <node concept="l9hG8" id="5IRaEVCP_b8" role="lcghm">
+            <node concept="2OqwBi" id="5IRaEVCP_b9" role="lb14g">
+              <node concept="117lpO" id="5IRaEVCP_ba" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5IRaEVCP_bb" role="2OqNvi">
+                <ref role="3Tt5mk" to="op4d:5IRaEVCP$UF" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

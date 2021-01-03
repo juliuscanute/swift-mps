@@ -83,6 +83,16 @@
       <concept id="6608797908903466296" name="swift.structure.ArrayExpression" flags="ng" index="2NfzYm">
         <child id="6608797908903466298" name="expression" index="2NfzYk" />
       </concept>
+      <concept id="6608797908907255385" name="swift.structure.MapExpression" flags="ng" index="2NtsNR">
+        <child id="6608797908907255387" name="expression" index="2NtsNP" />
+      </concept>
+      <concept id="6608797908907249527" name="swift.structure.MapListPair" flags="ng" index="2Ntunp">
+        <child id="6608797908907249556" name="pairs" index="2NtukU" />
+      </concept>
+      <concept id="6608797908907245864" name="swift.structure.MapPair" flags="ng" index="2NtuI6">
+        <child id="6608797908907245869" name="key" index="2NtuI3" />
+        <child id="6608797908907245867" name="value" index="2NtuI5" />
+      </concept>
       <concept id="6608797908807388545" name="swift.structure.ClosureParameter" flags="ng" index="2Tu2sJ" />
       <concept id="6608797908786903333" name="swift.structure.DotSeparatedExpression" flags="ng" index="2U8leb">
         <child id="6608797908786903334" name="expressions" index="2U8le8" />
@@ -600,6 +610,26 @@
       </node>
       <node concept="a0PXs" id="5IRaEVCKG1h" role="lHG9p">
         <property role="TrG5h" value="map" />
+        <node concept="2NtsNR" id="5IRaEVCP$Tz" role="a0PXt">
+          <node concept="2Ntunp" id="5IRaEVCP$TA" role="2NtsNP">
+            <node concept="2NtuI6" id="5IRaEVCP$TC" role="2NtukU">
+              <node concept="30bdrP" id="5IRaEVCP$TK" role="2NtuI3">
+                <property role="30bdrQ" value="XYZ" />
+              </node>
+              <node concept="30bdrP" id="5IRaEVCP$TV" role="2NtuI5">
+                <property role="30bdrQ" value="Tonronto" />
+              </node>
+            </node>
+            <node concept="2NtuI6" id="5IRaEVCP$U7" role="2NtukU">
+              <node concept="30bdrP" id="5IRaEVCP$Ui" role="2NtuI3">
+                <property role="30bdrQ" value="DUB" />
+              </node>
+              <node concept="30bdrP" id="5IRaEVCP$Ut" role="2NtuI5">
+                <property role="30bdrQ" value="Dublin" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2WpEUL" id="5IRaEVCp6qd" role="lHG9p">
         <property role="TrG5h" value="Hello" />
