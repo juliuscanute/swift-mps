@@ -7,6 +7,14 @@
   <imports />
   <registry>
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
+      <concept id="6608797908757774626" name="swift.structure.AssignmentStatement" flags="ng" index="24riIc">
+        <reference id="6608797908757778942" name="variableReference" index="24rjHg" />
+        <child id="6608797908757774627" name="init" index="24riId" />
+      </concept>
+      <concept id="6608797908745049072" name="swift.structure.GuardConstantDeclaration" flags="ng" index="24Cf_u">
+        <child id="6608797908745049073" name="init" index="24Cf_v" />
+        <child id="6608797908747793722" name="codeBlock" index="24XDYk" />
+      </concept>
       <concept id="2715275293084206882" name="swift.structure.ConstantDeclaration" flags="ng" index="a0PXs">
         <child id="2715275293084206883" name="init" index="a0PXt" />
       </concept>
@@ -75,9 +83,31 @@
       <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
         <child id="6608797908764566776" name="init" index="2VXCTm" />
       </concept>
+      <concept id="6608797908871263397" name="swift.structure.BreakStatement" flags="ng" index="2XaDSb" />
+      <concept id="6608797908874401758" name="swift.structure.ContinueStatement" flags="ng" index="2XuFPK" />
+      <concept id="6608797908861100620" name="swift.structure.SwitchDefaultBlock" flags="ng" index="2XHozy">
+        <child id="6608797908861100671" name="block" index="2XHozh" />
+      </concept>
+      <concept id="6608797908865213396" name="swift.structure.SwitchCaseBlock" flags="ng" index="2XX$_U">
+        <child id="6608797908865213400" name="init" index="2XX$_Q" />
+        <child id="6608797908865213399" name="block" index="2XX$_T" />
+      </concept>
+      <concept id="6608797908859049315" name="swift.structure.SwitchStatement" flags="ng" index="2Yl7Zd">
+        <child id="6608797908859049365" name="block" index="2Yl7WV" />
+        <child id="6608797908859049318" name="init" index="2Yl7Z8" />
+      </concept>
+      <concept id="6608797908857967781" name="swift.structure.ElseStatment" flags="ng" index="2YpvSb">
+        <child id="6608797908857967783" name="elseIfBlock" index="2YpvS9" />
+      </concept>
       <concept id="6608797908838636516" name="swift.structure.IfStatment" flags="ng" index="2Z7f5a">
         <child id="6608797908838636522" name="ifBlock" index="2Z7f54" />
         <child id="6608797908838636521" name="init" index="2Z7f57" />
+        <child id="6608797908841619142" name="elseIfBlock" index="2ZrBhC" />
+      </concept>
+      <concept id="6608797908840624310" name="swift.structure.ElseIfStatment" flags="ng" index="2ZvhCo">
+        <child id="6608797908852849765" name="elseStatement" index="2YcTrb" />
+        <child id="6608797908840624312" name="elseIfBlock" index="2ZvhCm" />
+        <child id="6608797908840624311" name="init" index="2ZvhCp" />
       </concept>
       <concept id="6608797908835668993" name="swift.structure.RepeatStatement" flags="ng" index="2ZMrUJ">
         <child id="6608797908835668994" name="init" index="2ZMrUG" />
@@ -381,14 +411,78 @@
       </node>
       <node concept="aAFJ2" id="5IRaEV_dFvH" role="lHG9p" />
       <node concept="2Z7f5a" id="5IRaEV_psHj" role="lHG9p">
-        <node concept="auLln" id="5IRaEV_psJb" role="2Z7f57">
-          <ref role="auLlk" node="5IRaEVzxnUT" resolve="a" />
-        </node>
         <node concept="lHG5K" id="5IRaEV_psHn" role="2Z7f54">
           <node concept="l03SS" id="5IRaEV_psHp" role="lHG9u" />
         </node>
+        <node concept="2ZvhCo" id="5IRaEV_SPiL" role="2ZrBhC">
+          <node concept="auLln" id="5IRaEV_SPiT" role="2ZvhCp">
+            <ref role="auLlk" node="2mIA7SPGWPP" resolve="Coordinates" />
+          </node>
+          <node concept="lHG5K" id="5IRaEV_SPiN" role="2ZvhCm">
+            <node concept="l03SS" id="5IRaEV_SPiO" role="lHG9u" />
+          </node>
+          <node concept="2YpvSb" id="5IRaEV_SPiZ" role="2YcTrb">
+            <node concept="lHG5K" id="5IRaEV_SPj0" role="2YpvS9">
+              <node concept="l03SS" id="5IRaEV_SPj1" role="lHG9u" />
+            </node>
+          </node>
+        </node>
+        <node concept="30bXRB" id="5IRaEVABrio" role="2Z7f57">
+          <property role="30bXRw" value="1" />
+        </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEV_tkWM" role="lHG9p" />
+      <node concept="24Cf_u" id="5IRaEV_SPj5" role="lHG9p">
+        <property role="TrG5h" value="name" />
+        <node concept="30bXRB" id="5IRaEV_SPl5" role="24Cf_v">
+          <property role="30bXRw" value="333333" />
+        </node>
+        <node concept="lHG5K" id="5IRaEV_SPlv" role="24XDYk">
+          <node concept="l03SS" id="5IRaEV_SPlw" role="lHG9u" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEV_WKY4" role="lHG9p" />
+      <node concept="2Yl7Zd" id="5IRaEV_WL1T" role="lHG9p">
+        <node concept="auLln" id="5IRaEV_WL40" role="2Yl7Z8">
+          <ref role="auLlk" node="5IRaEV_SPj5" resolve="name" />
+        </node>
+        <node concept="lHG5K" id="5IRaEV_WL1X" role="2Yl7WV">
+          <node concept="l03SS" id="5IRaEV_WL1Z" role="lHG9u">
+            <node concept="2XX$_U" id="5IRaEVArzWp" role="l03SQ">
+              <node concept="nav8X" id="5IRaEVArzWr" role="2XX$_Q">
+                <node concept="auLln" id="5IRaEVArzWC" role="nav8w">
+                  <ref role="auLlk" node="2mIA7SPGWPP" resolve="Coordinates" />
+                </node>
+              </node>
+              <node concept="l03SS" id="5IRaEVArzWt" role="2XX$_T">
+                <node concept="24riIc" id="5IRaEVArzWK" role="l03SQ">
+                  <ref role="24rjHg" node="5IRaEV$rSPH" resolve="c" />
+                  <node concept="30bXRB" id="5IRaEVArzWS" role="24riId">
+                    <property role="30bXRw" value="44444" />
+                  </node>
+                </node>
+                <node concept="24riIc" id="5IRaEVArzX9" role="l03SQ">
+                  <ref role="24rjHg" node="2mIA7SPGWPl" resolve="coordinates" />
+                  <node concept="30bdrP" id="5IRaEVArzXj" role="24riId">
+                    <property role="30bdrQ" value="32324324" />
+                  </node>
+                </node>
+                <node concept="2XaDSb" id="5IRaEVAFqG9" role="l03SQ" />
+              </node>
+            </node>
+            <node concept="2XHozy" id="5IRaEVA4_y_" role="l03SQ">
+              <node concept="l03SS" id="5IRaEVA4_yB" role="2XHozh">
+                <node concept="24riIc" id="5IRaEVA4_zK" role="l03SQ">
+                  <ref role="24rjHg" node="5IRaEVzxnUX" resolve="b" />
+                  <node concept="30bXRB" id="5IRaEVA4_zW" role="24riId">
+                    <property role="30bXRw" value="20" />
+                  </node>
+                </node>
+                <node concept="2XuFPK" id="5IRaEVARsfj" role="l03SQ" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
