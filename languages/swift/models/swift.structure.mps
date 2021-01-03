@@ -498,8 +498,8 @@
   </node>
   <node concept="1TIwiD" id="2mIA7SMq8yk">
     <property role="EcuMT" value="2715275293130000532" />
-    <property role="3GE5qa" value="expression" />
-    <property role="TrG5h" value="ParenthesizedExpression" />
+    <property role="3GE5qa" value="declaration" />
+    <property role="TrG5h" value="CallExpression" />
     <property role="34LRSv" value="call" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="PrWs8" id="2mIA7SMq8ym" role="PzmwI">
@@ -1234,7 +1234,7 @@
   </node>
   <node concept="1TIwiD" id="5IRaEVBOogv">
     <property role="EcuMT" value="6608797908891436063" />
-    <property role="3GE5qa" value="declaration" />
+    <property role="3GE5qa" value="declaration.enum" />
     <property role="TrG5h" value="EnumDeclaration" />
     <property role="34LRSv" value="enum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1261,7 +1261,7 @@
   </node>
   <node concept="1TIwiD" id="5IRaEVBSXjU">
     <property role="EcuMT" value="6608797908892636410" />
-    <property role="3GE5qa" value="declaration" />
+    <property role="3GE5qa" value="declaration.enum" />
     <property role="TrG5h" value="EnumCaseDeclaration" />
     <property role="34LRSv" value="enum case" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1278,7 +1278,7 @@
   </node>
   <node concept="1TIwiD" id="5IRaEVBSXNf">
     <property role="EcuMT" value="6608797908892638415" />
-    <property role="3GE5qa" value="declaration" />
+    <property role="3GE5qa" value="declaration.enum" />
     <property role="TrG5h" value="EnumCaseListDeclaration" />
     <property role="34LRSv" value="enum case list" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -1288,6 +1288,87 @@
       <property role="20kJfa" value="cases" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="5IRaEVBSXjU" resolve="EnumCaseDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IRaEVCyhkS">
+    <property role="EcuMT" value="6608797908903466296" />
+    <property role="3GE5qa" value="expression.collection" />
+    <property role="TrG5h" value="ArrayExpression" />
+    <property role="34LRSv" value="array" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="5IRaEVCyhkT" role="PzmwI">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVCyhkU" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908903466298" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="2mIA7SMxQD3" resolve="CommaSeparatedExpressions" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVCyhkV" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908903466299" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dotExpression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2mIA7SMXOno" resolve="DotParenthesizedExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IRaEVCKG4C">
+    <property role="EcuMT" value="6608797908907245864" />
+    <property role="3GE5qa" value="expression.collection" />
+    <property role="TrG5h" value="MapPair" />
+    <property role="34LRSv" value="map pair" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5IRaEVCKG4H" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908907245869" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="key" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVCKG4F" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908907245867" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IRaEVCKGXR">
+    <property role="EcuMT" value="6608797908907249527" />
+    <property role="3GE5qa" value="expression.collection" />
+    <property role="TrG5h" value="MapListPair" />
+    <property role="34LRSv" value="map list pair" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5IRaEVCKGYk" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908907249556" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="pairs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5IRaEVCKG4C" resolve="MapPair" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5IRaEVCKIpp">
+    <property role="EcuMT" value="6608797908907255385" />
+    <property role="3GE5qa" value="expression.collection" />
+    <property role="TrG5h" value="MapExpression" />
+    <property role="34LRSv" value="map" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="5IRaEVCKIpq" role="PzmwI">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVCKIpr" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908907255387" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="5IRaEVCKGXR" resolve="MapListPair" />
+    </node>
+    <node concept="1TJgyj" id="5IRaEVCKIps" role="1TKVEi">
+      <property role="IQ2ns" value="6608797908907255388" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dotExpression" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2mIA7SMXOno" resolve="DotParenthesizedExpression" />
     </node>
   </node>
 </model>

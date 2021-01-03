@@ -71,7 +71,7 @@
       <concept id="2715275293132024387" name="swift.structure.CommaSeparatedExpressions" flags="ng" index="nav8X">
         <child id="2715275293132024414" name="expressions" index="nav8w" />
       </concept>
-      <concept id="2715275293130000532" name="swift.structure.ParenthesizedExpression" flags="ng" index="nLx3E">
+      <concept id="2715275293130000532" name="swift.structure.CallExpression" flags="ng" index="nLx3E">
         <property id="6608797908746819378" name="name" index="24xvQs" />
         <child id="2715275293132033328" name="expression" index="nahle" />
       </concept>
@@ -79,6 +79,9 @@
         <child id="2715275293150616556" name="parenExpression" index="m3oei" />
         <child id="2715275293129003443" name="statement" index="nXWBd" />
         <child id="6608797908807390424" name="parameters" index="2Tu3TQ" />
+      </concept>
+      <concept id="6608797908903466296" name="swift.structure.ArrayExpression" flags="ng" index="2NfzYm">
+        <child id="6608797908903466298" name="expression" index="2NfzYk" />
       </concept>
       <concept id="6608797908807388545" name="swift.structure.ClosureParameter" flags="ng" index="2Tu2sJ" />
       <concept id="6608797908786903333" name="swift.structure.DotSeparatedExpression" flags="ng" index="2U8leb">
@@ -94,6 +97,7 @@
         <child id="6608797908892636411" name="expressoin" index="2WlfTl" />
       </concept>
       <concept id="6608797908891436063" name="swift.structure.EnumDeclaration" flags="ng" index="2WpEUL">
+        <child id="6608797908891436068" name="inheritType" index="2WpEUa" />
         <child id="6608797908891436067" name="body" index="2WpEUd" />
       </concept>
       <concept id="6608797908879756079" name="swift.structure.ClassDeclaration" flags="ng" index="2WE661">
@@ -578,17 +582,47 @@
           </node>
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEVCp6kQ" role="lHG9p" />
+      <node concept="aUV3R" id="5IRaEVCBgf2" role="lHG9p">
+        <property role="TrG5h" value="shoppingList" />
+        <node concept="aPoZM" id="5IRaEVCBghY" role="aPoZa">
+          <property role="TrG5h" value="Array" />
+        </node>
+        <node concept="2NfzYm" id="5IRaEVCFYYS" role="aXh68">
+          <node concept="nav8X" id="5IRaEVCFYYZ" role="2NfzYk">
+            <node concept="30bdrP" id="5IRaEVCFYZ7" role="nav8w">
+              <property role="30bdrQ" value="2324324" />
+            </node>
+            <node concept="30bdrP" id="5IRaEVCFYZk" role="nav8w">
+              <property role="30bdrQ" value="24234234" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVCKG1h" role="lHG9p">
+        <property role="TrG5h" value="map" />
+      </node>
       <node concept="2WpEUL" id="5IRaEVCp6qd" role="lHG9p">
         <property role="TrG5h" value="Hello" />
         <node concept="2Wlfpx" id="5IRaEVCp6qf" role="2WpEUd">
           <node concept="2WlfTk" id="5IRaEVCp6qh" role="2Wlfpt">
             <node concept="nav8X" id="5IRaEVCp6qj" role="2WlfTl">
-              <node concept="auLln" id="5IRaEVCtF_y" role="nav8w">
-                <ref role="auLlk" node="5IRaEVCp6qd" resolve="Hello" />
+              <node concept="24riIc" id="5IRaEVCyhfF" role="nav8w">
+                <ref role="24rjHg" node="5IRaEVzxnUT" resolve="a" />
+                <node concept="30bXRB" id="5IRaEVCyhfN" role="24riId">
+                  <property role="30bXRw" value="1" />
+                </node>
+              </node>
+              <node concept="24riIc" id="5IRaEVCyhgi" role="nav8w">
+                <ref role="24rjHg" node="5IRaEVzxnUX" resolve="b" />
+                <node concept="30bXRB" id="5IRaEVCyhgu" role="24riId">
+                  <property role="30bXRw" value="2" />
+                </node>
               </node>
             </node>
           </node>
+        </node>
+        <node concept="aPoZM" id="5IRaEVCyhgI" role="2WpEUa">
+          <property role="TrG5h" value="Int" />
         </node>
       </node>
       <node concept="aAFJ2" id="5IRaEVBXJUx" role="lHG9p" />
