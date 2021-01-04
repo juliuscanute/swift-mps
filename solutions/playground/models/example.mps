@@ -20,6 +20,7 @@
         <child id="6608797908747793722" name="codeBlock" index="24XDYk" />
       </concept>
       <concept id="2715275293084206882" name="swift.structure.ConstantDeclaration" flags="ng" index="a0PXs">
+        <child id="2715275293084206884" name="type" index="a0PXq" />
         <child id="2715275293084206883" name="init" index="a0PXt" />
       </concept>
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln">
@@ -31,9 +32,7 @@
         <child id="2715275293073836085" name="contents" index="aCh1b" />
       </concept>
       <concept id="2715275293073414015" name="swift.structure.ImportStatement" flags="ng" index="aDSW1" />
-      <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM">
-        <property id="2715275293186017815" name="bracket" index="g4t9D" />
-      </concept>
+      <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
       <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R">
         <property id="2715275293172814644" name="private" index="hmOHa" />
         <child id="2715275293080885172" name="type" index="aPoZa" />
@@ -64,10 +63,6 @@
       <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
         <child id="2715275293091191335" name="statement" index="lHG9p" />
       </concept>
-      <concept id="2715275293146686936" name="swift.structure.ConstantParameterValue" flags="ng" index="mMrQA">
-        <property id="2715275293152384132" name="parameter" index="m48NU" />
-        <property id="2715275293154685727" name="value" index="mjUHx" />
-      </concept>
       <concept id="2715275293132024387" name="swift.structure.CommaSeparatedExpressions" flags="ng" index="nav8X">
         <child id="2715275293132024414" name="expressions" index="nav8w" />
       </concept>
@@ -75,13 +70,40 @@
         <property id="6608797908746819378" name="name" index="24xvQs" />
         <child id="2715275293132033328" name="expression" index="nahle" />
       </concept>
-      <concept id="2715275293129003442" name="swift.structure.ClosureBlock" flags="ng" index="nXWBc">
-        <child id="2715275293150616556" name="parenExpression" index="m3oei" />
-        <child id="2715275293129003443" name="statement" index="nXWBd" />
-        <child id="6608797908807390424" name="parameters" index="2Tu3TQ" />
+      <concept id="6608797908943330785" name="swift.structure.ForStatement" flags="ng" index="2LnBtf">
+        <child id="6608797908943331270" name="parameters" index="2LnBlC" />
+        <child id="6608797908943330786" name="init" index="2LnBtc" />
+        <child id="6608797908943330787" name="forBlock" index="2LnBtd" />
+      </concept>
+      <concept id="6608797908941989667" name="swift.structure.UnwrapedType" flags="ng" index="2LoWQd">
+        <child id="6608797908941989668" name="type" index="2LoWQa" />
+      </concept>
+      <concept id="6608797908928551851" name="swift.structure.DictionaryType" flags="ng" index="2LGf45">
+        <child id="6608797908928551854" name="key" index="2LGf40" />
+        <child id="6608797908928551856" name="value" index="2LGf4u" />
+      </concept>
+      <concept id="6608797908921826966" name="swift.structure.ArrayType" flags="ng" index="2M5xgS">
+        <child id="6608797908925827025" name="type" index="2MqmPZ" />
+      </concept>
+      <concept id="6608797908917814304" name="swift.structure.FunctionType" flags="ng" index="2MOMUe">
+        <child id="6608797908917816629" name="returnType" index="2MOMur" />
+        <child id="6608797908917814306" name="types" index="2MOMUc" />
+      </concept>
+      <concept id="6608797908917814596" name="swift.structure.ParameterTypeValue" flags="ng" index="2MOMZE">
+        <property id="6608797908917814597" name="parameter" index="2MOMZF" />
+        <child id="6608797908917814656" name="value" index="2MOMWI" />
+      </concept>
+      <concept id="6608797908916484135" name="swift.structure.TupleExpression" flags="ng" index="2MY9a9">
+        <child id="6608797908916484137" name="expression" index="2MY9a7" />
       </concept>
       <concept id="6608797908903466296" name="swift.structure.ArrayExpression" flags="ng" index="2NfzYm">
         <child id="6608797908903466298" name="expression" index="2NfzYk" />
+      </concept>
+      <concept id="6608797908911119500" name="swift.structure.TupleType" flags="ng" index="2NiJoy">
+        <child id="6608797908911119507" name="types" index="2NiJoX" />
+      </concept>
+      <concept id="6608797908908527271" name="swift.structure.ExtensionDeclaration" flags="ng" index="2Nomg9">
+        <child id="6608797908908527275" name="body" index="2Nomg5" />
       </concept>
       <concept id="6608797908907255385" name="swift.structure.MapExpression" flags="ng" index="2NtsNR">
         <child id="6608797908907255387" name="expression" index="2NtsNP" />
@@ -196,21 +218,6 @@
         <property role="TrG5h" value="SwiftUI" />
       </node>
       <node concept="aAFJ2" id="2mIA7SPAUo0" role="lHG9p" />
-      <node concept="aUV3R" id="2mIA7SPMLmB" role="lHG9p">
-        <property role="TrG5h" value="landmarks" />
-        <node concept="aPoZM" id="2mIA7SPMLno" role="aPoZa">
-          <property role="TrG5h" value="Landmark" />
-          <property role="g4t9D" value="true" />
-        </node>
-        <node concept="nLx3E" id="5IRaEVvghgf" role="aXh68">
-          <property role="24xvQs" value="load" />
-          <node concept="nav8X" id="5IRaEVvghgu" role="nahle">
-            <node concept="30bdrP" id="5IRaEVvghgA" role="nav8w">
-              <property role="30bdrQ" value="landmarkData.json" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="aAFJ2" id="2mIA7SPMLoe" role="lHG9p" />
       <node concept="laRYR" id="2mIA7SPAUo1" role="lHG9p">
         <property role="TrG5h" value="Landmark" />
@@ -354,25 +361,6 @@
         <node concept="nav8X" id="5IRaEVyiM48" role="nahle" />
       </node>
       <node concept="aAFJ2" id="5IRaEVyiM5W" role="lHG9p" />
-      <node concept="nXWBc" id="5IRaEVyiM9T" role="lHG9p">
-        <property role="TrG5h" value="List" />
-        <node concept="2Tu2sJ" id="5IRaEVyREEe" role="2Tu3TQ">
-          <property role="TrG5h" value="c" />
-        </node>
-        <node concept="2Tu2sJ" id="5IRaEVz_8M7" role="2Tu3TQ">
-          <property role="TrG5h" value="d" />
-        </node>
-        <node concept="l03SS" id="5IRaEVyiM9V" role="nXWBd" />
-        <node concept="nav8X" id="5IRaEVyiMbX" role="m3oei">
-          <node concept="auLln" id="5IRaEVyiMc2" role="nav8w">
-            <ref role="auLlk" node="2mIA7SPMLmB" resolve="landmarks" />
-          </node>
-          <node concept="mMrQA" id="5IRaEVyiMca" role="nav8w">
-            <property role="mjUHx" value="\.id" />
-            <property role="m48NU" value="id" />
-          </node>
-        </node>
-      </node>
       <node concept="aAFJ2" id="5IRaEV$vDez" role="lHG9p" />
       <node concept="gj05W" id="5IRaEVzxnSR" role="lHG9p">
         <property role="TrG5h" value="add" />
@@ -631,6 +619,7 @@
           </node>
         </node>
       </node>
+      <node concept="aAFJ2" id="5IRaEVFa8yc" role="lHG9p" />
       <node concept="2WpEUL" id="5IRaEVCp6qd" role="lHG9p">
         <property role="TrG5h" value="Hello" />
         <node concept="2Wlfpx" id="5IRaEVCp6qf" role="2WpEUd">
@@ -655,7 +644,159 @@
           <property role="TrG5h" value="Int" />
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEVBXJUx" role="lHG9p" />
+      <node concept="aAFJ2" id="5IRaEVFa8uo" role="lHG9p" />
+      <node concept="2LnBtf" id="5IRaEVF4MZa" role="lHG9p">
+        <node concept="2Tu2sJ" id="5IRaEVF4N2Z" role="2LnBlC">
+          <property role="TrG5h" value="key" />
+        </node>
+        <node concept="2Tu2sJ" id="5IRaEVF4N31" role="2LnBlC">
+          <property role="TrG5h" value="value" />
+        </node>
+        <node concept="auLln" id="5IRaEVF4N37" role="2LnBtc">
+          <ref role="auLlk" node="5IRaEVCKG1h" resolve="map" />
+        </node>
+        <node concept="lHG5K" id="5IRaEVF4MZe" role="2LnBtd">
+          <node concept="l03SS" id="5IRaEVF4MZg" role="lHG9u" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVFa8q_" role="lHG9p" />
+      <node concept="a0PXs" id="5IRaEVEZAA_" role="lHG9p">
+        <property role="TrG5h" value="names" />
+        <node concept="2NfzYm" id="5IRaEVEZAEc" role="a0PXt">
+          <node concept="nav8X" id="5IRaEVEZAEf" role="2NfzYk">
+            <node concept="30bdrP" id="5IRaEVEZAEj" role="nav8w">
+              <property role="30bdrQ" value="Anna" />
+            </node>
+            <node concept="30bdrP" id="5IRaEVEZAEw" role="nav8w">
+              <property role="30bdrQ" value="Alex" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVF4N6V" role="lHG9p" />
+      <node concept="2LnBtf" id="5IRaEVEZAIh" role="lHG9p">
+        <node concept="2Tu2sJ" id="5IRaEVEZALZ" role="2LnBlC">
+          <property role="TrG5h" value="name" />
+        </node>
+        <node concept="auLln" id="5IRaEVEZAM4" role="2LnBtc">
+          <ref role="auLlk" node="5IRaEVEZAA_" resolve="names" />
+        </node>
+        <node concept="lHG5K" id="5IRaEVEZAIl" role="2LnBtd">
+          <node concept="l03SS" id="5IRaEVEZAIn" role="lHG9u">
+            <node concept="nLx3E" id="5IRaEVEZAM7" role="l03SQ">
+              <property role="24xvQs" value="print" />
+              <node concept="nav8X" id="5IRaEVEZAM9" role="nahle">
+                <node concept="auLln" id="5IRaEVEZAMd" role="nav8w">
+                  <ref role="auLlk" node="5IRaEVBc7VB" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="5IRaEVF4N3a" role="lHG9p" />
+      <node concept="2Nomg9" id="5IRaEVCU$Io" role="lHG9p">
+        <property role="TrG5h" value="Int" />
+        <node concept="lHG5K" id="5IRaEVCU$Iq" role="2Nomg5">
+          <node concept="l03SS" id="5IRaEVCU$Is" role="lHG9u" />
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVEc8Zr" role="lHG9p">
+        <property role="TrG5h" value="dictionary" />
+        <node concept="2LGf45" id="5IRaEVEc92M" role="a0PXq">
+          <node concept="aPoZM" id="5IRaEVEc92Q" role="2LGf40">
+            <property role="TrG5h" value="String" />
+          </node>
+          <node concept="aPoZM" id="5IRaEVEheA5" role="2LGf4u">
+            <property role="TrG5h" value="Int" />
+          </node>
+        </node>
+        <node concept="2NtsNR" id="5IRaEVEc93d" role="a0PXt">
+          <node concept="2Ntunp" id="5IRaEVEc93g" role="2NtsNP">
+            <node concept="2NtuI6" id="5IRaEVEc93i" role="2NtukU">
+              <node concept="30bXRB" id="5IRaEVEc94o" role="2NtuI5">
+                <property role="30bXRw" value="3" />
+              </node>
+              <node concept="30bdrP" id="5IRaEVEc93H" role="2NtuI3">
+                <property role="30bdrQ" value="23432" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVDH6K7" role="lHG9p">
+        <property role="TrG5h" value="someArray" />
+        <node concept="2NfzYm" id="5IRaEVDMug1" role="a0PXt">
+          <node concept="nav8X" id="5IRaEVDMug4" role="2NfzYk">
+            <node concept="2NfzYm" id="5IRaEVDMugn" role="nav8w">
+              <node concept="nav8X" id="5IRaEVDMugp" role="2NfzYk">
+                <node concept="30bXRB" id="5IRaEVDMugv" role="nav8w">
+                  <property role="30bXRw" value="1" />
+                </node>
+                <node concept="30bXRB" id="5IRaEVDMugN" role="nav8w">
+                  <property role="30bXRw" value="2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2M5xgS" id="5IRaEVDWS20" role="a0PXq">
+          <node concept="2M5xgS" id="5IRaEVDWS22" role="2MqmPZ">
+            <node concept="aPoZM" id="5IRaEVDWS26" role="2MqmPZ">
+              <property role="TrG5h" value="Int" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVDf0Bc" role="lHG9p">
+        <property role="TrG5h" value="type" />
+        <node concept="2NiJoy" id="5IRaEVDf0Eb" role="a0PXq">
+          <node concept="aPoZM" id="5IRaEVDf0Ef" role="2NiJoX">
+            <property role="TrG5h" value="Int" />
+          </node>
+          <node concept="aPoZM" id="5IRaEVDf0Ek" role="2NiJoX">
+            <property role="TrG5h" value="Int" />
+          </node>
+        </node>
+        <node concept="2MY9a9" id="5IRaEVDp0bI" role="a0PXt">
+          <node concept="nav8X" id="5IRaEVDp0bL" role="2MY9a7">
+            <node concept="30bXRB" id="5IRaEVDp0bR" role="nav8w">
+              <property role="30bXRw" value="1" />
+            </node>
+            <node concept="30bXRB" id="5IRaEVDp0cb" role="nav8w">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVDu9bR" role="lHG9p">
+        <property role="TrG5h" value="calculate" />
+        <node concept="2MOMUe" id="5IRaEVDu9eY" role="a0PXq">
+          <node concept="2MOMZE" id="5IRaEVDu9f0" role="2MOMUc">
+            <property role="2MOMZF" value="a" />
+            <node concept="aPoZM" id="5IRaEVDu9f4" role="2MOMWI">
+              <property role="TrG5h" value="Double" />
+            </node>
+          </node>
+          <node concept="2MOMZE" id="5IRaEVDu9f6" role="2MOMUc">
+            <property role="2MOMZF" value="b" />
+            <node concept="aPoZM" id="5IRaEVDu9fc" role="2MOMWI">
+              <property role="TrG5h" value="Double" />
+            </node>
+          </node>
+          <node concept="aPoZM" id="5IRaEVDu9fg" role="2MOMur">
+            <property role="TrG5h" value="Double" />
+          </node>
+        </node>
+      </node>
+      <node concept="a0PXs" id="5IRaEVEETgD" role="lHG9p">
+        <property role="TrG5h" value="a" />
+        <node concept="2LoWQd" id="5IRaEVEUlRr" role="a0PXq">
+          <node concept="aPoZM" id="5IRaEVEUlRv" role="2LoWQa">
+            <property role="TrG5h" value="Int" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
