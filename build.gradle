@@ -102,10 +102,8 @@ task resolveJdk(type: Download) {
 	def os
 	if (Os.isFamily(Os.FAMILY_WINDOWS)) {
         os = "windows"
-    } else if (Os.isFamily(Os.FAMILY_LINUX)) {
-    	os = "linux"
     } else {
-    	os = "osx"
+    	os = "linux"
     }
 
     def filename = "jbrsdk-11_0_8-$os-$arch-b1145.3.tar.gz"
