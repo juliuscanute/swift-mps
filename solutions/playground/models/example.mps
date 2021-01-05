@@ -35,6 +35,8 @@
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
       <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R">
         <property id="2715275293172814644" name="private" index="hmOHa" />
+        <property id="6608797908951626539" name="get" index="2KOdA5" />
+        <property id="6608797908951626545" name="set" index="2KOdAv" />
         <child id="2715275293080885172" name="type" index="aPoZa" />
         <child id="2715275293078817270" name="init" index="aXh68" />
         <child id="2715275293096196038" name="codeBlock" index="lMyYS" />
@@ -69,6 +71,9 @@
       <concept id="2715275293130000532" name="swift.structure.CallExpression" flags="ng" index="nLx3E">
         <property id="6608797908746819378" name="name" index="24xvQs" />
         <child id="2715275293132033328" name="expression" index="nahle" />
+      </concept>
+      <concept id="6608797908950232202" name="swift.structure.ProtocolDeclaration" flags="ng" index="2KToo$">
+        <child id="6608797908950232206" name="body" index="2KToow" />
       </concept>
       <concept id="6608797908943330785" name="swift.structure.ForStatement" flags="ng" index="2LnBtf">
         <child id="6608797908943331270" name="parameters" index="2LnBlC" />
@@ -694,11 +699,31 @@
           </node>
         </node>
       </node>
-      <node concept="aAFJ2" id="5IRaEVF4N3a" role="lHG9p" />
       <node concept="2Nomg9" id="5IRaEVCU$Io" role="lHG9p">
         <property role="TrG5h" value="Int" />
         <node concept="lHG5K" id="5IRaEVCU$Iq" role="2Nomg5">
           <node concept="l03SS" id="5IRaEVCU$Is" role="lHG9u" />
+        </node>
+      </node>
+      <node concept="2KToo$" id="5IRaEVFpYZh" role="lHG9p">
+        <property role="TrG5h" value="Hello" />
+        <node concept="lHG5K" id="5IRaEVFpYZj" role="2KToow">
+          <node concept="l03SS" id="5IRaEVFpYZl" role="lHG9u">
+            <node concept="aUV3R" id="5IRaEVFvBIj" role="l03SQ">
+              <property role="TrG5h" value="something" />
+              <property role="2KOdA5" value="true" />
+              <property role="2KOdAv" value="true" />
+              <node concept="aPoZM" id="5IRaEVFvBMh" role="aPoZa">
+                <property role="TrG5h" value="Int" />
+              </node>
+            </node>
+            <node concept="gj05W" id="5IRaEVFQfJy" role="l03SQ">
+              <property role="TrG5h" value="random" />
+              <node concept="aPoZM" id="5IRaEVFQfJF" role="2Z$LIJ">
+                <property role="TrG5h" value="Double" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="a0PXs" id="5IRaEVEc8Zr" role="lHG9p">
