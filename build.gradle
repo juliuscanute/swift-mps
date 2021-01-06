@@ -152,14 +152,14 @@ ext.buildScriptClasspath = project.configurations.junitAnt.fileCollection({ true
 // ------------- BUILD TASKS -------------
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
     if (downloadJdk) dependsOn "unpackJdk"
-    // script rootProject.file('build/mpsintrocourse.allScripts/build.xml')
-    script "$rootDir/build/mpsintrocourse.allScripts/build.xml"
+    // script rootProject.file('build/swift-mps.allScripts/build.xml')
+    script "$rootDir/build/swit-mps.allScripts/build.xml"
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }
 
-task buildMpsIntroCourse(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
-    script rootProject.file('build/mpsintrocourse/build.xml')
+task buildSwift(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
+    script rootProject.file('build/swift-mps/build.xml')
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }
@@ -178,6 +178,6 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks "setup", "buildMpsIntroCourse"
+defaultTasks "setup", "buildSwift"
 
 // ------------- /BUILD TASKS -------------

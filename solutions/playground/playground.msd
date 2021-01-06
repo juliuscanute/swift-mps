@@ -11,10 +11,6 @@
     </facet>
   </facets>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
     <language slang="l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil" version="1" />
@@ -36,9 +32,6 @@
     <language slang="l:388b264c-9809-4e2e-b292-61ab9914c8d0:swift.test" version="-1" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86(Hamcrest)" version="0" />
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
     <module reference="476dd780-6881-4954-bc33-4e978bf45e58(playground)" version="0" />
   </dependencyVersions>
 </solution>

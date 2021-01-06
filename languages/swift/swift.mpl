@@ -94,7 +94,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
-    <dependency reexport="false">5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)</dependency>
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
   </dependencies>
   <languageVersions>
@@ -170,7 +169,6 @@
     <module reference="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" version="0" />
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" version="1" />
-    <module reference="5a0b0b9c-ca67-4d27-9caa-ec974d9cfa40(org.iets3.core.expr.genjava.simpleTypes)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="1" />
     <module reference="ec192600-e7e1-4a3e-8ddf-ce429474a2ed(swift)" version="0" />
   </dependencyVersions>

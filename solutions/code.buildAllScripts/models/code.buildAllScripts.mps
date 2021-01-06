@@ -88,7 +88,7 @@
   </registry>
   <node concept="1l3spW" id="14E7mQ7MAGa">
     <property role="TrG5h" value="code" />
-    <property role="2DA0ip" value="../../build/mpsintrocourse.allScripts" />
+    <property role="2DA0ip" value="../../build/swit-mps.allScripts" />
     <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
       <node concept="55IIr" id="5wLtKNeT9Pe" role="398pKh">
@@ -122,7 +122,7 @@
       </node>
     </node>
     <node concept="398rNT" id="44RyrhrBozY" role="1l3spd">
-      <property role="TrG5h" value="mpsintrocource.home" />
+      <property role="TrG5h" value="swift.home" />
       <node concept="55IIr" id="44RyrhrBozZ" role="398pKh">
         <node concept="2Ry0Ak" id="44RyrhrBo$0" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -135,7 +135,7 @@
     <node concept="398rNT" id="4MR$$QmqomQ" role="1l3spd">
       <property role="TrG5h" value="artifacts.root" />
       <node concept="398BVA" id="44RyrhrBqkL" role="398pKh">
-        <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
+        <ref role="398BVh" node="44RyrhrBozY" resolve="swift.home" />
         <node concept="2Ry0Ak" id="14E7mQ7L3r2" role="iGT6I">
           <property role="2Ry0Am" value="build" />
           <node concept="2Ry0Ak" id="14E7mQ7L3sJ" role="2Ry0An">
@@ -178,7 +178,7 @@
         <property role="TrG5h" value="code.build" />
         <property role="3LESm3" value="2916e3a4-3dfa-4f4b-86f4-defd373adaf1" />
         <node concept="398BVA" id="14E7mQ7MAJB" role="3LF7KH">
-          <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
+          <ref role="398BVh" node="44RyrhrBozY" resolve="swift.home" />
           <node concept="2Ry0Ak" id="14E7mQ7MAJG" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
             <node concept="2Ry0Ak" id="14E7mQ7MAJH" role="2Ry0An">
@@ -197,7 +197,7 @@
         <node concept="3rtmxn" id="14E7mQ7MALa" role="3bR31x">
           <node concept="3LXTmp" id="14E7mQ7MALb" role="3rtmxm">
             <node concept="398BVA" id="14E7mQ7MALc" role="3LXTmr">
-              <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
+              <ref role="398BVh" node="44RyrhrBozY" resolve="swift.home" />
               <node concept="2Ry0Ak" id="14E7mQ7MALd" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="14E7mQ7MALe" role="2Ry0An">
@@ -231,7 +231,7 @@
           <property role="1HemKv" value="true" />
           <node concept="3LXTmp" id="48onJ2cH4l6" role="1HemKq">
             <node concept="398BVA" id="48onJ2cH4l1" role="3LXTmr">
-              <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
+              <ref role="398BVh" node="44RyrhrBozY" resolve="swift.home" />
               <node concept="2Ry0Ak" id="48onJ2cH4l2" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="48onJ2cH4l3" role="2Ry0An">
