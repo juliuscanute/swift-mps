@@ -133,6 +133,9 @@
     <node concept="PrWs8" id="2mIA7SJhiyc" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJ2htY" resolve="IDeclaration" />
     </node>
+    <node concept="PrWs8" id="6bUHwEbZYAx" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyi" id="2mIA7SJhiye" role="1TKVEl">
       <property role="IQ2nx" value="2715275293077350542" />
       <property role="TrG5h" value="attributeName" />
@@ -359,6 +362,9 @@
     </node>
     <node concept="PrWs8" id="2mIA7SMml6Q" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6bUHwEbU2aQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SMq8yk">
