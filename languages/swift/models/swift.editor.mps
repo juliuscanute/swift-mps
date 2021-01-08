@@ -673,8 +673,8 @@
     <node concept="1WcQYu" id="2mIA7SMml7u" role="2wV5jI">
       <node concept="2ElW$n" id="2mIA7SMml7w" role="2El2Yn" />
       <node concept="3EZMnI" id="2mIA7SMml7B" role="1LiK7o">
-        <node concept="3F0A7n" id="2mIA7SMml7I" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3F1sOY" id="6bUHwEdh7VI" role="3EZMnx">
+          <ref role="1NtTu8" to="op4d:6bUHwEdh7J3" resolve="closureName" />
         </node>
         <node concept="_tjkj" id="2mIA7SNCLJZ" role="3EZMnx">
           <node concept="3EZMnI" id="2mIA7SNCLK3" role="_tjki">
@@ -1034,8 +1034,8 @@
           <property role="3F0ifm" value="func" />
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         </node>
-        <node concept="3F0A7n" id="2mIA7SPSDDI" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="3F1sOY" id="6bUHwEd5Jx_" role="3EZMnx">
+          <ref role="1NtTu8" to="op4d:6bUHwEd4WN1" resolve="functionName" />
         </node>
         <node concept="_tjkj" id="2mIA7SQYz61" role="3EZMnx">
           <node concept="3EZMnI" id="2mIA7SQYz65" role="_tjki">
@@ -1904,7 +1904,7 @@
   </node>
   <node concept="24kQdi" id="5IRaEVyNKQu">
     <property role="3GE5qa" value="declaration" />
-    <ref role="1XX52x" to="op4d:5IRaEVyNKQ1" resolve="ClosureParameter" />
+    <ref role="1XX52x" to="op4d:5IRaEVyNKQ1" resolve="ValidName" />
     <node concept="3F0A7n" id="5IRaEVyNKQw" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>

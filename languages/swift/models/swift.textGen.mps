@@ -900,10 +900,10 @@
       <node concept="3clFbS" id="2mIA7SMml8c" role="2VODD2">
         <node concept="lc7rE" id="2mIA7SMmlfY" role="3cqZAp">
           <node concept="l9hG8" id="2mIA7SMmlnr" role="lcghm">
-            <node concept="2OqwBi" id="2mIA7SMml_I" role="lb14g">
+            <node concept="2OqwBi" id="6bUHwEdh8L7" role="lb14g">
               <node concept="117lpO" id="2mIA7SMmloj" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2mIA7SMmlS5" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="3TrEf2" id="6bUHwEdh93b" role="2OqNvi">
+                <ref role="3Tt5mk" to="op4d:6bUHwEdh7J3" resolve="closureName" />
               </node>
             </node>
           </node>
@@ -1418,10 +1418,10 @@
         </node>
         <node concept="lc7rE" id="2mIA7SPSEhU" role="3cqZAp">
           <node concept="l9hG8" id="2mIA7SPSEhV" role="lcghm">
-            <node concept="2OqwBi" id="2mIA7SPSEhW" role="lb14g">
+            <node concept="2OqwBi" id="6bUHwEd4XE3" role="lb14g">
               <node concept="117lpO" id="2mIA7SPSEhX" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2mIA7SPSEhY" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="3TrEf2" id="6bUHwEd4XW7" role="2OqNvi">
+                <ref role="3Tt5mk" to="op4d:6bUHwEd4WN1" resolve="functionName" />
               </node>
             </node>
           </node>
@@ -1940,7 +1940,7 @@
   </node>
   <node concept="WtQ9Q" id="5IRaEVyNKQX">
     <property role="3GE5qa" value="declaration" />
-    <ref role="WuzLi" to="op4d:5IRaEVyNKQ1" resolve="ClosureParameter" />
+    <ref role="WuzLi" to="op4d:5IRaEVyNKQ1" resolve="ValidName" />
     <node concept="11bSqf" id="5IRaEVyNKQY" role="11c4hB">
       <node concept="3clFbS" id="5IRaEVyNKQZ" role="2VODD2">
         <node concept="lc7rE" id="5IRaEVyNKRg" role="3cqZAp">
