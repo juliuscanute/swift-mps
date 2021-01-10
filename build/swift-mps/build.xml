@@ -78,6 +78,7 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
           <module ref="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt" />
+          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" kind="rt" />
           <module ref="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" kind="rt" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
           <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
@@ -90,6 +91,7 @@
           <module ref="0a98f3e2-decf-4e97-bf80-9109eccc59bb(jetbrains.mps.lang.feedback.problem.rules)" kind="rt" />
           <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="rt" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
           <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="cl" />
           <module ref="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" kind="cl" />
@@ -99,6 +101,8 @@
         </dependencies>
         <uses>
           <language id="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" />
+          <language id="l:442d3b7d-fe4a-4293-a7c1-6744d440ecaa:com.mbeddr.mpsutil.richstring" />
+          <language id="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
           <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
@@ -240,13 +244,22 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jfreechart" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.json" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.margincell_review" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.treenotations" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.uisupport" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil" />
@@ -258,17 +271,27 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil" />
       <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-math-editor" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.editingGuide" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin path="${artifacts.mps}/plugins/git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
+      <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-execution-api" />
+      <plugin path="${artifacts.mps}/plugins/mps-git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-httpsupport" />
+      <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${artifacts.mps}/plugins/mps-vcs" />
+      <plugin path="${artifacts.mps}/plugins/svn4idea" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
@@ -289,6 +312,7 @@
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils/languages/de.itemis.mps.utils/com.mbeddr.mpsutil.serializer.xml.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/group.baseLanguage/com.mbeddr.mpsutil.richstring.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
@@ -498,11 +522,19 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons-math/org.apache.commons.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-math3-3.3/commons-math3-3.3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-csv-1.0/commons-csv-1.0.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-io-2.4/commons-io-2.4.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-lang3-3.3.2/commons-lang3-3.3.2.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-primitives-1.0/commons-primitives-1.0.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout/miglayout-4.0-swing.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout/miglayout-4.0.jar" />
       </classpath>
     </javac>
   </target>
