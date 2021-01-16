@@ -25,5 +25,9 @@
     <property role="3GE5qa" value="expression" />
     <ref role="1M2myG" to="op4d:2mIA7SJPoOD" resolve="VariableReference" />
   </node>
+  <node concept="1M2fIO" id="1NXgdqZg1_C">
+    <property role="3GE5qa" value="expression.call" />
+    <ref role="1M2myG" to="op4d:50jP99hjKD7" resolve="CallExpressionReference" />
+  </node>
 </model>
 
