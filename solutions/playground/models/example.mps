@@ -19,18 +19,11 @@
         <child id="2715275293073836085" name="contents" index="aCh1b" />
       </concept>
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
-      <concept id="2715275293188331778" name="swift.structure.FunctionBlock" flags="ng" index="gj05W">
-        <child id="2715275293188331780" name="parameters" index="gj05U" />
-        <child id="2715275293188331779" name="statement" index="gj05X" />
-      </concept>
-      <concept id="2715275293200916469" name="swift.structure.ParameterListType" flags="ng" index="j30ub">
-        <child id="2715275293200916472" name="parameters" index="j30u6" />
-      </concept>
-      <concept id="2715275293192533385" name="swift.structure.ParameterType" flags="ng" index="jz2RR">
-        <child id="2715275293192533386" name="type" index="jz2RO" />
-      </concept>
       <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
         <child id="2715275293101041224" name="statement" index="l03SQ" />
+      </concept>
+      <concept id="2715275293091191054" name="swift.structure.CodeBlock" flags="ng" index="lHG5K">
+        <child id="2715275293091191328" name="statement" index="lHG9u" />
       </concept>
       <concept id="2715275293091191333" name="swift.structure.Statements" flags="ng" index="lHG9r">
         <child id="2715275293091191335" name="statement" index="lHG9p" />
@@ -42,23 +35,28 @@
         <child id="2715275293129003443" name="statement" index="nXWBd" />
         <child id="6608797908807390424" name="parameters" index="2Tu3TQ" />
       </concept>
-      <concept id="2088897093250267387" name="swift.structure.IArgument" flags="ng" index="2zuBwH">
-        <child id="5770189272486186367" name="expression" index="1ndBH" />
-      </concept>
       <concept id="2088897093247214889" name="swift.structure.ReferenceExpression" flags="ng" index="2zDunZ">
         <reference id="2088897093247214890" name="target" index="2zDunW" />
       </concept>
       <concept id="6608797908807388545" name="swift.structure.ValidName" flags="ng" index="2Tu2sJ" />
-      <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
-        <child id="6608797908764566776" name="init" index="2VXCTm" />
+      <concept id="6608797908892638415" name="swift.structure.EnumCaseListDeclaration" flags="ng" index="2Wlfpx">
+        <child id="6608797908892638451" name="cases" index="2Wlfpt" />
       </concept>
-    </language>
-    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
-      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
-      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
-        <child id="5115872837156576280" name="right" index="30dEs_" />
-        <child id="5115872837156576278" name="left" index="30dEsF" />
+      <concept id="6608797908892636410" name="swift.structure.EnumCaseDeclaration" flags="ng" index="2WlfTk" />
+      <concept id="6608797908891436063" name="swift.structure.EnumDeclaration" flags="ng" index="2WpEUL">
+        <child id="6608797908891436067" name="body" index="2WpEUd" />
+      </concept>
+      <concept id="6608797908865213396" name="swift.structure.SwitchCaseBlock" flags="ng" index="2XX$_U">
+        <child id="6608797908865213400" name="init" index="2XX$_Q" />
+        <child id="6608797908865213399" name="block" index="2XX$_T" />
+      </concept>
+      <concept id="6608797908859049315" name="swift.structure.SwitchStatement" flags="ng" index="2Yl7Zd">
+        <child id="6608797908859049365" name="block" index="2Yl7WV" />
+        <child id="6608797908859049318" name="init" index="2Yl7Z8" />
+      </concept>
+      <concept id="2088897093262481550" name="swift.structure.EnumCaseReferenceExpression" flags="ng" index="3sJdxo" />
+      <concept id="2088897093279603919" name="swift.structure.ICase" flags="ng" index="3tITKp">
+        <property id="2088897093282706556" name="caseDec" index="3tyRiE" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -93,89 +91,66 @@
           <property role="30bXRw" value="1" />
         </node>
       </node>
-      <node concept="gj05W" id="50jP99fDr4m" role="lHG9p">
-        <property role="TrG5h" value="add" />
-        <node concept="j30ub" id="50jP99fDr50" role="gj05U">
-          <node concept="jz2RR" id="50jP99fDr5q" role="j30u6">
-            <property role="TrG5h" value="a" />
-            <node concept="aPoZM" id="50jP99fDr5I" role="jz2RO">
-              <property role="TrG5h" value="Int" />
-            </node>
+      <node concept="aAFJ2" id="1NXgdr0alub" role="lHG9p" />
+      <node concept="aAFJ2" id="1NXgdr1VGle" role="lHG9p" />
+      <node concept="2WpEUL" id="1NXgdr0y71O" role="lHG9p">
+        <property role="TrG5h" value="Directions" />
+        <node concept="2Wlfpx" id="1NXgdr0y71Q" role="2WpEUd">
+          <node concept="2WlfTk" id="1NXgdr1zCWx" role="2Wlfpt">
+            <property role="3tyRiE" value="north" />
           </node>
-          <node concept="jz2RR" id="50jP99fDr5S" role="j30u6">
-            <property role="TrG5h" value="b" />
-            <node concept="aPoZM" id="50jP99fDr6m" role="jz2RO">
-              <property role="TrG5h" value="Int" />
-            </node>
+          <node concept="2WlfTk" id="1NXgdr1zCWz" role="2Wlfpt">
+            <property role="3tyRiE" value="south" />
+          </node>
+          <node concept="2WlfTk" id="1NXgdr1zCX7" role="2Wlfpt">
+            <property role="3tyRiE" value="east" />
+          </node>
+          <node concept="2WlfTk" id="1NXgdr1zCXb" role="2Wlfpt">
+            <property role="3tyRiE" value="west" />
           </node>
         </node>
-        <node concept="l03SS" id="1NXgdqZs3oH" role="gj05X">
-          <node concept="2VXCT0" id="1NXgdqZs3oJ" role="l03SQ">
-            <node concept="30dDZf" id="1NXgdqZs3oS" role="2VXCTm">
-              <node concept="auLln" id="1NXgdqZs3p2" role="30dEs_">
-                <ref role="2zDunW" node="50jP99fDr5S" resolve="b" />
+      </node>
+      <node concept="aAFJ2" id="1NXgdr2dzva" role="lHG9p" />
+      <node concept="2WpEUL" id="1NXgdr2dzw_" role="lHG9p">
+        <property role="TrG5h" value="Hand" />
+        <node concept="2Wlfpx" id="1NXgdr2dzwB" role="2WpEUd">
+          <node concept="2WlfTk" id="1NXgdr2dzwD" role="2Wlfpt">
+            <property role="3tyRiE" value="left" />
+          </node>
+          <node concept="2WlfTk" id="1NXgdr2dzxq" role="2Wlfpt">
+            <property role="3tyRiE" value="right" />
+          </node>
+        </node>
+      </node>
+      <node concept="auLln" id="1NXgdr2dzqE" role="lHG9p">
+        <ref role="2zDunW" node="1NXgdr0y71O" resolve="Directions" />
+      </node>
+      <node concept="2Yl7Zd" id="1NXgdr1nCYT" role="lHG9p">
+        <node concept="auLln" id="1NXgdr1nD03" role="2Yl7Z8">
+          <ref role="2zDunW" node="1NXgdqZN4VO" resolve="aa" />
+        </node>
+        <node concept="lHG5K" id="1NXgdr1nCYX" role="2Yl7WV">
+          <node concept="l03SS" id="1NXgdr1nCYZ" role="lHG9u">
+            <node concept="2XX$_U" id="1NXgdr2v9bK" role="l03SQ">
+              <node concept="nav8X" id="1NXgdr2v9bM" role="2XX$_Q">
+                <node concept="3sJdxo" id="1NXgdr2v9bY" role="nav8w">
+                  <ref role="2zDunW" node="1NXgdr2dzwD" />
+                </node>
               </node>
-              <node concept="auLln" id="1NXgdqZs3oN" role="30dEsF">
-                <ref role="2zDunW" node="50jP99fDr5q" resolve="a" />
+              <node concept="l03SS" id="1NXgdr2v9bO" role="2XX$_T" />
+            </node>
+            <node concept="2XX$_U" id="1NXgdr2v9b7" role="l03SQ">
+              <node concept="nav8X" id="1NXgdr2v9b8" role="2XX$_Q">
+                <node concept="3sJdxo" id="1NXgdr2v9bd" role="nav8w">
+                  <ref role="2zDunW" node="1NXgdr1zCX7" />
+                </node>
               </node>
+              <node concept="l03SS" id="1NXgdr2v9b9" role="2XX$_T" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="aAFJ2" id="1NXgdqZs3om" role="lHG9p" />
-      <node concept="gj05W" id="50jP99fYPo0" role="lHG9p">
-        <property role="TrG5h" value="subtract" />
-        <node concept="j30ub" id="50jP99fYPoH" role="gj05U">
-          <node concept="jz2RR" id="1NXgdqZYBlj" role="j30u6">
-            <property role="TrG5h" value="a" />
-            <node concept="aPoZM" id="1NXgdqZYBln" role="jz2RO">
-              <property role="TrG5h" value="Int" />
-            </node>
-          </node>
-          <node concept="jz2RR" id="1NXgdqZYBlp" role="j30u6">
-            <property role="TrG5h" value="b" />
-            <node concept="aPoZM" id="1NXgdqZYBlv" role="jz2RO">
-              <property role="TrG5h" value="Int" />
-            </node>
-          </node>
-        </node>
-        <node concept="l03SS" id="50jP99fYPpY" role="gj05X">
-          <node concept="2VXCT0" id="1NXgdqZYBlx" role="l03SQ">
-            <node concept="30dvUo" id="1NXgdqZYBlF" role="2VXCTm">
-              <node concept="auLln" id="1NXgdqZYBlP" role="30dEs_">
-                <ref role="2zDunW" node="50jP99fDr5S" resolve="b" />
-              </node>
-              <node concept="auLln" id="1NXgdqZYBlA" role="30dEsF">
-                <ref role="2zDunW" node="50jP99fDr5q" resolve="a" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="aAFJ2" id="1NXgdqZYBmP" role="lHG9p" />
-      <node concept="1ndVl" id="1NXgdqZYBiX" role="lHG9p">
-        <ref role="2zDunW" node="50jP99fDr4m" resolve="add" />
-        <node concept="nav8X" id="1NXgdqZYBjs" role="1ndBH">
-          <node concept="auLln" id="1NXgdqZYBju" role="nav8w">
-            <ref role="2zDunW" node="1NXgdqZN4VO" resolve="aa" />
-          </node>
-          <node concept="auLln" id="1NXgdqZYBj_" role="nav8w">
-            <ref role="2zDunW" node="1NXgdqZN4Xa" resolve="bb" />
-          </node>
-        </node>
-      </node>
-      <node concept="1ndVl" id="1NXgdqZYBkI" role="lHG9p">
-        <ref role="2zDunW" node="50jP99fYPo0" resolve="subtract" />
-        <node concept="nav8X" id="1NXgdqZYBlU" role="1ndBH">
-          <node concept="auLln" id="1NXgdqZYBlY" role="nav8w">
-            <ref role="2zDunW" node="1NXgdqZN4VO" resolve="aa" />
-          </node>
-          <node concept="auLln" id="1NXgdqZYBm5" role="nav8w">
-            <ref role="2zDunW" node="1NXgdqZN4Xa" resolve="bb" />
-          </node>
-        </node>
-      </node>
-      <node concept="aAFJ2" id="1NXgdqZYBm9" role="lHG9p" />
+      <node concept="aAFJ2" id="1NXgdr1nD2d" role="lHG9p" />
       <node concept="nXWBc" id="50jP99guNOz" role="lHG9p">
         <property role="TrG5h" value="cls" />
         <node concept="2Tu2sJ" id="50jP99guNOW" role="2Tu3TQ">
@@ -186,7 +161,11 @@
         </node>
         <node concept="l03SS" id="50jP99guNO_" role="nXWBd" />
       </node>
-      <node concept="aAFJ2" id="50jP99guNP1" role="lHG9p" />
+      <node concept="1ndVl" id="1NXgdr1DAbH" role="lHG9p">
+        <ref role="2zDunW" node="50jP99guNOz" resolve="cls" />
+      </node>
+      <node concept="aAFJ2" id="1NXgdr1DAco" role="lHG9p" />
+      <node concept="aAFJ2" id="1NXgdr0almC" role="lHG9p" />
     </node>
   </node>
 </model>

@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -54,6 +55,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -224,19 +226,15 @@
       <property role="20kJfa" value="indexExpression" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
-    <node concept="1TJgyj" id="5IRaEVwuKgx" role="1TKVEi">
-      <property role="IQ2ns" value="6608797908768326689" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dotExpression" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5IRaEVx_B$_" resolve="DotSeparatedExpression" />
-    </node>
     <node concept="1TJgyj" id="2mIA7SJPoOE" role="1TKVEi">
       <property role="IQ2ns" value="2715275293086813482" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2mIA7SJ2htY" resolve="IDeclaration" />
       <ref role="20ksaX" node="1NXgdqZmakE" resolve="target" />
+    </node>
+    <node concept="PrWs8" id="1NXgdr0gpEF" role="PzmwI">
+      <ref role="PrY4T" node="1NXgdr0gpEt" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="5IRaEVwy_mQ" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
@@ -361,8 +359,8 @@
     <node concept="PrWs8" id="2mIA7SMml6O" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
     </node>
-    <node concept="PrWs8" id="50jP99gptBG" role="PzmwI">
-      <ref role="PrY4T" node="2mIA7SJ2htY" resolve="IDeclaration" />
+    <node concept="PrWs8" id="1NXgdr1bCSO" role="PzmwI">
+      <ref role="PrY4T" node="50jP99hjKCW" resolve="IMethod" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SMq8yk">
@@ -397,6 +395,7 @@
       <property role="TrG5h" value="try" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="asaX9" id="1NXgdr0arwi" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2mIA7SMxQD3">
     <property role="EcuMT" value="2715275293132024387" />
@@ -731,6 +730,7 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="asaX9" id="1NXgdr21F8Q" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="5IRaEVyNKQ1">
     <property role="EcuMT" value="6608797908807388545" />
@@ -1103,11 +1103,8 @@
     <property role="TrG5h" value="EnumDeclaration" />
     <property role="34LRSv" value="enum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5IRaEVBOogx" role="PzmwI">
-      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
-    </node>
-    <node concept="PrWs8" id="5IRaEVBOogy" role="PzmwI">
-      <ref role="PrY4T" node="2mIA7SJ2htY" resolve="IDeclaration" />
+    <node concept="PrWs8" id="1NXgdr1J$Ak" role="PzmwI">
+      <ref role="PrY4T" node="1NXgdr1J$A9" resolve="IEnum" />
     </node>
     <node concept="1TJgyj" id="5IRaEVBOogz" role="1TKVEi">
       <property role="IQ2ns" value="6608797908891436067" />
@@ -1128,14 +1125,9 @@
     <property role="EcuMT" value="6608797908892636410" />
     <property role="3GE5qa" value="declaration.enum" />
     <property role="TrG5h" value="EnumCaseDeclaration" />
-    <property role="34LRSv" value="enum case" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5IRaEVBSXjV" role="1TKVEi">
-      <property role="IQ2ns" value="6608797908892636411" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expressoin" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2mIA7SMxQD3" resolve="CommaSeparatedExpressions" />
+    <node concept="PrWs8" id="1NXgdr1nDtD" role="PzmwI">
+      <ref role="PrY4T" node="1NXgdr1hHNf" resolve="ICase" />
     </node>
     <node concept="PrWs8" id="5IRaEVBSXHY" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
@@ -1537,6 +1529,99 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="expression" />
       <ref role="20lvS9" node="2mIA7SMxQD3" resolve="CommaSeparatedExpressions" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1NXgdr0apFE">
+    <property role="EcuMT" value="2088897093260909290" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="IDottable" />
+  </node>
+  <node concept="PlHQZ" id="1NXgdr0ari5">
+    <property role="EcuMT" value="2088897093260915845" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="IDottarget" />
+  </node>
+  <node concept="1TIwiD" id="1NXgdr0arwf">
+    <property role="EcuMT" value="2088897093260916751" />
+    <property role="3GE5qa" value="expression.members" />
+    <property role="TrG5h" value="AbstractMemberAccessExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="1NXgdr0arwg" role="PzmwI">
+      <ref role="PrY4T" node="1NXgdr0apFE" resolve="IDottable" />
+    </node>
+    <node concept="1TJgyj" id="1NXgdr0arwk" role="1TKVEi">
+      <property role="IQ2ns" value="2088897093260916756" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dottable" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1NXgdr0apFE" resolve="IDottable" />
+    </node>
+    <node concept="1TJgyj" id="1NXgdr0arwm" role="1TKVEi">
+      <property role="IQ2ns" value="2088897093260916758" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1NXgdr0ari5" resolve="IDottarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1NXgdr0auyz">
+    <property role="EcuMT" value="2088897093260929187" />
+    <property role="3GE5qa" value="expression.members" />
+    <property role="TrG5h" value="MemberAccessExpression" />
+    <property role="34LRSv" value="." />
+    <property role="R4oN_" value="member access" />
+    <ref role="1TJDcQ" node="1NXgdr0arwf" resolve="AbstractMemberAccessExpression" />
+  </node>
+  <node concept="1TIwiD" id="1NXgdr0gpye">
+    <property role="EcuMT" value="2088897093262481550" />
+    <property role="3GE5qa" value="expression.enum" />
+    <property role="TrG5h" value="EnumCaseReferenceExpression" />
+    <ref role="1TJDcQ" node="1NXgdqZmakD" resolve="ReferenceExpression" />
+    <node concept="PrWs8" id="1NXgdr0gpyf" role="PzmwI">
+      <ref role="PrY4T" node="1NXgdr0ari5" resolve="IDottarget" />
+    </node>
+    <node concept="PrWs8" id="1NXgdr0BZWU" role="PzmwI">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    </node>
+    <node concept="1TJgyj" id="1NXgdr0gpEa" role="1TKVEi">
+      <property role="IQ2ns" value="2088897093262482058" />
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20ksaX" node="1NXgdqZmakE" resolve="target" />
+      <ref role="20lvS9" node="1NXgdr1hHNf" resolve="ICase" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1NXgdr0gpEt">
+    <property role="EcuMT" value="2088897093262482077" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="IValue" />
+    <node concept="PrWs8" id="1NXgdr0gpEu" role="PrDN$">
+      <ref role="PrY4T" node="1NXgdr0apFE" resolve="IDottable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1NXgdr1hHNf">
+    <property role="EcuMT" value="2088897093279603919" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="ICase" />
+    <node concept="1TJgyi" id="1NXgdr1tzhW" role="1TKVEl">
+      <property role="IQ2nx" value="2088897093282706556" />
+      <property role="TrG5h" value="caseDec" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1NXgdr2jtYv" role="PrDN$">
+      <ref role="PrY4T" node="1NXgdr0apFE" resolve="IDottable" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1NXgdr1J$A9">
+    <property role="EcuMT" value="2088897093287430537" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="IEnum" />
+    <node concept="PrWs8" id="1NXgdr1J$Aa" role="PrDN$">
+      <ref role="PrY4T" node="2mIA7SJ2htY" resolve="IDeclaration" />
+    </node>
+    <node concept="PrWs8" id="1NXgdr1J$Ag" role="PrDN$">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
     </node>
   </node>
 </model>
