@@ -69,6 +69,9 @@
     <node concept="PrWs8" id="5IRaEVvR1s0" role="PrDN$">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
+    <node concept="PrWs8" id="1NXgdr3vRLb" role="PrDN$">
+      <ref role="PrY4T" node="1NXgdr0apFE" resolve="IDottable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SJ2htZ">
     <property role="EcuMT" value="2715275293073414015" />
@@ -1604,13 +1607,8 @@
     <property role="EcuMT" value="2088897093279603919" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="ICase" />
-    <node concept="1TJgyi" id="1NXgdr1tzhW" role="1TKVEl">
-      <property role="IQ2nx" value="2088897093282706556" />
-      <property role="TrG5h" value="caseDec" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1NXgdr2jtYv" role="PrDN$">
-      <ref role="PrY4T" node="1NXgdr0apFE" resolve="IDottable" />
+    <node concept="PrWs8" id="1NXgdr3_YZm" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="1NXgdr1J$A9">

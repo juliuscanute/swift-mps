@@ -565,8 +565,8 @@
               <node concept="EGPMe" id="1NXgdr0NNNa" role="19SJt6">
                 <node concept="2OqwBi" id="1NXgdr0NO0u" role="EGPMd">
                   <node concept="13iPFW" id="1NXgdr0NNRG" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="1NXgdr1tzJu" role="2OqNvi">
-                    <ref role="3TsBF5" to="op4d:1NXgdr1tzhW" resolve="caseDec" />
+                  <node concept="3TrcHB" id="1NXgdr3_Zzt" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                   </node>
                 </node>
               </node>
@@ -583,6 +583,29 @@
     <ref role="13h7C2" to="op4d:5IRaEVBOogv" resolve="EnumDeclaration" />
     <node concept="13hLZK" id="1NXgdr1PwH2" role="13h7CW">
       <node concept="3clFbS" id="1NXgdr1PwH3" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1NXgdr3q1yH" role="13h7CS">
+      <property role="TrG5h" value="getPossibleTargets" />
+      <ref role="13i0hy" node="1NXgdr0aq7v" resolve="getPossibleTargets" />
+      <node concept="3Tm1VV" id="1NXgdr3q1yI" role="1B3o_S" />
+      <node concept="3clFbS" id="1NXgdr3q1yQ" role="3clF47">
+        <node concept="3cpWs6" id="1NXgdr3q1BB" role="3cqZAp">
+          <node concept="2OqwBi" id="1NXgdr3q2JG" role="3cqZAk">
+            <node concept="2OqwBi" id="1NXgdr3q1RX" role="2Oq$k0">
+              <node concept="13iPFW" id="1NXgdr3q1C5" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1NXgdr3q2cb" role="2OqNvi">
+                <ref role="3Tt5mk" to="op4d:5IRaEVBOogz" resolve="body" />
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="1NXgdr3q2TV" role="2OqNvi">
+              <ref role="3TtcxE" to="op4d:5IRaEVBSXNN" resolve="cases" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="1NXgdr3q1yR" role="3clF45">
+        <node concept="3Tqbb2" id="1NXgdr3q1yS" role="A3Ik2" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1NXgdr1PyMX">

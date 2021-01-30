@@ -2703,7 +2703,7 @@
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="3F0A7n" id="1NXgdr1tzi2" role="3EZMnx">
-        <ref role="1NtTu8" to="op4d:1NXgdr1tzhW" resolve="caseDec" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="l2Vlx" id="5IRaEVBSXks" role="2iSdaV" />
     </node>
@@ -3341,7 +3341,7 @@
         <node concept="1sVBvm" id="1NXgdr1nD40" role="1sWHZn">
           <node concept="3F0A7n" id="1NXgdr1tHHQ" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="op4d:1NXgdr1tzhW" resolve="caseDec" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>

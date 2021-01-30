@@ -54,10 +54,6 @@
         <child id="6608797908859049365" name="block" index="2Yl7WV" />
         <child id="6608797908859049318" name="init" index="2Yl7Z8" />
       </concept>
-      <concept id="2088897093262481550" name="swift.structure.EnumCaseReferenceExpression" flags="ng" index="3sJdxo" />
-      <concept id="2088897093279603919" name="swift.structure.ICase" flags="ng" index="3tITKp">
-        <property id="2088897093282706556" name="caseDec" index="3tyRiE" />
-      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
@@ -92,60 +88,49 @@
         </node>
       </node>
       <node concept="aAFJ2" id="1NXgdr0alub" role="lHG9p" />
-      <node concept="aAFJ2" id="1NXgdr1VGle" role="lHG9p" />
-      <node concept="2WpEUL" id="1NXgdr0y71O" role="lHG9p">
+      <node concept="2WpEUL" id="1NXgdr3FXNo" role="lHG9p">
         <property role="TrG5h" value="Directions" />
-        <node concept="2Wlfpx" id="1NXgdr0y71Q" role="2WpEUd">
-          <node concept="2WlfTk" id="1NXgdr1zCWx" role="2Wlfpt">
-            <property role="3tyRiE" value="north" />
+        <node concept="2Wlfpx" id="1NXgdr3FXNq" role="2WpEUd">
+          <node concept="2WlfTk" id="1NXgdr3FXNs" role="2Wlfpt">
+            <property role="TrG5h" value="north" />
           </node>
-          <node concept="2WlfTk" id="1NXgdr1zCWz" role="2Wlfpt">
-            <property role="3tyRiE" value="south" />
+          <node concept="2WlfTk" id="1NXgdr3FXNY" role="2Wlfpt">
+            <property role="TrG5h" value="south" />
           </node>
-          <node concept="2WlfTk" id="1NXgdr1zCX7" role="2Wlfpt">
-            <property role="3tyRiE" value="east" />
+          <node concept="2WlfTk" id="1NXgdr3FXO1" role="2Wlfpt">
+            <property role="TrG5h" value="east" />
           </node>
-          <node concept="2WlfTk" id="1NXgdr1zCXb" role="2Wlfpt">
-            <property role="3tyRiE" value="west" />
+          <node concept="2WlfTk" id="1NXgdr3FXQ5" role="2Wlfpt">
+            <property role="TrG5h" value="west" />
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="1NXgdr3FXQa" role="lHG9p" />
+      <node concept="2WpEUL" id="1NXgdr3FXRb" role="lHG9p">
+        <property role="TrG5h" value="Hand" />
+        <node concept="2Wlfpx" id="1NXgdr3FXRd" role="2WpEUd">
+          <node concept="2WlfTk" id="1NXgdr3FXRf" role="2Wlfpt">
+            <property role="TrG5h" value="left" />
+          </node>
+          <node concept="2WlfTk" id="1NXgdr3FXRN" role="2Wlfpt">
+            <property role="TrG5h" value="right" />
           </node>
         </node>
       </node>
       <node concept="aAFJ2" id="1NXgdr2dzva" role="lHG9p" />
-      <node concept="2WpEUL" id="1NXgdr2dzw_" role="lHG9p">
-        <property role="TrG5h" value="Hand" />
-        <node concept="2Wlfpx" id="1NXgdr2dzwB" role="2WpEUd">
-          <node concept="2WlfTk" id="1NXgdr2dzwD" role="2Wlfpt">
-            <property role="3tyRiE" value="left" />
-          </node>
-          <node concept="2WlfTk" id="1NXgdr2dzxq" role="2Wlfpt">
-            <property role="3tyRiE" value="right" />
-          </node>
-        </node>
-      </node>
-      <node concept="auLln" id="1NXgdr2dzqE" role="lHG9p">
-        <ref role="2zDunW" node="1NXgdr0y71O" resolve="Directions" />
-      </node>
       <node concept="2Yl7Zd" id="1NXgdr1nCYT" role="lHG9p">
         <node concept="auLln" id="1NXgdr1nD03" role="2Yl7Z8">
           <ref role="2zDunW" node="1NXgdqZN4VO" resolve="aa" />
         </node>
         <node concept="lHG5K" id="1NXgdr1nCYX" role="2Yl7WV">
           <node concept="l03SS" id="1NXgdr1nCYZ" role="lHG9u">
-            <node concept="2XX$_U" id="1NXgdr2v9bK" role="l03SQ">
-              <node concept="nav8X" id="1NXgdr2v9bM" role="2XX$_Q">
-                <node concept="3sJdxo" id="1NXgdr2v9bY" role="nav8w">
-                  <ref role="2zDunW" node="1NXgdr2dzwD" />
+            <node concept="2XX$_U" id="1NXgdr3FXRQ" role="l03SQ">
+              <node concept="nav8X" id="1NXgdr3FXRR" role="2XX$_Q">
+                <node concept="auLln" id="1NXgdr3FXSe" role="nav8w">
+                  <ref role="2zDunW" node="1NXgdr3FXRb" resolve="Hand" />
                 </node>
               </node>
-              <node concept="l03SS" id="1NXgdr2v9bO" role="2XX$_T" />
-            </node>
-            <node concept="2XX$_U" id="1NXgdr2v9b7" role="l03SQ">
-              <node concept="nav8X" id="1NXgdr2v9b8" role="2XX$_Q">
-                <node concept="3sJdxo" id="1NXgdr2v9bd" role="nav8w">
-                  <ref role="2zDunW" node="1NXgdr1zCX7" />
-                </node>
-              </node>
-              <node concept="l03SS" id="1NXgdr2v9b9" role="2XX$_T" />
+              <node concept="l03SS" id="1NXgdr3FXRS" role="2XX$_T" />
             </node>
           </node>
         </node>
