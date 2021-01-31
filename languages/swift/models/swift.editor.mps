@@ -553,6 +553,9 @@
             <node concept="VPM3Z" id="5IRaEVyK2u9" role="3F10Kt" />
             <node concept="3F0ifn" id="5IRaEVyK2ub" role="3EZMnx">
               <property role="3F0ifm" value="{" />
+              <node concept="3mYdg7" id="1NXgdr8XcOY" role="3F10Kt">
+                <property role="1413C4" value="grammar-brace" />
+              </node>
             </node>
             <node concept="3F2HdR" id="5IRaEVyNLo9" role="3EZMnx">
               <property role="2czwfO" value="," />
@@ -596,6 +599,9 @@
             <property role="3F0ifm" value="}" />
             <node concept="pVoyu" id="5IRaEVyGjsh" role="3F10Kt">
               <property role="VOm3f" value="true" />
+            </node>
+            <node concept="3mYdg7" id="1NXgdr8XcP3" role="3F10Kt">
+              <property role="1413C4" value="grammar-brace" />
             </node>
           </node>
           <node concept="l2Vlx" id="5IRaEVyGjro" role="2iSdaV" />
@@ -2428,12 +2434,18 @@
         <node concept="drBAd" id="5IRaEVBXJXH" role="3EZMnx">
           <node concept="3F0ifn" id="5IRaEVBXJXJ" role="drBA7">
             <property role="3F0ifm" value="{" />
+            <node concept="3mYdg7" id="1NXgdr8Q42O" role="3F10Kt">
+              <property role="1413C4" value="grammar-brace" />
+            </node>
           </node>
           <node concept="3F1sOY" id="5IRaEVBXJXL" role="drBAU">
             <ref role="1NtTu8" to="op4d:5IRaEVBOogz" resolve="body" />
           </node>
           <node concept="3F0ifn" id="5IRaEVBXJXN" role="drBAZ">
             <property role="3F0ifm" value="}" />
+            <node concept="3mYdg7" id="1NXgdr8Q42Q" role="3F10Kt">
+              <property role="1413C4" value="grammar-brace" />
+            </node>
           </node>
         </node>
         <node concept="l2Vlx" id="5IRaEVBOohn" role="2iSdaV" />
