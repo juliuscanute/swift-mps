@@ -19,6 +19,10 @@
         <child id="2715275293073836085" name="contents" index="aCh1b" />
       </concept>
       <concept id="2715275293080885132" name="swift.structure.CustomType" flags="ng" index="aPoZM" />
+      <concept id="2715275293077350537" name="swift.structure.VariableDeclaration" flags="ng" index="aUV3R" />
+      <concept id="2715275293188331778" name="swift.structure.FunctionBlock" flags="ng" index="gj05W">
+        <child id="2715275293188331779" name="statement" index="gj05X" />
+      </concept>
       <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
         <child id="2715275293101041224" name="statement" index="l03SQ" />
       </concept>
@@ -46,6 +50,9 @@
       <concept id="6608797908891436063" name="swift.structure.EnumDeclaration" flags="ng" index="2WpEUL">
         <child id="6608797908891436067" name="body" index="2WpEUd" />
       </concept>
+      <concept id="6608797908879756079" name="swift.structure.ClassDeclaration" flags="ng" index="2WE661">
+        <child id="6608797908879756083" name="body" index="2WE66t" />
+      </concept>
       <concept id="6608797908865213396" name="swift.structure.SwitchCaseBlock" flags="ng" index="2XX$_U">
         <child id="6608797908865213400" name="init" index="2XX$_Q" />
         <child id="6608797908865213399" name="block" index="2XX$_T" />
@@ -53,6 +60,16 @@
       <concept id="6608797908859049315" name="swift.structure.SwitchStatement" flags="ng" index="2Yl7Zd">
         <child id="6608797908859049365" name="block" index="2Yl7WV" />
         <child id="6608797908859049318" name="init" index="2Yl7Z8" />
+      </concept>
+      <concept id="2088897093327754256" name="swift.structure.VariableComponent" flags="ng" index="3oQdj6">
+        <child id="2088897093327754259" name="type" index="3oQdj5" />
+        <child id="2088897093327754257" name="init" index="3oQdj7" />
+      </concept>
+      <concept id="2088897093262481550" name="swift.structure.EnumCaseReferenceExpression" flags="ng" index="3sJdxo" />
+      <concept id="2088897093260929187" name="swift.structure.MemberAccessExpression" flags="ng" index="3sPaxP" />
+      <concept id="2088897093260916751" name="swift.structure.AbstractMemberAccessExpression" flags="ng" index="3sPfzp">
+        <child id="2088897093260916758" name="target" index="3sPfz0" />
+        <child id="2088897093260916756" name="dottable" index="3sPfz2" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -87,7 +104,37 @@
           <property role="30bXRw" value="1" />
         </node>
       </node>
-      <node concept="aAFJ2" id="1NXgdr0alub" role="lHG9p" />
+      <node concept="gj05W" id="1NXgdr3LMiw" role="lHG9p">
+        <property role="TrG5h" value="add" />
+        <node concept="l03SS" id="1NXgdr3LMje" role="gj05X">
+          <node concept="aAFJ2" id="1NXgdr3LMjg" role="l03SQ" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="1NXgdr3LMkb" role="lHG9p" />
+      <node concept="2WE661" id="1NXgdr3LMnW" role="lHG9p">
+        <property role="TrG5h" value="VideoMode" />
+        <node concept="lHG5K" id="1NXgdr3LMnY" role="2WE66t">
+          <node concept="l03SS" id="1NXgdr3LMo0" role="lHG9u">
+            <node concept="aUV3R" id="1NXgdr4f_ru" role="l03SQ">
+              <property role="TrG5h" value="hello" />
+              <node concept="aPoZM" id="1NXgdr4f_ry" role="3oQdj5">
+                <property role="TrG5h" value="Int" />
+              </node>
+              <node concept="30bXRB" id="1NXgdr4f_rG" role="3oQdj7">
+                <property role="30bXRw" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="aAFJ2" id="1NXgdr3LMDk" role="lHG9p" />
+      <node concept="a0PXs" id="1NXgdr3LMF7" role="lHG9p">
+        <property role="TrG5h" value="mode" />
+        <node concept="aPoZM" id="1NXgdr3LMG5" role="a0PXq">
+          <property role="TrG5h" value="VideoMode" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="1NXgdr3LMqw" role="lHG9p" />
       <node concept="2WpEUL" id="1NXgdr3FXNo" role="lHG9p">
         <property role="TrG5h" value="Directions" />
         <node concept="2Wlfpx" id="1NXgdr3FXNq" role="2WpEUd">
@@ -124,13 +171,39 @@
         </node>
         <node concept="lHG5K" id="1NXgdr1nCYX" role="2Yl7WV">
           <node concept="l03SS" id="1NXgdr1nCYZ" role="lHG9u">
+            <node concept="2XX$_U" id="1NXgdr3LMfW" role="l03SQ">
+              <node concept="nav8X" id="1NXgdr3LMfY" role="2XX$_Q">
+                <node concept="3sPaxP" id="1NXgdr43_jN" role="nav8w">
+                  <node concept="3sJdxo" id="1NXgdr49pfp" role="3sPfz0">
+                    <ref role="2zDunW" node="1NXgdr3FXNs" resolve="north" />
+                  </node>
+                  <node concept="auLln" id="1NXgdr3LMNE" role="3sPfz2">
+                    <ref role="2zDunW" node="1NXgdr3FXNo" resolve="Directions" />
+                  </node>
+                </node>
+              </node>
+              <node concept="l03SS" id="1NXgdr3LMg0" role="2XX$_T" />
+            </node>
             <node concept="2XX$_U" id="1NXgdr3FXRQ" role="l03SQ">
               <node concept="nav8X" id="1NXgdr3FXRR" role="2XX$_Q">
-                <node concept="auLln" id="1NXgdr3FXSe" role="nav8w">
-                  <ref role="2zDunW" node="1NXgdr3FXRb" resolve="Hand" />
+                <node concept="3sPaxP" id="1NXgdr43_k4" role="nav8w">
+                  <node concept="auLln" id="1NXgdr3FXSe" role="3sPfz2">
+                    <ref role="2zDunW" node="1NXgdr3FXRb" resolve="Hand" />
+                  </node>
+                  <node concept="3sJdxo" id="1NXgdr49pfm" role="3sPfz0">
+                    <ref role="2zDunW" node="1NXgdr3FXRN" resolve="right" />
+                  </node>
                 </node>
               </node>
               <node concept="l03SS" id="1NXgdr3FXRS" role="2XX$_T" />
+            </node>
+            <node concept="2XX$_U" id="1NXgdr3LMPM" role="l03SQ">
+              <node concept="nav8X" id="1NXgdr3LMPO" role="2XX$_Q">
+                <node concept="auLln" id="1NXgdr3LMQ9" role="nav8w">
+                  <ref role="2zDunW" node="1NXgdr3LMF7" resolve="mode" />
+                </node>
+              </node>
+              <node concept="l03SS" id="1NXgdr3LMPQ" role="2XX$_T" />
             </node>
           </node>
         </node>
@@ -149,8 +222,6 @@
       <node concept="1ndVl" id="1NXgdr1DAbH" role="lHG9p">
         <ref role="2zDunW" node="50jP99guNOz" resolve="cls" />
       </node>
-      <node concept="aAFJ2" id="1NXgdr1DAco" role="lHG9p" />
-      <node concept="aAFJ2" id="1NXgdr0almC" role="lHG9p" />
     </node>
   </node>
 </model>

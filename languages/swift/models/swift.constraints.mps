@@ -233,5 +233,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1NXgdr3X_Kg">
+    <property role="3GE5qa" value="expression.members" />
+    <ref role="1M2myG" to="op4d:1NXgdr0auyz" resolve="MemberAccessExpression" />
+  </node>
 </model>
 
