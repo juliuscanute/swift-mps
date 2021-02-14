@@ -12,6 +12,21 @@
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
+    <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
+      <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
+        <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
+        <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
@@ -44,6 +59,7 @@
         <property id="5204048710541015587" name="internalBaseDirectory" index="2DA0ip" />
         <child id="6647099934206700656" name="plugins" index="10PD9s" />
         <child id="7389400916848080626" name="parts" index="3989C9" />
+        <child id="3542413272732620719" name="aspects" index="1hWBAP" />
         <child id="5617550519002745381" name="dependencies" index="1l3spa" />
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
@@ -64,11 +80,24 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
+        <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
@@ -125,6 +154,9 @@
   <node concept="1l3spW" id="14E7mQ7KVrx">
     <property role="TrG5h" value="code" />
     <property role="2DA0ip" value="../../build/swift-mps" />
+    <node concept="2igEWh" id="6FTMwU_3CV9" role="1hWBAP">
+      <property role="3UIfUI" value="4096" />
+    </node>
     <node concept="10PD9b" id="14E7mQ7KVry" role="10PD9s" />
     <node concept="3b7kt6" id="14E7mQ7KVrz" role="10PD9s" />
     <node concept="398rNT" id="5wLtKNeSRPo" role="1l3spd">
@@ -236,6 +268,32 @@
     </node>
     <node concept="m$_wf" id="14E7mQ7KVs8" role="3989C9">
       <property role="m$_wk" value="code" />
+      <node concept="1X3_iC" id="6FTMwU_3CUP" role="lGtFl">
+        <property role="3V$3am" value="xml" />
+        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932/1359186315025500371" />
+        <node concept="2pNNFK" id="6FTMwU$URVT" role="8Wnug">
+          <property role="2pNNFO" value="mps.generate" />
+          <node concept="2pNNFK" id="6FTMwU$URWa" role="3o6s8t">
+            <property role="2pNNFO" value="jvmargs" />
+            <node concept="2pNNFK" id="6FTMwU$URWo" role="3o6s8t">
+              <property role="2pNNFO" value="arg" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="6FTMwU$URWu" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="6FTMwU$URWv" role="2pMdts">
+                  <property role="2pMdty" value="-Xmx4096m" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNUuL" id="6FTMwU$URWi" role="2pNNFR">
+              <property role="2pNUuO" value="id" />
+              <node concept="2pMdtt" id="6FTMwU$URWj" role="2pMdts">
+                <property role="2pMdty" value="myargs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3_J27D" id="14E7mQ7KVs9" role="m$_yQ">
         <node concept="3Mxwew" id="14E7mQ7KVsa" role="3MwsjC">
           <property role="3MwjfP" value="Swift MPS Plugin" />

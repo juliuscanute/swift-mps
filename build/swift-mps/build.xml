@@ -444,7 +444,7 @@
       </chunk>
       <jvmargs>
         <arg value="-ea" />
-        <arg value="-Xmx512m" />
+        <arg value="-Xmx4096m" />
       </jvmargs>
       <macro name="mps.home" path="${mps.home}" />
       <macro name="swift.home" path="${swift.home}" />
