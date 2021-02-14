@@ -26,7 +26,6 @@ jobs:
 
     - name: Build with Gradle
       run: |
-        export MAVEN_OPTS="-Xmx4096m"
         ./gradlew buildSwift
     - uses: actions/upload-artifact@v2
       with:
