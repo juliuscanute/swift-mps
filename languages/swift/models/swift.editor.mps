@@ -3079,23 +3079,8 @@
   <node concept="24kQdi" id="1NXgdr4s4Sg">
     <property role="3GE5qa" value="declaration.vars" />
     <ref role="1XX52x" to="op4d:2mIA7SJFssy" resolve="ConstantDeclaration" />
-    <node concept="3EZMnI" id="1NXgdr4xEKX" role="2wV5jI">
-      <node concept="PMmxH" id="1NXgdr4xEKY" role="3EZMnx">
-        <ref role="PMmxG" node="1NXgdr4s9zX" resolve="annotationComponent" />
-      </node>
-      <node concept="PMmxH" id="1NXgdr4xEKZ" role="3EZMnx">
-        <ref role="PMmxG" node="1NXgdr4lxeR" resolve="declarationModifier" />
-      </node>
-      <node concept="PMmxH" id="1NXgdr4xEL0" role="3EZMnx">
-        <ref role="PMmxG" node="1NXgdr4lwHh" resolve="accessModifier" />
-      </node>
-      <node concept="PMmxH" id="1NXgdr4xEL1" role="3EZMnx">
-        <ref role="PMmxG" node="1NXgdr4xEKM" resolve="letBinding" />
-      </node>
-      <node concept="PMmxH" id="1NXgdr4xEL2" role="3EZMnx">
-        <ref role="PMmxG" node="1NXgdr4s8SQ" resolve="postInitBlock" />
-      </node>
-      <node concept="l2Vlx" id="1NXgdr4xEL3" role="2iSdaV" />
+    <node concept="PMmxH" id="2V70poD7RSc" role="2wV5jI">
+      <ref role="PMmxG" node="2V70poD7RS4" resolve="ConstantComponent" />
     </node>
   </node>
   <node concept="PKFIW" id="1NXgdr4s8Hw">
@@ -3470,12 +3455,9 @@
             <node concept="VPM3Z" id="yfHT9hMrpV" role="3F10Kt" />
           </node>
         </node>
-        <node concept="3F0ifn" id="yfHT9hMrpW" role="3EZMnx">
-          <property role="3F0ifm" value="class" />
+        <node concept="PMmxH" id="2V70poCR7KJ" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-          <node concept="pVoyu" id="yfHT9hMrpX" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="3F0A7n" id="yfHT9hMrpY" role="3EZMnx">
           <ref role="1k5W1q" to="tpen:hFD0yD_" resolve="VariableName" />
@@ -3550,6 +3532,36 @@
         </node>
       </node>
       <node concept="l2Vlx" id="yfHT9iq1pc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2V70poD7RS2">
+    <property role="3GE5qa" value="declaration.class" />
+    <ref role="1XX52x" to="op4d:2V70poD7RR_" resolve="ClassConstantDeclaration" />
+    <node concept="PMmxH" id="2V70poD7RSl" role="2wV5jI">
+      <ref role="PMmxG" node="2V70poD7RS4" resolve="ConstantComponent" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2V70poD7RS4">
+    <property role="TrG5h" value="ConstantComponent" />
+    <property role="3GE5qa" value="declaration.vars" />
+    <ref role="1XX52x" to="op4d:2mIA7SJFssy" resolve="ConstantDeclaration" />
+    <node concept="3EZMnI" id="2V70poD7RS5" role="2wV5jI">
+      <node concept="PMmxH" id="2V70poD7RS6" role="3EZMnx">
+        <ref role="PMmxG" node="1NXgdr4s9zX" resolve="annotationComponent" />
+      </node>
+      <node concept="PMmxH" id="2V70poD7RS7" role="3EZMnx">
+        <ref role="PMmxG" node="1NXgdr4lxeR" resolve="declarationModifier" />
+      </node>
+      <node concept="PMmxH" id="2V70poD7RS8" role="3EZMnx">
+        <ref role="PMmxG" node="1NXgdr4lwHh" resolve="accessModifier" />
+      </node>
+      <node concept="PMmxH" id="2V70poD7RS9" role="3EZMnx">
+        <ref role="PMmxG" node="1NXgdr4xEKM" resolve="letBinding" />
+      </node>
+      <node concept="PMmxH" id="2V70poD7RSa" role="3EZMnx">
+        <ref role="PMmxG" node="1NXgdr4s8SQ" resolve="postInitBlock" />
+      </node>
+      <node concept="l2Vlx" id="2V70poD7RSb" role="2iSdaV" />
     </node>
   </node>
 </model>

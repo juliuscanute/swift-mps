@@ -109,8 +109,8 @@
     <property role="3GE5qa" value="statement" />
     <property role="TrG5h" value="EmptyStatement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2mIA7SJUIrJ" role="PzmwI">
-      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    <node concept="PrWs8" id="2V70poCZDCN" role="PzmwI">
+      <ref role="PrY4T" node="2V70poCZDCI" resolve="IEmpty" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SJhiy9">
@@ -1533,6 +1533,9 @@
     <property role="EcuMT" value="616913513036148952" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="IClassMember" />
+    <node concept="PrWs8" id="2V70poCZDCL" role="PrDN$">
+      <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
+    </node>
   </node>
   <node concept="PlHQZ" id="yfHT9hE73u">
     <property role="EcuMT" value="616913513036148958" />
@@ -1570,6 +1573,23 @@
       <ref role="20lvS9" node="yfHT9hE73o" resolve="IClassMember" />
     </node>
     <node concept="PrWs8" id="yfHT9hUmzF" role="PzmwI">
+      <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2V70poCZDCI">
+    <property role="EcuMT" value="3370664590554602030" />
+    <property role="3GE5qa" value="interface" />
+    <property role="TrG5h" value="IEmpty" />
+    <node concept="PrWs8" id="2V70poCZDCJ" role="PrDN$">
+      <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2V70poD7RR_">
+    <property role="EcuMT" value="3370664590556757477" />
+    <property role="3GE5qa" value="declaration.class" />
+    <property role="TrG5h" value="ClassConstantDeclaration" />
+    <ref role="1TJDcQ" node="2mIA7SJFssy" resolve="ConstantDeclaration" />
+    <node concept="PrWs8" id="2V70poD7RRA" role="PzmwI">
       <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />
     </node>
   </node>
