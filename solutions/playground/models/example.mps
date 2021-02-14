@@ -27,7 +27,9 @@
       <concept id="2715275293192533385" name="swift.structure.ParameterType" flags="ng" index="jz2RR">
         <child id="2715275293192533386" name="type" index="jz2RO" />
       </concept>
-      <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS" />
+      <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS">
+        <child id="2715275293101041224" name="statement" index="l03SQ" />
+      </concept>
       <concept id="2715275293091191054" name="swift.structure.CodeBlock" flags="ng" index="lHG5K">
         <child id="2715275293091191328" name="statement" index="lHG9u" />
       </concept>
@@ -47,6 +49,9 @@
         <reference id="2088897093247214890" name="target" index="2zDunW" />
       </concept>
       <concept id="6608797908807388545" name="swift.structure.ValidName" flags="ng" index="2Tu2sJ" />
+      <concept id="6608797908764566766" name="swift.structure.ReturnStatement" flags="ng" index="2VXCT0">
+        <child id="6608797908764566776" name="init" index="2VXCTm" />
+      </concept>
       <concept id="6608797908892638415" name="swift.structure.EnumCaseListDeclaration" flags="ng" index="2Wlfpx">
         <child id="6608797908892638451" name="cases" index="2Wlfpt" />
       </concept>
@@ -67,6 +72,24 @@
         <child id="2088897093327754258" name="codeBlock" index="3oQdj4" />
         <child id="2088897093327754259" name="type" index="3oQdj5" />
         <child id="2088897093327754257" name="init" index="3oQdj7" />
+      </concept>
+      <concept id="616913513036165360" name="swift.structure.ClassVariableDeclaration" flags="ng" index="1p9Kty" />
+      <concept id="616913513036148959" name="swift.structure.ClassMethod" flags="ng" index="1p9Wtd" />
+      <concept id="616913513036148942" name="swift.structure.ClassDeclaration" flags="ng" index="1p9Wts">
+        <child id="616913513038329612" name="member" index="1phw2u" />
+      </concept>
+      <concept id="616913513040406762" name="swift.structure.ClassMembers" flags="ng" index="1ppHXS">
+        <child id="616913513040406765" name="member" index="1ppHXZ" />
+      </concept>
+    </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156652603" name="org.iets3.core.expr.base.structure.DivExpression" flags="ng" index="30dvO6" />
+      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
+      <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -181,7 +204,6 @@
         </node>
       </node>
       <node concept="aAFJ2" id="1NXgdr7andz" role="lHG9p" />
-      <node concept="aAFJ2" id="1NXgdr5AyK8" role="lHG9p" />
       <node concept="2WpEUL" id="1NXgdr3FXNo" role="lHG9p">
         <property role="TrG5h" value="Directions" />
         <node concept="2Wlfpx" id="1NXgdr3FXNq" role="2WpEUd">
@@ -211,7 +233,7 @@
           </node>
         </node>
       </node>
-      <node concept="aAFJ2" id="1NXgdr2dzva" role="lHG9p" />
+      <node concept="aAFJ2" id="yfHT9hE6Zf" role="lHG9p" />
       <node concept="nXWBc" id="1NXgdr52eDt" role="lHG9p">
         <property role="TrG5h" value="sub" />
         <node concept="2Tu2sJ" id="1NXgdr52eE5" role="2Tu3TQ">
@@ -222,8 +244,140 @@
           <property role="TrG5h" value="b" />
         </node>
       </node>
+      <node concept="aAFJ2" id="yfHT9hE709" role="lHG9p" />
       <node concept="1ndVl" id="1NXgdr52eEM" role="lHG9p">
         <ref role="2zDunW" node="1NXgdr52eDt" resolve="sub" />
+      </node>
+      <node concept="aAFJ2" id="yfHT9ixVvk" role="lHG9p" />
+      <node concept="1p9Wts" id="yfHT9ii6Fx" role="lHG9p">
+        <property role="TrG5h" value="Math" />
+        <node concept="1ppHXS" id="yfHT9ii6Gu" role="1phw2u">
+          <node concept="1p9Kty" id="yfHT9ixVuz" role="1ppHXZ">
+            <property role="TrG5h" value="ans" />
+            <node concept="aPoZM" id="yfHT9ixVuB" role="3oQdj5">
+              <property role="TrG5h" value="Int" />
+            </node>
+            <node concept="30bXRB" id="yfHT9ixVv7" role="3oQdj7">
+              <property role="30bXRw" value="0" />
+            </node>
+          </node>
+          <node concept="1p9Wtd" id="yfHT9ixVuH" role="1ppHXZ">
+            <property role="TrG5h" value="add" />
+            <node concept="l03SS" id="yfHT9ixVuJ" role="lHG9u">
+              <node concept="2VXCT0" id="yfHT9ixVzq" role="l03SQ">
+                <node concept="30dDZf" id="yfHT9ixVz$" role="2VXCTm">
+                  <node concept="auLln" id="yfHT9ixVzI" role="30dEs_">
+                    <ref role="2zDunW" node="1NXgdr4BVDW" resolve="b" />
+                  </node>
+                  <node concept="auLln" id="yfHT9ixVzv" role="30dEsF">
+                    <ref role="2zDunW" node="1NXgdr5b3lD" resolve="a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="j30ub" id="yfHT9ixVyq" role="gj05U">
+              <node concept="jz2RR" id="yfHT9ixVys" role="j30u6">
+                <property role="TrG5h" value="a" />
+                <node concept="aPoZM" id="yfHT9ixVyw" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+              <node concept="jz2RR" id="yfHT9ixVyy" role="j30u6">
+                <property role="TrG5h" value="b" />
+                <node concept="aPoZM" id="yfHT9ixVyC" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1p9Wtd" id="yfHT9ixVxv" role="1ppHXZ">
+            <property role="TrG5h" value="sub" />
+            <node concept="l03SS" id="yfHT9ixVxx" role="lHG9u">
+              <node concept="2VXCT0" id="yfHT9ixVzN" role="l03SQ">
+                <node concept="30dvUo" id="yfHT9ixV$J" role="2VXCTm">
+                  <node concept="auLln" id="yfHT9ixV$T" role="30dEs_">
+                    <ref role="2zDunW" node="1NXgdr4BVDW" resolve="b" />
+                  </node>
+                  <node concept="auLln" id="yfHT9ixVzS" role="30dEsF">
+                    <ref role="2zDunW" node="1NXgdr5b3lD" resolve="a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="j30ub" id="yfHT9ixVyE" role="gj05U">
+              <node concept="jz2RR" id="yfHT9ixVyG" role="j30u6">
+                <property role="TrG5h" value="a" />
+                <node concept="aPoZM" id="yfHT9ixVyK" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+              <node concept="jz2RR" id="yfHT9ixVyM" role="j30u6">
+                <property role="TrG5h" value="b" />
+                <node concept="aPoZM" id="yfHT9ixVyS" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1p9Wtd" id="yfHT9ixVxN" role="1ppHXZ">
+            <property role="TrG5h" value="mul" />
+            <node concept="l03SS" id="yfHT9ixVxP" role="lHG9u">
+              <node concept="2VXCT0" id="yfHT9ixV$c" role="l03SQ">
+                <node concept="30dDTi" id="yfHT9ixV$r" role="2VXCTm">
+                  <node concept="auLln" id="yfHT9ixV$B" role="30dEs_">
+                    <ref role="2zDunW" node="1NXgdr4BVDW" resolve="b" />
+                  </node>
+                  <node concept="auLln" id="yfHT9ixV$m" role="30dEsF">
+                    <ref role="2zDunW" node="1NXgdr5b3lD" resolve="a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="j30ub" id="yfHT9ixVyU" role="gj05U">
+              <node concept="jz2RR" id="yfHT9ixVyW" role="j30u6">
+                <property role="TrG5h" value="a" />
+                <node concept="aPoZM" id="yfHT9ixVz0" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+              <node concept="jz2RR" id="yfHT9ixVz2" role="j30u6">
+                <property role="TrG5h" value="b" />
+                <node concept="aPoZM" id="yfHT9ixVz8" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1p9Wtd" id="yfHT9ixVyb" role="1ppHXZ">
+            <property role="TrG5h" value="div" />
+            <node concept="l03SS" id="yfHT9ixVyd" role="lHG9u">
+              <node concept="2VXCT0" id="yfHT9ixV$Y" role="l03SQ">
+                <node concept="30dvO6" id="yfHT9ixV_8" role="2VXCTm">
+                  <node concept="auLln" id="yfHT9ixV_i" role="30dEs_">
+                    <ref role="2zDunW" node="1NXgdr4BVDW" resolve="b" />
+                  </node>
+                  <node concept="auLln" id="yfHT9ixV_3" role="30dEsF">
+                    <ref role="2zDunW" node="1NXgdr5b3lD" resolve="a" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="j30ub" id="yfHT9ixVza" role="gj05U">
+              <node concept="jz2RR" id="yfHT9ixVzc" role="j30u6">
+                <property role="TrG5h" value="a" />
+                <node concept="aPoZM" id="yfHT9ixVzg" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+              <node concept="jz2RR" id="yfHT9ixVzi" role="j30u6">
+                <property role="TrG5h" value="b" />
+                <node concept="aPoZM" id="yfHT9ixVzo" role="jz2RO">
+                  <property role="TrG5h" value="Int" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
