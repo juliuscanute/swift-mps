@@ -263,6 +263,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.60.mps.libs" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
@@ -291,6 +292,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-httpsupport" />
       <plugin path="${artifacts.mps}/plugins/mps-make" />
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
+      <plugin path="${artifacts.mps}/plugins/mps-tooltips" />
       <plugin path="${artifacts.mps}/plugins/mps-vcs" />
       <plugin path="${artifacts.mps}/plugins/svn4idea" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" />
@@ -431,6 +433,7 @@
       <library file="${artifacts.mps}/plugins/mps-httpsupport/languages/jetbrains.mps.ide.httpsupport.jar" />
       <library file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
       <library file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/mps-tooltips/languages/jetbrains.mps.lang.editor.tooltips.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
