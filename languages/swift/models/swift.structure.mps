@@ -219,27 +219,15 @@
   </node>
   <node concept="1TIwiD" id="2mIA7SKxuv9">
     <property role="EcuMT" value="2715275293098371017" />
-    <property role="3GE5qa" value="declaration" />
+    <property role="3GE5qa" value="declaration.struct" />
     <property role="TrG5h" value="StructDeclaration" />
     <property role="34LRSv" value="struct" />
-    <ref role="1TJDcQ" node="2mIA7SK65$e" resolve="CodeBlock" />
-    <node concept="1TJgyi" id="2mIA7SMeTF7" role="1TKVEl">
-      <property role="IQ2nx" value="2715275293127056071" />
-      <property role="TrG5h" value="attributeName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="yfHT9hE73e" resolve="ClassDeclaration" />
     <node concept="PrWs8" id="2mIA7SKxuv_" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJUIrx" resolve="IStatement" />
     </node>
     <node concept="PrWs8" id="2mIA7SKxuvB" role="PzmwI">
       <ref role="PrY4T" node="2mIA7SJ2htY" resolve="IDeclaration" />
-    </node>
-    <node concept="1TJgyj" id="2mIA7SKBPOL" role="1TKVEi">
-      <property role="IQ2ns" value="2715275293100039473" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="inheritType" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2mIA7SJuLud" resolve="IDataType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2mIA7SKFEp6">
@@ -1520,7 +1508,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="baseTypes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="yfHT9hE73u" resolve="IClassReferenceType" />
+      <ref role="20lvS9" node="2mIA7SJuLud" resolve="IDataType" />
     </node>
     <node concept="1TJgyj" id="yfHT9hMrsc" role="1TKVEi">
       <property role="IQ2ns" value="616913513038329612" />
@@ -1546,6 +1534,7 @@
     <property role="EcuMT" value="616913513036148959" />
     <property role="3GE5qa" value="declaration.class" />
     <property role="TrG5h" value="ClassMethod" />
+    <property role="34LRSv" value="func" />
     <ref role="1TJDcQ" node="2mIA7SPSD$2" resolve="FunctionBlock" />
     <node concept="PrWs8" id="yfHT9hE73w" role="PzmwI">
       <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />
@@ -1555,6 +1544,7 @@
     <property role="EcuMT" value="616913513036165360" />
     <property role="3GE5qa" value="declaration.class" />
     <property role="TrG5h" value="ClassVariableDeclaration" />
+    <property role="34LRSv" value="var" />
     <ref role="1TJDcQ" node="2mIA7SJhiy9" resolve="VariableDeclaration" />
     <node concept="PrWs8" id="yfHT9hEb3L" role="PzmwI">
       <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />
@@ -1588,6 +1578,7 @@
     <property role="EcuMT" value="3370664590556757477" />
     <property role="3GE5qa" value="declaration.class" />
     <property role="TrG5h" value="ClassConstantDeclaration" />
+    <property role="34LRSv" value="let" />
     <ref role="1TJDcQ" node="2mIA7SJFssy" resolve="ConstantDeclaration" />
     <node concept="PrWs8" id="2V70poD7RRA" role="PzmwI">
       <ref role="PrY4T" node="yfHT9hE73o" resolve="IClassMember" />

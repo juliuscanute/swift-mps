@@ -10,7 +10,7 @@
     <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="swift">
       <concept id="5770189272486185543" name="swift.structure.CallExpressionReference" flags="ng" index="1ndVl" />
       <concept id="6608797908745049072" name="swift.structure.GuardConstantDeclaration" flags="ng" index="24Cf_u" />
-      <concept id="3370664590556757477" name="swift.structure.ClassConceptDeclaration" flags="ng" index="7Q7LN" />
+      <concept id="3370664590556757477" name="swift.structure.ClassConstantDeclaration" flags="ng" index="7Q7LN" />
       <concept id="2715275293084206882" name="swift.structure.ConstantDeclaration" flags="ng" index="a0PXs" />
       <concept id="2715275293086813481" name="swift.structure.VariableReference" flags="ng" index="auLln" />
       <concept id="2715275293076235196" name="swift.structure.EmptyStatement" flags="ng" index="aAFJ2" />
@@ -29,6 +29,7 @@
         <child id="2715275293192533386" name="type" index="jz2RO" />
       </concept>
       <concept id="2715275293101041222" name="swift.structure.IndentStatements" flags="ng" index="l03SS" />
+      <concept id="2715275293098371017" name="swift.structure.StructDeclaration" flags="ng" index="laRYR" />
       <concept id="2715275293091191054" name="swift.structure.CodeBlock" flags="ng" index="lHG5K">
         <child id="2715275293091191328" name="statement" index="lHG9u" />
       </concept>
@@ -72,6 +73,7 @@
       <concept id="616913513036165360" name="swift.structure.ClassVariableDeclaration" flags="ng" index="1p9Kty" />
       <concept id="616913513036148959" name="swift.structure.ClassMethod" flags="ng" index="1p9Wtd" />
       <concept id="616913513036148942" name="swift.structure.ClassDeclaration" flags="ng" index="1p9Wts">
+        <child id="616913513036148955" name="baseTypes" index="1p9Wt9" />
         <child id="616913513038329612" name="member" index="1phw2u" />
       </concept>
       <concept id="616913513040406762" name="swift.structure.ClassMembers" flags="ng" index="1ppHXS">
@@ -256,10 +258,49 @@
               <property role="30bXRw" value="2" />
             </node>
           </node>
-          <node concept="aAFJ2" id="2V70poDpBRN" role="1ppHXZ" />
+          <node concept="aAFJ2" id="6FTMwU_AF2e" role="1ppHXZ" />
           <node concept="1p9Wtd" id="2V70poCZDCu" role="1ppHXZ">
             <property role="TrG5h" value="add" />
             <node concept="l03SS" id="2V70poCZDCv" role="lHG9u" />
+          </node>
+          <node concept="aAFJ2" id="6FTMwU_SrX7" role="1ppHXZ" />
+        </node>
+        <node concept="aPoZM" id="6FTMwU_Jst1" role="1p9Wt9">
+          <property role="TrG5h" value="Int" />
+        </node>
+        <node concept="aPoZM" id="6FTMwU_Jst6" role="1p9Wt9">
+          <property role="TrG5h" value="Float" />
+        </node>
+      </node>
+      <node concept="aAFJ2" id="6FTMwU_AF2y" role="lHG9p" />
+      <node concept="laRYR" id="6FTMwU_SrUO" role="lHG9p">
+        <property role="TrG5h" value="BetterMath" />
+        <node concept="aPoZM" id="6FTMwU_SrW2" role="1p9Wt9">
+          <property role="TrG5h" value="Int" />
+        </node>
+        <node concept="1ppHXS" id="6FTMwU_SrWL" role="1phw2u">
+          <node concept="7Q7LN" id="6FTMwUA1cSe" role="1ppHXZ">
+            <property role="TrG5h" value="a" />
+            <node concept="aPoZM" id="6FTMwUA1cSl" role="3oQdj5">
+              <property role="TrG5h" value="Int" />
+            </node>
+            <node concept="30bXRB" id="6FTMwUA1cSv" role="3oQdj7">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="1p9Kty" id="6FTMwUA1cSN" role="1ppHXZ">
+            <property role="TrG5h" value="b" />
+            <node concept="aPoZM" id="6FTMwUA1cSX" role="3oQdj5">
+              <property role="TrG5h" value="Float" />
+            </node>
+            <node concept="30bXRB" id="6FTMwUA1cT6" role="3oQdj7">
+              <property role="30bXRw" value="2" />
+            </node>
+          </node>
+          <node concept="aAFJ2" id="6FTMwUA1cTj" role="1ppHXZ" />
+          <node concept="1p9Wtd" id="6FTMwU_SrWN" role="1ppHXZ">
+            <property role="TrG5h" value="date" />
+            <node concept="l03SS" id="6FTMwU_SrWO" role="lHG9u" />
           </node>
         </node>
       </node>
