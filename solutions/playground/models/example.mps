@@ -2,43 +2,32 @@
 <model ref="r:32aaf1e3-6b2e-4a01-ae2d-d1f88f67acf3(playground.example)">
   <persistence version="9" />
   <languages>
-    <devkit ref="86be0a72-d86a-46e6-a4a8-9b3c377f8ade(statestuff)" />
+    <use id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="blog" version="0" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
   </languages>
   <imports />
   <registry>
-    <language id="388b264c-9809-4e2e-b292-61ab9914c8d0" name="statemachine.test">
-      <concept id="7459152088147528103" name="statemachine.test.structure.TestCase" flags="ng" index="2G8rbE">
-        <reference id="7459152088147528104" name="machine" index="2G8rb_" />
-        <child id="7459152088147529057" name="contents" index="2G8roG" />
-      </concept>
-      <concept id="7459152088147529060" name="statemachine.test.structure.AssertState" flags="ng" index="2G8roD">
-        <reference id="7459152088147529063" name="state" index="2G8roE" />
-      </concept>
-      <concept id="7459152088147529090" name="statemachine.test.structure.TriggerMachine" flags="ng" index="2G8rrf">
-        <reference id="7459152088147529091" name="event" index="2G8rre" />
-      </concept>
-    </language>
-    <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="statemachine">
-      <concept id="7459152088147169320" name="statemachine.structure.StateMachine" flags="ng" index="2G92H_">
+    <language id="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" name="blog">
+      <concept id="7459152088147169320" name="blog.structure.StateMachine" flags="ng" index="2G92H_">
         <child id="7459152088147263655" name="contents" index="2G9rJE" />
       </concept>
-      <concept id="7459152088147263388" name="statemachine.structure.Event" flags="ng" index="2G9kjh" />
-      <concept id="7459152088147263391" name="statemachine.structure.Transition" flags="ng" index="2G9kji">
+      <concept id="7459152088147263388" name="blog.structure.Event" flags="ng" index="2G9kjh" />
+      <concept id="7459152088147263391" name="blog.structure.Transition" flags="ng" index="2G9kji">
         <reference id="7459152088147263395" name="target" index="2G9kjI" />
         <child id="7459152088147263776" name="trigger" index="2G9rDH" />
         <child id="5323883234338014268" name="guard" index="1TwzY$" />
       </concept>
-      <concept id="7459152088147263377" name="statemachine.structure.State" flags="ng" index="2G9kjs">
+      <concept id="7459152088147263377" name="blog.structure.State" flags="ng" index="2G9kjs">
         <property id="7459152088147263378" name="initial" index="2G9kjv" />
         <child id="7459152088147263534" name="contents" index="2G9rHz" />
       </concept>
-      <concept id="7459152088147263734" name="statemachine.structure.EventTrigger" flags="ng" index="2G9rIV">
+      <concept id="7459152088147263734" name="blog.structure.EventTrigger" flags="ng" index="2G9rIV">
         <reference id="7459152088147263735" name="event" index="2G9rIU" />
       </concept>
-      <concept id="5323883234338083216" name="statemachine.structure.VarRef" flags="ng" index="1TwMC8">
+      <concept id="5323883234338083216" name="blog.structure.VarRef" flags="ng" index="1TwMC8">
         <reference id="5323883234338083217" name="var" index="1TwMC9" />
       </concept>
-      <concept id="5323883234337882098" name="statemachine.structure.Variable" flags="ng" index="1TJWhE">
+      <concept id="5323883234337882098" name="blog.structure.Variable" flags="ng" index="1TJWhE">
         <child id="5323883234337882101" name="init" index="1TJWhH" />
       </concept>
     </language>
@@ -109,18 +98,6 @@
     </node>
     <node concept="2G9kjs" id="4ByeTwKoFwt" role="2G9rJE">
       <property role="TrG5h" value="error" />
-    </node>
-  </node>
-  <node concept="2G8rbE" id="6u4eORbDKFr">
-    <ref role="2G8rb_" node="6u4eORbCnXb" resolve="TrafficLight" />
-    <node concept="2G8roD" id="6u4eORbDOIo" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbCyop" resolve="red" />
-    </node>
-    <node concept="2G8rrf" id="6u4eORbDSfr" role="2G8roG">
-      <ref role="2G8rre" node="6u4eORbCyok" resolve="pedestrianButton" />
-    </node>
-    <node concept="2G8roD" id="6u4eORbDSrC" role="2G8roG">
-      <ref role="2G8roE" node="6u4eORbD3Dj" resolve="green" />
     </node>
   </node>
 </model>

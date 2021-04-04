@@ -99,12 +99,6 @@
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
-      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
-        <child id="322010710375832962" name="exports" index="3LEDUa" />
-      </concept>
-      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
-        <reference id="322010710375832947" name="language" index="3LEDTV" />
-      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -262,152 +256,24 @@
     </node>
     <node concept="2G$12M" id="14E7mQ7KVs7" role="3989C9">
       <property role="TrG5h" value="code" />
-      <node concept="1E1JtD" id="14E7mQ7KVrI" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="swift.test" />
-        <property role="3LESm3" value="388b264c-9809-4e2e-b292-61ab9914c8d0" />
-        <node concept="398BVA" id="14E7mQ7L2Cb" role="3LF7KH">
-          <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
-          <node concept="2Ry0Ak" id="14E7mQ7L2Cg" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="14E7mQ7L2Ch" role="2Ry0An">
-              <property role="2Ry0Am" value="swift.test" />
-              <node concept="2Ry0Ak" id="14E7mQ7L2Ci" role="2Ry0An">
-                <property role="2Ry0Am" value="swift.test.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsm" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsn" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVso" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsp" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsq" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsr" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVss" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVst" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsu" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsv" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsw" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsx" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3IKDaVZp4tZ" resolve="jetbrains.mps.execution.common" />
-          </node>
-        </node>
-        <node concept="1yeLz9" id="14E7mQ7KVsy" role="1TViLv">
-          <property role="TrG5h" value="swift.test#01" />
-          <property role="3LESm3" value="7c6c1b6a-aaba-467a-9372-64154f298b99" />
-          <node concept="1SiIV0" id="14E7mQ7KVsz" role="3bR37C">
-            <node concept="3bR9La" id="14E7mQ7KVs$" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="14E7mQ7KVs_" role="3bR37C">
-            <node concept="3bR9La" id="14E7mQ7KVsA" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2jY" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2jZ" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2k0" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2k1" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2k2" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2k3" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="swift.test" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2k4" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2k5" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="swift" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="14E7mQ7KVrO" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="swift.test.interpreter" />
-        <property role="3LESm3" value="7102c78c-03aa-49bd-a8a7-da421fcdf6a6" />
-        <node concept="398BVA" id="14E7mQ7L2CG" role="3LF7KH">
-          <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
-          <node concept="2Ry0Ak" id="14E7mQ7L2CL" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="14E7mQ7L2CM" role="2Ry0An">
-              <property role="2Ry0Am" value="swift.test.interpreter" />
-              <node concept="2Ry0Ak" id="14E7mQ7L2CN" role="2Ry0An">
-                <property role="2Ry0Am" value="swift.test.interpreter.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsK" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsL" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7KVsM" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7KVsN" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2kf" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2kg" role="1SiIV1">
-            <ref role="3bR37D" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2kh" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2ki" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrI" resolve="swift.test" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2kj" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2kk" role="1SiIV1">
-            <ref role="3bR37D" node="14E7mQ7KVrU" resolve="swift" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="14E7mQ7L2kl" role="3bR37C">
-          <node concept="3bR9La" id="14E7mQ7L2km" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:2bBLuwR9$cn" resolve="com.mbeddr.mpsutil.interpreter.rt" />
-          </node>
-        </node>
-      </node>
       <node concept="1E1JtD" id="14E7mQ7KVrU" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="swift" />
+        <property role="TrG5h" value="blog" />
         <property role="3LESm3" value="ec192600-e7e1-4a3e-8ddf-ce429474a2ed" />
         <node concept="398BVA" id="14E7mQ7L2Dh" role="3LF7KH">
           <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
           <node concept="2Ry0Ak" id="14E7mQ7L2Dm" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="14E7mQ7L2Dn" role="2Ry0An">
-              <property role="2Ry0Am" value="swift" />
+              <property role="2Ry0Am" value="blog" />
               <node concept="2Ry0Ak" id="14E7mQ7L2Do" role="2Ry0An">
-                <property role="2Ry0Am" value="swift.mpl" />
+                <property role="2Ry0Am" value="blog.mpl" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1yeLz9" id="14E7mQ7KVsS" role="1TViLv">
-          <property role="TrG5h" value="swift#01" />
+          <property role="TrG5h" value="blog#01" />
           <property role="3LESm3" value="775134a4-c0dd-4eec-b5a6-18f21e52d840" />
         </node>
         <node concept="1SiIV0" id="14E7mQ7L2kr" role="3bR37C">
@@ -429,35 +295,6 @@
           <node concept="1Busua" id="14E7mQ7L2ky" role="1SiIV1">
             <ref role="1Busuk" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
-        </node>
-      </node>
-      <node concept="3LEwk6" id="14E7mQ7KVs0" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="statestuff" />
-        <property role="3LESm3" value="86be0a72-d86a-46e6-a4a8-9b3c377f8ade" />
-        <node concept="398BVA" id="14E7mQ7L2DZ" role="3LF7KH">
-          <ref role="398BVh" node="44RyrhrBozY" resolve="mpsintrocource.home" />
-          <node concept="2Ry0Ak" id="14E7mQ7L2E4" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="14E7mQ7L2E5" role="2Ry0An">
-              <property role="2Ry0Am" value="statestuff" />
-              <node concept="2Ry0Ak" id="14E7mQ7L2E6" role="2Ry0An">
-                <property role="2Ry0Am" value="statestuff.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="14E7mQ7L2kG" role="3LEDUa">
-          <ref role="3LEDTV" node="14E7mQ7KVrU" resolve="swift" />
-        </node>
-        <node concept="3LEDTy" id="14E7mQ7L2kH" role="3LEDUa">
-          <ref role="3LEDTV" node="14E7mQ7KVrI" resolve="swift.test" />
-        </node>
-        <node concept="3LEDTy" id="14E7mQ7L2kI" role="3LEDUa">
-          <ref role="3LEDTV" to="ip48:5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
-        </node>
-        <node concept="3LEDTy" id="14E7mQ7L2kJ" role="3LEDUa">
-          <ref role="3LEDTV" to="ip48:5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
         </node>
       </node>
       <node concept="1E1JtA" id="14E7mQ7KVs6" role="2G$12L">
