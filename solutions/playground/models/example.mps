@@ -16,6 +16,12 @@
         <child id="7190464171375973386" name="content" index="1iK7Or" />
       </concept>
       <concept id="7190464171373366495" name="blog.structure.SubSection" flags="ng" index="1jaUne" />
+      <concept id="1228876316698843352" name="blog.structure.Blog" flags="ng" index="3oH42B">
+        <child id="1228876316698843353" name="articles" index="3oH42A" />
+      </concept>
+      <concept id="1228876316698843348" name="blog.structure.ArticleReference" flags="ng" index="3oH42F">
+        <reference id="1228876316698843350" name="article" index="3oH42D" />
+      </concept>
       <concept id="2990921134017522440" name="blog.structure.Article" flags="ng" index="3DOOB$" />
       <concept id="2990921134017874864" name="blog.structure.Section" flags="ng" index="3DQu_s" />
     </language>
@@ -34,23 +40,94 @@
     </language>
   </registry>
   <node concept="3DOOB$" id="6f9Eh4LcLYn">
-    <property role="TrG5h" value="lkjlkjlkjlkj" />
+    <property role="TrG5h" value="First Article" />
     <node concept="3DQu_s" id="6f9Eh4Lf9EG" role="1iK7Or">
-      <property role="TrG5h" value="sdfsadf" />
-      <node concept="1iUVBs" id="6f9Eh4Lf9EI" role="1iK7Or">
-        <node concept="19SGf9" id="6f9Eh4Lf9EJ" role="1iPsTO">
-          <node concept="19SUe$" id="6f9Eh4Lf9EK" role="19SJt6">
-            <property role="19SUeA" value="sdfsadfsadf" />
+      <property role="TrG5h" value="Frist Section" />
+      <node concept="1iUVBs" id="14dQ7Z9_VL9" role="1iK7Or">
+        <node concept="19SGf9" id="14dQ7Z9_VLb" role="1iPsTO">
+          <node concept="19SUe$" id="14dQ7Z9_VLc" role="19SJt6">
+            <property role="19SUeA" value="Here i can explain the first section" />
           </node>
         </node>
       </node>
       <node concept="1jaUne" id="6f9Eh4Lf9ET" role="1iK7Or">
-        <property role="TrG5h" value="fsadfsadf" />
-        <node concept="1iUVBs" id="6f9Eh4Lf9EZ" role="1iK7Or">
-          <node concept="19SGf9" id="6f9Eh4Lf9F0" role="1iPsTO">
-            <node concept="19SUe$" id="6f9Eh4Lf9F1" role="19SJt6">
-              <property role="19SUeA" value="sdfsadfsadf" />
+        <property role="TrG5h" value="First Subsection of Frist Section" />
+        <node concept="1iUVBs" id="14dQ7Z9_VLo" role="1iK7Or">
+          <node concept="19SGf9" id="14dQ7Z9_VLp" role="1iPsTO">
+            <node concept="19SUe$" id="14dQ7Z9_VLq" role="19SJt6">
+              <property role="19SUeA" value="Can give it a go here&#10;&#10;don't know what I'll be writing here but we can continue" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DQu_s" id="7lu6iPmFJo0" role="1iK7Or">
+      <property role="TrG5h" value="Second Section" />
+      <node concept="1jaUne" id="7lu6iPmFJo4" role="1iK7Or">
+        <property role="TrG5h" value="First Subsection of Second Section" />
+        <node concept="1iUVBs" id="14dQ7Z9_VLi" role="1iK7Or">
+          <node concept="19SGf9" id="14dQ7Z9_VLj" role="1iPsTO">
+            <node concept="19SUe$" id="14dQ7Z9_VLk" role="19SJt6">
+              <property role="19SUeA" value="Here I can empasize no stronger" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iUVBs" id="7lu6iPmFJo1" role="1iK7Or">
+        <node concept="19SGf9" id="7lu6iPmFJo2" role="1iPsTO">
+          <node concept="19SUe$" id="7lu6iPmFJo3" role="19SJt6">
+            <property role="19SUeA" value="Section One&#10;&#10;I wanted to elaborate on certain aspects of life." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3oH42B" id="14dQ7Z9IXdY">
+    <node concept="3oH42F" id="14dQ7Z9IXdZ" role="3oH42A">
+      <ref role="3oH42D" node="6f9Eh4LcLYn" resolve="First Article" />
+    </node>
+    <node concept="3oH42F" id="14dQ7Z9JuNK" role="3oH42A">
+      <ref role="3oH42D" node="14dQ7Z9IXe5" resolve="Second Article" />
+    </node>
+  </node>
+  <node concept="3DOOB$" id="14dQ7Z9IXe5">
+    <property role="TrG5h" value="Second Article" />
+    <node concept="3DQu_s" id="14dQ7Z9IXe6" role="1iK7Or">
+      <property role="TrG5h" value="Frist Section" />
+      <node concept="1iUVBs" id="14dQ7Z9IXe7" role="1iK7Or">
+        <node concept="19SGf9" id="14dQ7Z9IXe8" role="1iPsTO">
+          <node concept="19SUe$" id="14dQ7Z9IXe9" role="19SJt6">
+            <property role="19SUeA" value="Here i can explain the first section" />
+          </node>
+        </node>
+      </node>
+      <node concept="1jaUne" id="14dQ7Z9IXea" role="1iK7Or">
+        <property role="TrG5h" value="First Subsection of Frist Section" />
+        <node concept="1iUVBs" id="14dQ7Z9IXeb" role="1iK7Or">
+          <node concept="19SGf9" id="14dQ7Z9IXec" role="1iPsTO">
+            <node concept="19SUe$" id="14dQ7Z9IXed" role="19SJt6">
+              <property role="19SUeA" value="Can give it a go here&#10;&#10;don't know what I'll be writing here but we can continue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3DQu_s" id="14dQ7Z9IXee" role="1iK7Or">
+      <property role="TrG5h" value="Second Section" />
+      <node concept="1jaUne" id="14dQ7Z9IXef" role="1iK7Or">
+        <property role="TrG5h" value="First Subsection of Second Section" />
+        <node concept="1iUVBs" id="14dQ7Z9IXeg" role="1iK7Or">
+          <node concept="19SGf9" id="14dQ7Z9IXeh" role="1iPsTO">
+            <node concept="19SUe$" id="14dQ7Z9IXei" role="19SJt6">
+              <property role="19SUeA" value="Here I can empasize no stronger" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1iUVBs" id="14dQ7Z9IXej" role="1iK7Or">
+        <node concept="19SGf9" id="14dQ7Z9IXek" role="1iPsTO">
+          <node concept="19SUe$" id="14dQ7Z9IXel" role="19SJt6">
+            <property role="19SUeA" value="Section One&#10;&#10;I wanted to elaborate on certain aspects of life." />
           </node>
         </node>
       </node>

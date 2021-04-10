@@ -432,5 +432,53 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="14dQ7Z9IpzP">
+    <property role="3GE5qa" value="semantics" />
+    <ref role="1XX52x" to="op4d:14dQ7Z9Ipzo" resolve="Blog" />
+    <node concept="3EZMnI" id="14dQ7Z9IpzV" role="2wV5jI">
+      <node concept="3EZMnI" id="14dQ7Z9IpzW" role="3EZMnx">
+        <node concept="VPM3Z" id="14dQ7Z9IpzX" role="3F10Kt" />
+        <node concept="ljvvj" id="14dQ7Z9IpzY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="14dQ7Z9IpzZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="PMmxH" id="14dQ7Z9Ip$0" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0ifn" id="14dQ7Z9Ip$2" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="l2Vlx" id="14dQ7Z9Ip$3" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="14dQ7Z9Ip$4" role="3EZMnx">
+        <node concept="VPM3Z" id="14dQ7Z9Ip$5" role="3F10Kt" />
+        <node concept="3XFhqQ" id="14dQ7Z9Ip$6" role="3EZMnx" />
+        <node concept="3F2HdR" id="14dQ7Z9Ip$z" role="3EZMnx">
+          <ref role="1NtTu8" to="op4d:14dQ7Z9Ipzp" resolve="articles" />
+          <node concept="2iRkQZ" id="14dQ7Z9IXeH" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="14dQ7Z9Ip$a" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="14dQ7Z9Ip$b" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRkQZ" id="14dQ7Z9Ip$c" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="14dQ7Z9Ip_3">
+    <property role="3GE5qa" value="semantics" />
+    <ref role="1XX52x" to="op4d:14dQ7Z9Ipzk" resolve="ArticleReference" />
+    <node concept="1iCGBv" id="14dQ7Z9Ip_5" role="2wV5jI">
+      <ref role="1NtTu8" to="op4d:14dQ7Z9Ipzm" resolve="article" />
+      <node concept="1sVBvm" id="14dQ7Z9Ip_7" role="1sWHZn">
+        <node concept="3F0A7n" id="14dQ7Z9Ip_e" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

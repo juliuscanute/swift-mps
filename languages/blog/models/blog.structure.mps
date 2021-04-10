@@ -317,5 +317,32 @@
     <property role="R4oN_" value="text important to the surrounding text" />
     <ref role="1TJDcQ" node="6f9Eh4L6939" resolve="ATextContent" />
   </node>
+  <node concept="1TIwiD" id="14dQ7Z9Ipzk">
+    <property role="EcuMT" value="1228876316698843348" />
+    <property role="3GE5qa" value="semantics" />
+    <property role="TrG5h" value="ArticleReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="14dQ7Z9Ipzm" role="1TKVEi">
+      <property role="IQ2ns" value="1228876316698843350" />
+      <property role="20kJfa" value="article" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2A1SIN0l6s$" resolve="IArticle" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14dQ7Z9Ipzo">
+    <property role="EcuMT" value="1228876316698843352" />
+    <property role="3GE5qa" value="semantics" />
+    <property role="TrG5h" value="Blog" />
+    <property role="34LRSv" value="blog" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="14dQ7Z9Ipzp" role="1TKVEi">
+      <property role="IQ2ns" value="1228876316698843353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="articles" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="14dQ7Z9Ipzk" resolve="ArticleReference" />
+    </node>
+  </node>
 </model>
 
