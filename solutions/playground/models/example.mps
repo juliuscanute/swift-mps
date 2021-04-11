@@ -86,106 +86,51 @@
     <node concept="3oH42F" id="14dQ7Z9IXdZ" role="3oH42A">
       <ref role="3oH42D" node="6f9Eh4LcLYn" resolve="First Article" />
     </node>
-    <node concept="3oH42F" id="14dQ7Z9JuNK" role="3oH42A">
-      <ref role="3oH42D" node="14dQ7Z9IXe5" resolve="Second Article" />
-    </node>
-    <node concept="3oH42F" id="lPuSHrlTlV" role="3oH42A">
-      <ref role="3oH42D" node="lPuSHrlmaf" resolve="Third Article" />
-    </node>
-    <node concept="3oH42F" id="lPuSHrmZgt" role="3oH42A">
-      <ref role="3oH42D" node="lPuSHrmshJ" resolve="Fourth Article" />
+    <node concept="3oH42F" id="Xzu9zcaUHR" role="3oH42A">
+      <ref role="3oH42D" node="Xzu9zcam5V" resolve="Second Article" />
     </node>
   </node>
-  <node concept="3DOOB$" id="14dQ7Z9IXe5">
+  <node concept="3DOOB$" id="Xzu9zcam5V">
     <property role="TrG5h" value="Second Article" />
-    <node concept="3DQu_s" id="14dQ7Z9IXe6" role="1iK7Or">
-      <property role="TrG5h" value="Frist Section" />
-      <node concept="1iUVBs" id="14dQ7Z9IXe7" role="1iK7Or">
-        <node concept="19SGf9" id="14dQ7Z9IXe8" role="1iPsTO">
-          <node concept="19SUe$" id="14dQ7Z9IXe9" role="19SJt6">
+    <node concept="3DQu_s" id="Xzu9zcam5W" role="1iK7Or">
+      <property role="TrG5h" value="MPS Frist Section" />
+      <node concept="1iUVBs" id="Xzu9zcam5X" role="1iK7Or">
+        <node concept="19SGf9" id="Xzu9zcam5Y" role="1iPsTO">
+          <node concept="19SUe$" id="Xzu9zcam5Z" role="19SJt6">
             <property role="19SUeA" value="Here i can explain the first section" />
           </node>
         </node>
       </node>
-      <node concept="1jaUne" id="14dQ7Z9IXea" role="1iK7Or">
+      <node concept="1jaUne" id="Xzu9zcam60" role="1iK7Or">
         <property role="TrG5h" value="First Subsection of Frist Section" />
-        <node concept="1iUVBs" id="14dQ7Z9IXeb" role="1iK7Or">
-          <node concept="19SGf9" id="14dQ7Z9IXec" role="1iPsTO">
-            <node concept="19SUe$" id="14dQ7Z9IXed" role="19SJt6">
+        <node concept="1iUVBs" id="Xzu9zcam61" role="1iK7Or">
+          <node concept="19SGf9" id="Xzu9zcam62" role="1iPsTO">
+            <node concept="19SUe$" id="Xzu9zcam63" role="19SJt6">
               <property role="19SUeA" value="Can give it a go here&#10;&#10;don't know what I'll be writing here but we can continue" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="3DQu_s" id="14dQ7Z9IXee" role="1iK7Or">
-      <property role="TrG5h" value="Second Section" />
-      <node concept="1jaUne" id="14dQ7Z9IXef" role="1iK7Or">
+    <node concept="3DQu_s" id="Xzu9zcam64" role="1iK7Or">
+      <property role="TrG5h" value="MPS Second Section" />
+      <node concept="1jaUne" id="Xzu9zcam65" role="1iK7Or">
         <property role="TrG5h" value="First Subsection of Second Section" />
-        <node concept="1iUVBs" id="14dQ7Z9IXeg" role="1iK7Or">
-          <node concept="19SGf9" id="14dQ7Z9IXeh" role="1iPsTO">
-            <node concept="19SUe$" id="14dQ7Z9IXei" role="19SJt6">
+        <node concept="1iUVBs" id="Xzu9zcam66" role="1iK7Or">
+          <node concept="19SGf9" id="Xzu9zcam67" role="1iPsTO">
+            <node concept="19SUe$" id="Xzu9zcam68" role="19SJt6">
               <property role="19SUeA" value="Here I can empasize no stronger" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="1iUVBs" id="14dQ7Z9IXej" role="1iK7Or">
-        <node concept="19SGf9" id="14dQ7Z9IXek" role="1iPsTO">
-          <node concept="19SUe$" id="14dQ7Z9IXel" role="19SJt6">
-            <property role="19SUeA" value="Section One&#10;&#10;I wanted to elaborate on certain aspects of life." />
+      <node concept="1iUVBs" id="Xzu9zcam69" role="1iK7Or">
+        <node concept="19SGf9" id="Xzu9zcam6a" role="1iPsTO">
+          <node concept="19SUe$" id="Xzu9zcam6b" role="19SJt6">
+            <property role="19SUeA" value="Section One&#10;I wanted to elaborate on certain aspects of life." />
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="3DOOB$" id="lPuSHrlmaf">
-    <property role="TrG5h" value="Third Article" />
-    <node concept="3DQu_s" id="lPuSHrlmag" role="1iK7Or">
-      <property role="TrG5h" value="Frist Section" />
-      <node concept="1iUVBs" id="lPuSHrlmah" role="1iK7Or">
-        <node concept="19SGf9" id="lPuSHrlmai" role="1iPsTO">
-          <node concept="19SUe$" id="lPuSHrlmaj" role="19SJt6">
-            <property role="19SUeA" value="Here i can explain the first section" />
-          </node>
-        </node>
-      </node>
-      <node concept="1jaUne" id="lPuSHrlmak" role="1iK7Or">
-        <property role="TrG5h" value="First Subsection of Frist Section" />
-        <node concept="1iUVBs" id="lPuSHrlmal" role="1iK7Or">
-          <node concept="19SGf9" id="lPuSHrlmam" role="1iPsTO">
-            <node concept="19SUe$" id="lPuSHrlman" role="19SJt6">
-              <property role="19SUeA" value="Can give it a go here&#10;&#10;don't know what I'll be writing here but we can continue" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3DQu_s" id="lPuSHrlmao" role="1iK7Or">
-      <property role="TrG5h" value="Second Section" />
-      <node concept="1jaUne" id="lPuSHrlmap" role="1iK7Or">
-        <property role="TrG5h" value="First Subsection of Second Section" />
-        <node concept="1iUVBs" id="lPuSHrlmaq" role="1iK7Or">
-          <node concept="19SGf9" id="lPuSHrlmar" role="1iPsTO">
-            <node concept="19SUe$" id="lPuSHrlmas" role="19SJt6">
-              <property role="19SUeA" value="Here I can empasize no stronger" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1iUVBs" id="lPuSHrlmat" role="1iK7Or">
-        <node concept="19SGf9" id="lPuSHrlmau" role="1iPsTO">
-          <node concept="19SUe$" id="lPuSHrlmav" role="19SJt6">
-            <property role="19SUeA" value="Section One&#10;&#10;I wanted to elaborate on certain aspects of life." />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3DOOB$" id="lPuSHrmshJ">
-    <property role="TrG5h" value="Fourth Article" />
-    <node concept="3DQu_s" id="lPuSHrmshK" role="1iK7Or">
-      <property role="TrG5h" value="Hello world" />
     </node>
   </node>
 </model>

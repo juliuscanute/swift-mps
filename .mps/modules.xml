@@ -3,10 +3,10 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/blog/blog.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/blog/blog.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/code.build/code.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/code.buildAllScripts/code.buildAllScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/playground/playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/runtime/runtime.msd" folder="" />
     </projectModules>
   </component>
 </project>
