@@ -11,10 +11,6 @@
     </facet>
   </facets>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="false">49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:ec192600-e7e1-4a3e-8ddf-ce429474a2ed:blog" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -32,13 +28,9 @@
     <language slang="l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base" version="0" />
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
-    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="1" />
     <language slang="l:388b264c-9809-4e2e-b292-61ab9914c8d0:statemachine.test" version="-1" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="1fd846c3-c5f9-4b9e-9ecc-e716f7149f86(Hamcrest)" version="0" />
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" version="0" />
     <module reference="476dd780-6881-4954-bc33-4e978bf45e58(playground)" version="0" />
   </dependencyVersions>
 </solution>
