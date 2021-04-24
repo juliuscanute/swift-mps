@@ -53,10 +53,6 @@
           </node>
         </node>
       </node>
-      <node concept="3labsX" id="1zuWner31xi" role="1iK7Or">
-        <property role="TrG5h" value="Beacon Name" />
-        <property role="23RpnP" value="C:\Users\julius\Desktop\beacon_set_uuid.png" />
-      </node>
     </node>
     <node concept="3DQu_s" id="7lu6iPmFJo0" role="1iK7Or">
       <property role="TrG5h" value="Installation Instructions" />
@@ -93,6 +89,10 @@
             </node>
           </node>
         </node>
+        <node concept="3labsX" id="1zuWner31xi" role="1iK7Or">
+          <property role="TrG5h" value="Set beacon UUID" />
+          <property role="23RpnP" value="C:\Users\julius\Documents\BlogResources\beacon_set_uuid.png" />
+        </node>
       </node>
       <node concept="1jaUne" id="1nv7_X8ep9Z" role="1iK7Or">
         <property role="TrG5h" value="Usage set UUID &amp; manufacturer" />
@@ -103,6 +103,10 @@
             </node>
           </node>
         </node>
+        <node concept="3labsX" id="7ds195ZJRRq" role="1iK7Or">
+          <property role="23RpnP" value="C:\Users\julius\Documents\BlogResources\beacon_set_uuid_manufacturer.png" />
+          <property role="TrG5h" value="Set beacon UUID and Manufacturer" />
+        </node>
       </node>
       <node concept="1jaUne" id="1nv7_X8epad" role="1iK7Or">
         <property role="TrG5h" value="Usage set UUID, manufacturer, major, minor &amp; tx" />
@@ -112,6 +116,10 @@
               <property role="19SUeA" value="jbeacon -uuid &quot;efb8454c-6988-11eb-9439-0242ac130002&quot; -manufacturer 1234 -major 1 -minor 2 -measuredPower 128" />
             </node>
           </node>
+        </node>
+        <node concept="3labsX" id="7ds195ZJRR_" role="1iK7Or">
+          <property role="23RpnP" value="C:\Users\julius\Documents\BlogResources\beacon_set_all.png" />
+          <property role="TrG5h" value="Set all beacon attributes" />
         </node>
       </node>
     </node>

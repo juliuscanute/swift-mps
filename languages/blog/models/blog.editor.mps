@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="op4d" ref="r:e6aac129-ad30-404a-bffd-bbb7552438f9(blog.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -387,6 +388,22 @@
         <node concept="l2Vlx" id="4pMdKQjmC2l" role="2iSdaV" />
         <node concept="pj6Ft" id="4pMdKQjmC2m" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7ds195ZLjXU">
+    <property role="3GE5qa" value="semantics" />
+    <ref role="1XX52x" to="op4d:7ds195ZK_OX" resolve="LinkContent" />
+    <node concept="1WcQYu" id="7ds195ZLjXW" role="2wV5jI">
+      <node concept="2ElW$n" id="7ds195ZLjXY" role="2El2Yn" />
+      <node concept="3EZMnI" id="7ds195ZLG7X" role="1LiK7o">
+        <node concept="l2Vlx" id="7ds195ZLG7Y" role="2iSdaV" />
+        <node concept="PMmxH" id="7ds195ZLG81" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0A7n" id="7ds195ZLG86" role="3EZMnx">
+          <ref role="1NtTu8" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
         </node>
       </node>
     </node>
