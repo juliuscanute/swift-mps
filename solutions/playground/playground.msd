@@ -28,8 +28,8 @@
     <language slang="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" version="0" />
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="3" />
     <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="1" />
+    <language slang="l:388b264c-9809-4e2e-b292-61ab9914c8d0:statemachine.test" version="-1" />
     <language slang="l:ec192600-e7e1-4a3e-8ddf-ce429474a2ed:swift" version="0" />
-    <language slang="l:388b264c-9809-4e2e-b292-61ab9914c8d0:swift.test" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="476dd780-6881-4954-bc33-4e978bf45e58(playground)" version="0" />
